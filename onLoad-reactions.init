@@ -1,0 +1,135 @@
+#=============Stasis chambers==========
+foe/reaction-trigger -reactionName INSTALL_STASIS_FIVE -syndrome "entering stasis for five years"
+foe/reaction-trigger -reactionName INSTALL_STASIS_TEN -syndrome "entering stasis for ten years"
+foe/reaction-trigger -reactionName INSTALL_STASIS_TWENTY -syndrome "entering stasis for twenty years"
+#=============slave rehab=============
+foe/reaction-trigger -reactionName REHABILITATE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "rehabilitated (um)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+foe/reaction-trigger -reactionName REHABILITATE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "rehabilitated (uf)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+foe/reaction-trigger -reactionName REHABILITATE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "rehabilitated (em)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+foe/reaction-trigger -reactionName REHABILITATE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "rehabilitated (ef)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+
+foe/reaction-trigger -reactionName ENSLAVE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "enslaved (um)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+foe/reaction-trigger -reactionName ENSLAVE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "enslaved (uf)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+foe/reaction-trigger -reactionName ENSLAVE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "enslaved (em)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+foe/reaction-trigger -reactionName ENSLAVE_SLAVE -allowNonworkerTargets -range [ 5 5 0 ] -syndrome "enslaved (ef)" -command [ foe/fix-unit-history -unit \\TARGET_ID -clearTamed ]
+
+#============Robronco==============
+#-----mines--------
+#Robronco
+foe/reaction-trigger -reactionName DEPLOY_MINE_HE -command [ modtools/create-unit -race LANDMINE -caste HE -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName DEPLOY_MINE_EMP -command [ modtools/create-unit -race LANDMINE -caste EMP -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+#-----------Spritebots--------
+foe/reaction-trigger -reactionName MANUFACTURE_SPRITEBOT -command [ modtools/create-unit -race SPRITEBOT -caste MALE -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_SPRITEBOT_LP -command [ modtools/create-unit -race SPRITEBOT -caste MALE -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_ARMORED_SPRITEBOT -command [ modtools/create-unit -race SPRITEBOT_ARMORED -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+foe/reaction-trigger -reactionName MANUFACTURE_ARMORED_SPRITEBOT_LP -command [ modtools/create-unit -race SPRITEBOT_ARMORED -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+#-----------Turrets----------
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET -command [ modtools/create-unit -race TURRET_BASIC -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET_LP -command [ modtools/create-unit -race TURRET_BASIC -caste NORMAL -domesticate -setUnitToFort -location  [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET_LASER -command [ modtools/create-unit -race TURRET_LASER -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET_LASER_LP -command [ modtools/create-unit -race TURRET_LASER -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_PLASMA_TURRET -command [ modtools/create-unit -race TURRET_PLASMA -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET_RIFLE -command [ modtools/create-unit -race TURRET_RIFLE -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET_RIFLE_LP -command [ modtools/create-unit -race TURRET_RIFLE -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET_MINIGUN -command [ modtools/create-unit -race TURRET_MINIGUN -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_TURRET_FLAMETHROWER -command [ modtools/create-unit -race TURRET_FLAMETHROWER -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+
+#-----------Protectapony----------------
+foe/reaction-trigger -reactionName MANUFACTURE_PROTECTAPONY -command [ modtools/create-unit -race PROTECTAPONY -caste MALE -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_PROTECTAPONY_LP -command [ modtools/create-unit -race PROTECTAPONY -caste MALE -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_PROTECTAPONY_ARMORED -command [ modtools/create-unit -race PROTECTAPONY_ARMORED -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_PROTECTAPONY_MINIGUN -command [ modtools/create-unit -race PROTECTAPONY_MINIGUN -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_PROTECTAPONY_PLASMA -command [ modtools/create-unit -race PROTECTAPONY_PLASMA -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+#-------------Mr Hooves------------
+foe/reaction-trigger -reactionName MANUFACTURE_MR_HOOVES -command [ modtools/create-unit -race MR_HOOVES -caste MALE -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_MR_HOOVES_LP -command [ modtools/create-unit -race MR_HOOVES -caste MALE -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_NURSE_REDHEART -command [ modtools/create-unit -race NURSE_REDHEART -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_MACINTOSH -command [ modtools/create-unit -race MR_MACINTOSH_DOMESTIC -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+foe/reaction-trigger -reactionName MANUFACTURE_PINKANEMA -command [ modtools/create-unit -race PINKANEMA -caste NORMAL -domesticate -setUnitToFort -location [ \\LOCATION ] ]
+
+
+#-------------Other----------
+foe/reaction-trigger -reactionName MANUFACTURE_CYBERDOG -syndrome "cybernetically augmented dog" -allowNonworkerTargets -ignoreWorker -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName MANUFACTURE_ROBOBRAIN_MINIGUN -syndrome "minigun robobrain" -allowNonworkerTargets -ignoreWorker -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName MANUFACTURE_ROBOBRAIN_MINIGUN2 -syndrome "minigun robobrain blank" -allowNonworkerTargets -ignoreWorker -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName DESIGNATE_HEALING -syndrome "designating healing"
+
+#-----------Robronco Maintenance----------- 
+
+foe/reaction-trigger -reactionName REPAIR_ROBOT_CIVILIAN -syndrome "repair civilian robot" -allowNonworkerTargets -range [ 5 5 0 ] -command [ full-heal -unit \\TARGET_ID ]
+foe/reaction-trigger -reactionName REPAIR_ROBOT_MILITARY -syndrome "repair military robot" -allowNonworkerTargets -range [ 5 5 0 ] -command [ full-heal -unit \\TARGET_ID ]
+foe/reaction-trigger -reactionName UPGRADE_SPRITEBOT -syndrome "rigged with explosives" -allowNonworkerTargets -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName UPGRADE_PROTECTAPONY -syndrome "armored protectapony upgrade" -allowNonworkerTargets -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName UPGRADE_REDHEART -syndrome "Nurse Redheart upgrade" -allowNonworkerTargets -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName UPGRADE_PINKANEMA -syndrome "Pinkamena upgrade" -allowNonworkerTargets -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName UPGRADE_TURRET_FLAMETHROWER -syndrome "flamethrower upgrade" -allowNonworkerTargets -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName UPGRADE_TURRET_MINIGUN -syndrome "minigun upgrade" -allowNonworkerTargets -range [ 5 5 0 ]
+foe/reaction-trigger -reactionName UPGRADE_TURRET_RIFLE -syndrome "rifle upgrade" -allowNonworkerTargets -range [ 5 5 0 ]
+
+
+
+#Friendship
+foe/reaction-trigger -reactionName REMEMBER_KINDNESS -syndrome "remembering kindness" -allowMultipleTargets -range [ 20 20 10 ] -resetPolicy ResetDuration
+foe/reaction-trigger -reactionName REMEMBER_GENEROSITY -syndrome "remembering generosity" -allowMultipleTargets -range [ 20 20 10 ] -resetPolicy ResetDuration
+foe/reaction-trigger -reactionName REMEMBER_LAUGHTER -syndrome "remembering laughter" -allowMultipleTargets -range [ 20 20 10 ] -resetPolicy ResetDuration
+foe/reaction-trigger -reactionName REMEMBER_HONESTY -syndrome "remembering honesty" -allowMultipleTargets -range [ 20 20 10 ] -resetPolicy ResetDuration
+foe/reaction-trigger -reactionName REMEMBER_LOYALTY -syndrome "remembering loyalty" -allowMultipleTargets -range [ 20 20 10 ] -resetPolicy ResetDuration
+foe/reaction-trigger -reactionName REMEMBER_MAGIC -syndrome "remembering magic" -allowMultipleTargets -range [ 20 20 10 ] -resetPolicy ResetDuration
+foe/reaction-trigger -reactionName REMEMBER_FRIENDSHIP -syndrome "remembering friendship" -allowMultipleTargets -range [ 20 20 10 ] -resetPolicy ResetDuration
+
+#Arcane poisoning
+#Spark battery recharging
+foe/reaction-trigger -reactionName RECHARGE_SPARK_BATTERY_FLUX -syndrome "exhaustion"
+foe/reaction-trigger -reactionName RECHARGE_SPARK_BATTERY_FLUX -syndrome "severe conjuration magic poisoning"
+
+#Drug administration to blanks/slaves
+foe/reaction-trigger -reactionName ADMINISTER_BUCK_DASH -syndrome "administer buck and dash"
+foe/reaction-trigger -reactionName ADMINISTER_COMBAT -syndrome "administer combat drugs"
+
+foe/reaction-trigger -reactionName DRINK_HYDRA -syndrome "drink hydra" -command [ full-heal -unit \\TARGET_ID ]
+foe/reaction-trigger -reactionName GIVE_HYDRA -syndrome "drink hydra" -allowNonworkerTargets -ignoreWorker -range [ 5 5 0 ] -command [ full-heal -unit \\TARGET_ID ]
+
+#Cybernetics
+foe/reaction-trigger -reactionName INSTALL_PROSTHETICS_SELF -syndrome "install prosthetics on self" -command [ full-heal -unit \\TARGET_ID ]
+foe/reaction-trigger -reactionName INSTALL_PROSTHETICS_OTHERS -syndrome "install prosthetics on self" -allowNonworkerTargets -ignoreWorker -range [ 5 5 0 ] -command [ full-heal -unit \\TARGET_ID ]
+foe/reaction-trigger -reactionName INSTALL_CYBERNETIC_EYES -syndrome "Installing cybernetic eye"
+foe/reaction-trigger -reactionName INSTALL_DERMAL_ARMOUR -syndrome "Installing dermal armour"
+foe/reaction-trigger -reactionName INSTALL_CYBERNETIC_LUNGS -syndrome "Installing cybernetic lungs"
+foe/reaction-trigger -reactionName INSTALL_CYBERNETIC_NERVOUS_SELF -syndrome "Installing redundant nerves"
+foe/reaction-trigger -reactionName INSTALL_CYBERNETIC_NERVOUS_OTHERS -syndrome "Installing redundant nerves" -allowNonworkerTargets -ignoreWorker -range [ 5 5 0 ]
+
+#water/magma spawning
+
+foe/reaction-trigger -reactionName PUMP_WATER -command [ foe/spawn-liquid 7 water [ \\LOCATION ] [ 0 0 -1 ] ]
+
+foe/reaction-trigger -reactionName ROCKS_TO_MAGMA -command [ foe/spawn-liquid 7 magma [ \\LOCATION ] [ -1 -1 -1 ] ]
+
+
+#pony resources centre utilities
+
+foe/reaction-trigger -reactionName UNLOCK_MAGMA_WORKSHOPS -command [ feature magma ]
+
+foe/reaction-trigger -reactionName SOUND_ALARM -command [ siren ]

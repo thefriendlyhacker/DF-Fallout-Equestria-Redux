@@ -1,0 +1,170 @@
+#======battle saddles========
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_MINIGUN -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "minigun battle saddle" -target \\UNIT_ID -resetPolicy DoNothing ]
+
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_MINIGUN -onUnequip [ Worn ] -command [ modtools/add-syndrome -erase -syndrome "minigun battle saddle" -target \\UNIT_ID ]
+#-----------------
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_LASER -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "laser battle saddle" -target \\UNIT_ID  -resetPolicy DoNothing ]
+
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_LASER -onUnequip [ Worn ] -command [ modtools/add-syndrome -erase -syndrome "laser battle saddle" -target \\UNIT_ID ]
+#-------
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_PLASMA -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "plasma battle saddle" -target \\UNIT_ID  -resetPolicy DoNothing ]
+
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_PLASMA -onUnequip [ Worn ] -command [ modtools/add-syndrome -erase -syndrome "plasma battle saddle" -target \\UNIT_ID ]
+#-----------------
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_FLAMETHROWER -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "flamethrower battle saddle" -target \\UNIT_ID  -resetPolicy DoNothing ]
+
+modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_FLAMETHROWER -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome  "flamethrower battle saddle" -erase -target \\UNIT_ID ]
+
+#modtools/item-trigger -itemType ITEM_ARMOR_BATTLE_SADDLE_MINIGUN -onEquip [ Worn ] -command [ devel/print-args "equipped" ]
+#------------------
+#========Boot activated items=========
+
+modtools/item-trigger -itemType ITEM_SHOES_PIPBUCK -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "PipBuck" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_PIPBUCK -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "PipBuck" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_STEALTHBUCK -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "StealthBuck" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_STEALTHBUCK -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "StealthBuck" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_HEALING_POTION -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "healing potion auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_HEALING_POTION -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "healing potion auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_MEDX -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Med-X auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_MEDX -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Med-X auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_DASH -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Dash auto-rebreather" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_DASH -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Dash auto-rebreather" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_BUCK -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Buck auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_BUCK -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Buck auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGE -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rage auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGE -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rage auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_STAMPEDE -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Stampede auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_STAMPEDE -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Stampede auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_STEADY -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Steady auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_STEADY -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Steady auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGEDASH -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Ragedash auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGEDASH -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Ragedash auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGEBUCK -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Ragebuck auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGEBUCK -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Ragebuck auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGE-AL -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rage-al auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGE-AL -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rage-al auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_FURY -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Fury auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_FURY -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Fury auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGE_PLUS -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rage+ auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_RAGE_PLUS -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rage+ auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_MINT-AL -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Mint-al auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_MINT-AL -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Mint-al auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_PARTY_TIME_MINT-AL -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Party Time Mint-al auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_PARTY_TIME_MINT-AL -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Party Time Mint-al auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_MINTBUCK -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Mintbuck auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_MINTBUCK -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Mintbuck auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_BERRY_MINT-AL -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Berry Mint-al auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_BERRY_MINT-AL -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Berry Mint-al auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_GRAPE_MINT-AL -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Grape Mint-al auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_GRAPE_MINT-AL -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Grape Mint-al auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_ORANGE_MINT-AL -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Orange Mint-al auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_ORANGE_MINT-AL -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Orange Mint-al auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_DASH_FUEL -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Dash-fuel auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_DASH_FUEL -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Dash-fuel auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_DASH_PLUS -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Dash+ auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_DASH_PLUS -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Dash+ auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_RAINBOOM -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rainboom auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_RAINBOOM -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Rainboom auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_HAWKEYE -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "HawkEye auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_HAWKEYE -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "HawkEye auto-injector" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_CELESTIA_TEARS -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "Celestia's Tears auto-injector" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_SHOES_AUTOINJECTOR_CELESTIA_TEARS -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "Celestia's Tears auto-injector" -erase -target \\UNIT_ID ]
+
+#==============Other syndrome armor and helmets========
+modtools/item-trigger -itemType ITEM_ARMOR_JUMPSUIT_HAZMAT -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "hazmat jumpsuit" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_ARMOR_JUMPSUIT_HAZMAT -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "hazmat jumpsuit" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_MASK_GAS -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "gas mask" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_MASK_GAS -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "gas mask" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_AMULET_PARALYZE -onEquip  [ Worn ] -command [ modtools/add-syndrome -syndrome "paralyze amulet" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_AMULET_PARALYZE -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "paralyze amulet" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_POWER -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "power armor helmet" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_POWER -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "power armor helmet" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_ARMOR_POWER -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "power armor" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_ARMOR_POWER -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "power armor" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_POWER_TITAN -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "titan PA helmet" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_POWER_TITAN -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "titan PA helmet" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_ARMOR_POWER_TITAN -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "titan PA" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_ARMOR_POWER_TITAN -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "titan PA" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_HELM_POWER_SCORPION -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "scorpion PA helmet" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_HELM_POWER_SCORPION -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "scorpion PA helmet" -erase -target \\UNIT_ID ]
+#------------------
+
+modtools/item-trigger -itemType ITEM_ARMOR_POWER_SCORPION -onEquip [ Worn ] -command [ modtools/add-syndrome -syndrome "scorpion PA" -target \\UNIT_ID  -resetPolicy DoNothing ]
+modtools/item-trigger -itemType ITEM_ARMOR_POWER_SCORPION -onUnequip [ Worn ] -command [ modtools/add-syndrome -syndrome "scorpion PA" -erase -target \\UNIT_ID ]
+#------------------
+
+#auto-fire
+
+ranged/ranged-rof -name "revolver" -reqWeaponType [ ITEM_WEAPON_PISTOL_REVOLVER ITEM_WEAPON_PISTOL_LITTLE_MACINTOSH ] -timeBase [ -30 -30 -30 -30 -30 -80  ] -timeMult [ 1 1 1 1 1 3 ]
+#------------------
+ranged/ranged-rof -name "combat pistol" -reqWeaponType ITEM_WEAPON_PISTOL_COMBAT -timeBase [ -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -40 ] -timeMult [ 1 1 1 1 1 1 1 1 1 1 1 2 ]
+#------------------
+ranged/ranged-rof -name "service rifles" -reqWeaponType [ ITEM_WEAPON_RIFLE_COMBAT ITEM_WEAPON_RIFLE_RIPPER ITEM_WEAPON_RIFLE_CHAIN ] -timeBase [ 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 -40 ] -timeMult [ 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 2 ]
+#------------------
+ranged/ranged-rof -name "smg" -reqWeaponType ITEM_WEAPON_SUB_MACHINE_GUN -timeBase [ 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -40 ] -timeMult [ 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 ]
+#------------------
+ranged/ranged-rof -name "automatic rifle" -reqWeaponType ITEM_WEAPON_RIFLE_AUTOMATIC -timeBase [ 4 4 4 -30 ] -timeMult [ 0 0 0 1 ]
+#------------------
+ranged/ranged-rof -name "storm glaive" -reqWeaponType ITEM_WEAPON_GLAIVE_STORM -timeBase [ 2 2 2 2 2 2 2 2 2 -30 ] -timeMult [ 0 0 0 0 0 0 0 0 0 1 ]

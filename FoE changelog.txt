@@ -1,0 +1,155 @@
+0.41.6-beta1
+major changes
+- complete stable caste overhaul
+- massive increase in number of used cutie marks
+- autofire script, used for all firearms but hunting and anti-machine rifles
+- SMGs and automatic rifles
+- added Glaive and Ripsaw Glaive, using the piker skill, and the Storm Glaive, a Ripsaw Glaive/twin linked SMG hybrid
+
+minor tweaks
+- cut killing joke gender changing interactions until I can be bothered going over all the interactions converting them to the new stable caste system
+- added reanimated griffon sprite
+- made royal jelly and honey solid at room temp
+- alteration time stutter/stop give noexert for their duration
+- tweaked preset worldgen cavern heights.
+- tweaked revolver muzzle velocity
+- tweaked amr mat size
+- gun making reactions now all use steel
+
+bug fixes
+-fixed bad alteration hologem cutting reactions
+
+0.41.5
+major changes
+- updated to DF 44.12
+- added a whole bunch of drugs (contribution by Unknown72)
+- added catagories to a whole bunch of things
+- added large caliber explosive ammo - low AP capabilities, but can knock armored foes over or sever unprotected limbs with ease
+- added plasma caster equipped armored protectapony
+- changed flamethrower to a hot liquid glob thrower
+- data extractions now aims for specific designs/AI etc
+- added equestria worldgen settings
+
+minor tweaks
+- armored protectapony now available at assembly line
+- reduced ranger size, so they can carry normal pony wearables
+- made gold and silver [ITEMS_SOFT] so cloth can be made into clothing
+- added low grade weapon metal classification, that can only be made into bullets, and moved a couple of weapon metals into them
+- increased value of aluminum
+- gave AMR to talons and rangers
+- added specific milling reactions (sugar, flour etc)
+- berry juice now produces berry liqueur
+- corn revamped
+- massively buffed cola RAD
+- tweaked scriptorium reactions
+- more coiled wire produced per smelting reaction
+- moved slave/blank castes out of stable pony file, so they will now show up as e.g. freed earth pony peasant
+- necrospirit now has remove tag [has_blood], crimson gift master buffs more units
+- gas masks and hazmat suits now made of synthetic material
+- tweaked numbers for security/combat armor
+- adjusted entity settings to let more civs spawn in worldgen
+- more reaction skill changes - even less stuff uses mechanics instead of specific skills (forge weapon, bowyer etc)
+- tweaked a couple of stable pony castes
+- boosted armory armor training speed
+- radhogs now have sprites
+- animated (undead) ponies now have sprites
+
+
+bug fixes
+- increased killing joke stealth cooldown to avoid ridiculous ambush alert spam
+- fixed a bunch of things with cybernetics
+- fixed a few bugs in spells
+- fixed some drug interactions having [usage_hint:attack]
+- fixed bug to do with create-unit missing -setUnitToFort
+- fixed various errors in creatures, particularly everfree ones
+- fixed missing profession names in ranger (only had caste professions)
+- made a duplicate of reaction-product-trigger that refers to foe/reaction-trigger instead
+- training boulders are no longer evaporation based, so they shouldn't blow up buildings any more
+
+0.41.0
+major changes
+- updated to DF 44.11
+- massive overhaul of magic system - 45 spells, 90 spells if including variations of the same spell
+- spell readout reaction to announce spells available to a pony (through stable-tec terminal)
+- MAS terminal and MAS gemcutters cut completely - arcane buildings handle everything now
+- sver's combat overhaul mat changes integrated into mod - no more glass spinal cords
+- more leather mod integrated - lots of leather/parchment from large creatures
+- fire resistance of creatures altered radically - fat melts at a much higher temperature, heat damage occurs at a much lower temperature.  Net result is that creatures die from melted fat induced blood loss far less, but can take burn damage while still surviving.
+- cut reloading bench and electronics, all reactions rolled into bowyers and workbench respectively
+- many reactions now use forge weapon/armor/bowyer instead of everything using mechanics.  In general, only complex non-firearm mechanical weapons use mechanics
+- griffons now have several castes, each dedicated to a certain specialization (polearms, ranged, leadership etc)
+
+minor tweaks
+- baked goods reactions cut completely - they are buggy, weird and crash inducing (seriously, making dough caused a crash a short time later unless all dough was autodump -destroy'd) 
+- added a body part for spellcasting attached to horn, similar to TK parts
+- smelting of star metal alloys now done in prism smelter
+- battery recharging does not require alchemy, and is done at any of the power talisman based industrial buildings, x5 recharge cut
+- minor tweaks to some clothing/armor
+- renamed a bunch of creature classes (magic_novice->unicorn_pony etc) and added classes for griffons and hellhounds, included classes in appropriate equipment syndromes
+- changed pony scout (aka thief) sprite, added messenger sprite
+- arcane terminal cut, stable tec terminal used instead
+- alicorns and hellhounds can use drug injectors etc (they probably still can't wear them though unless you can get one to apply for citizenship).  Reaction/item syndromes in general should work on them when appropriate.
+- bowyer renamed to gunsmith in pony/griffon skill descriptions
+- seeds are now cookable
+- added seed drops to plant burning, poppies can be burnt
+- healing rate tweaks for some tissues
+- several heal transformations done by script now
+- black opals added as a C3 gem
+- Power armor strength buffed, calibration gem and related reactions cut
+- values of several weapon component tools reduced to something sane
+- chain weapon velocity nerfed, attack speed buffed
+- Little Macintosh buffed, now made of stellarite
+- burning trash reactions now take a single item at a time, and don't require skill
+- cut unused sheets from MAS extraction
+- autoresetgrid added as an optional script because why not
+- added refurbish AMR reactions
+- grinding produces 4 sand per run
+- cut wood burning reaction - wood is plentiful enough now that 1 ash per log is acceptable (as opposed to pre-multitile trees)
+
+bug fixes
+- fixed erronious instructions in setup guide - it now mentions how to deal with tilesets and such 
+- fixed cotton sheets from salvage not being quite the right type of cotton (was structural, is now thread)
+- added no hospital to a bunch of syndromes
+- fixed poppy mats in chem lab reaction
+- fixed broken energy lance manufacture and refurbish reactions
+- lots of tidying up and separating of stuff, including dfhack .init stuff and entities
+- error in repair mil robot fixed
+- ffid doesn't constantly execute itself, functions just recalled internally
+- fixed missing reset policy arg in reaction trigger permitted args
+- removed dupe pony stable graphics from pony file
+- fixed erronious slave descriptions
+- removed unusable corn growths
+- changed processed orewood name to deal with odd naming
+- fixed rehab/enslave reaction using //target instead of //target_id
+- fixed paralyze amulet syn in equip trigger
+
+0.40.1
+major changes
+- removed cave animals from slavers, since slaves are guarenteed now through [ANIMAL]
+- added an FFID script, spells now use FFID syndromes for targetting instead of attack hint, spell casting range increased
+- to make Good surroundings less bad, orewood gives a slight chance (av 1 bar/25 logs) of dropping star metal i.e. adamantine
+
+
+minor tweaks
+- break down gems reaction now available in arcane gemcutters
+- changed stable clothes/armor to forced, guarenteeing their availability
+- upped the material size of combat boots somewhat
+- added [special] to many inorganic materials, so artifacts made of e.g. medium caliber bullet won't be showing up
+- scrolls replaced with paper for design/spell reactions (couldn't stop ponies from using written on scrolls)
+- swapped bins with boxes in salvage.
+- changed ingame med-x reaction description
+- removed subterranean biome from slaves, since the cave animals hack is no longer needed thanks to [ANIMAL]
+- tweaked some head slot item size permits
+- upped revolver velocity
+
+bug fixes
+- fixed a problem with onLoad.init having a lowercase l preventing onload scripts from running
+- fixed bad onload commands for slave rehab/enslavement
+- fixed missing magma gunsmith permitted building entity token
+- removed unused tuber paste item
+- removed opium from salvage, replaced with med-x (was previously removed, but salvage items were left in)
+- fixed a couple of bugs to do with cotton.  Sheets should be made of cotton now, not nothing.
+- fixed bad reactants/products in nervous system cybernetic reactions
+- moved titan PA from MWT to MAW forge
+- fixed a bunch of MAW forge errors related to entity permitted reactions
+

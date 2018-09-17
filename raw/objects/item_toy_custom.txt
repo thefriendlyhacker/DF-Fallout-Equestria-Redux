@@ -1,0 +1,43 @@
+item_toy_custom
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:ITEM_BODYSUIT]
+[NAME:flight suit:flight suits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_BODYSUIT_NIGHTMARE]
+[NAME:black flight suit:black flight suits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_BODYSUIT_CAPTAIN]
+[NAME:captain's flight suit:captain's flight suits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_YOKE]
+[NAME:yoke:yokes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LYRE]
+[NAME:lyre:lyres]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_CELLO]
+[NAME:cello:cellos]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_BOTTLE]
+[NAME:bottle:bottles]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_SUIT_STAR]
+[NAME:star suit:star suits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_BAG_SEED]
+[NAME:seed pouch:seed pouches]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_TURNTABLE]
+[NAME:turntable:turntables]
+[HARD_MAT]

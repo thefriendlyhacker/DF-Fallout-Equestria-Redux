@@ -1,0 +1,471 @@
+item_misc
+
+[OBJECT:ITEM]
+========Drugs=========
+[ITEM_TOY:ITEM_DUNG]
+[NAME:brahmin dung:brahmin dung]
+[HARD_MAT]
+
+==========Special==========
+
+[ITEM_TOOL:ITEM_BATTLE_SADDLE]
+[NAME:battle saddle:battle saddles]
+[VALUE:10]
+[TILE:14]
+[SIZE:1000]
+[MATERIAL_SIZE:5]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_FLAMETHROWER]
+[NAME:flamethrower:flamethrowers]
+[VALUE:50]
+[TILE:168]
+[HARD_MAT]
+[SIZE:1000]
+[MATERIAL_SIZE:5]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MINIGUN]
+[NAME:minigun:miniguns]
+[VALUE:200]
+[TILE:168]
+[HARD_MAT]
+[SIZE:1300]
+[MATERIAL_SIZE:6]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_PLASMA_CASTER]
+[NAME:plasma caster:plasma casters]
+[VALUE:200]
+[TILE:168]
+[HARD_MAT]
+[SIZE:600]
+[MATERIAL_SIZE:2]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_PULSE_LASER]
+[NAME:pulse laser:pulse lasers]
+[VALUE:50]
+[TILE:168]
+[HARD_MAT]
+[SIZE:600]
+[MATERIAL_SIZE:2]
+[UNIMPROVABLE]
+
+
+[ITEM_TOOL:ITEM_MINE_HE]
+[NAME:HE mine:HE mines]
+[VALUE:150]
+[TILE:153]
+[HARD_MAT]
+[SIZE:500]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MINE_EMP]
+[NAME:pulse mine:pulse mines]
+[VALUE:150]
+[TILE:153]
+[HARD_MAT]
+[SIZE:500]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+==========Terminals==========
+
+[ITEM_TOOL:ITEM_TERMINAL_STABLE_TEC]
+[NAME:Stable-Tec terminal:Stable-Tec terminals]
+[VALUE:2000]
+[TILE:151]
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TERMINAL_ROBRONCO]
+[NAME:RobronCo terminal:RobronCo terminals]
+[VALUE:4000]
+[TILE:151]
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TERMINAL_MOP]
+[NAME:MOP terminal:MOP terminals]
+[VALUE:5000]
+[TILE:151]
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TERMINAL_MOM]
+[NAME:MOM terminal:MOM terminals]
+[VALUE:5000]
+[TILE:151]
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TERMINAL_MWT]
+[NAME:MWT terminal:MWT terminals]
+[VALUE:20000]
+[TILE:151]
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TERMINAL_MAW]
+[NAME:MAW terminal:MAW terminals]
+[VALUE:20000]
+[TILE:151]
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_TERMINAL_MAS]
+[NAME:MAS terminal:MAS terminals]
+[VALUE:20000]
+[TILE:151]
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+==========Statuettes==========
+
+[ITEM_TOY:ITEM_STATUETTE_TWILIGHT_SPARKLE]
+[NAME:Twilight Sparkle statuette:Twilight Sparkle statuettes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_STATUETTE_RARITY]
+[NAME:Rarity statuette:Rarity statuettes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_STATUETTE_RAINBOW_DASH]
+[NAME:Rainbow Dash statuette:Rainbow Dash statuettes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_STATUETTE_PINKIE_PIE]
+[NAME:Pinkie Pie statuette:Pinkie Pie statuettes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_STATUETTE_FLUTTERSHY]
+[NAME:Fluttershy statuette:Fluttershy statuettes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_STATUETTE_APPLEJACK]
+[NAME:Applejack statuette:Applejack statuettes]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_STATUETTE_LITTLEPIP]
+[NAME:Littlepip statuette:Littlepip statuettes]
+[HARD_MAT]
+
+==========Materials==========
+
+[ITEM_TOY:ITEM_SCROLL_ALTERATION_LOW]
+[NAME:scroll of basic alteration:scrolls of basic alteration]
+
+[ITEM_TOY:ITEM_SCROLL_ALTERATION_MID]
+[NAME:scroll of advanced alteration:scrolls of advanced alteration]
+
+[ITEM_TOY:ITEM_SCROLL_ALTERATION_HIGH]
+[NAME:scroll of prismatic alteration:scrolls of prismatic alteration]
+
+[ITEM_TOY:ITEM_SCROLL_CONJURATION_LOW]
+[NAME:scroll of basic conjuration:scrolls of basic conjuration]
+
+[ITEM_TOY:ITEM_SCROLL_CONJURATION_MID]
+[NAME:scroll of advanced conjuration:scrolls of advanced conjuration]
+
+[ITEM_TOY:ITEM_SCROLL_CONJURATION_HIGH]
+[NAME:scroll of prismatic conjuration:scrolls of prismatic conjuration]
+
+[ITEM_TOY:ITEM_SCROLL_DESTRUCTION_LOW]
+[NAME:scroll of basic destruction:scrolls of basic destruction]
+
+[ITEM_TOY:ITEM_SCROLL_DESTRUCTION_MID]
+[NAME:scroll of advanced destruction:scrolls of advanced destruction]
+
+[ITEM_TOY:ITEM_SCROLL_DESTRUCTION_HIGH]
+[NAME:scroll of prismatic destruction:scrolls of prismatic destruction]
+
+[ITEM_TOY:ITEM_SCROLL_ILLUSION_LOW]
+[NAME:scroll of basic illusion:scrolls of basic illusion]
+
+[ITEM_TOY:ITEM_SCROLL_ILLUSION_MID]
+[NAME:scroll of advanced illusion:scrolls of advanced illusion]
+
+[ITEM_TOY:ITEM_SCROLL_ILLUSION_HIGH]
+[NAME:scroll of prismatic illusion:scrolls of prismatic illusion]
+
+[ITEM_TOY:ITEM_SCROLL_RESTORATION_LOW]
+[NAME:scroll of basic restoration:scrolls of basic restoration]
+
+[ITEM_TOY:ITEM_SCROLL_RESTORATION_MID]
+[NAME:scroll of advanced restoration:scrolls of advanced restoration]
+
+[ITEM_TOY:ITEM_SCROLL_RESTORATION_HIGH]
+[NAME:scroll of prismatic restoration:scrolls of prismatic restoration]
+
+[ITEM_TOY:ITEM_SCROLL_ARCANE_MAX]
+[NAME:scroll of pure arcane knowledge:scrolls of pure arcane knowledge]
+
+==========Compositions==========
+
+[ITEM_TOY:ITEM_SYMPHONY_5]
+[NAME:copy of Octavia's Symphony No. 5:copies of Octavia's Symphony No. 5]
+
+[ITEM_TOY:ITEM_HOMAGE_APOLLO]
+[NAME:copy of Lyra's homage to Apollo:copies of Lyra's homage to Apollo]
+
+[ITEM_TOY:ITEM_COMPOSITION_MUSIC]
+[NAME:musical composition scroll:musical composition scrolls]
+
+[ITEM_TOY:ITEM_COMPOSITION_COMEDY]
+[NAME:stand-up routine scroll:stand-up routine scrolls]
+
+[ITEM_TOY:ITEM_COMPOSITION_SPEECH]
+[NAME:speech scroll:speech scrolls]
+
+[ITEM_TOY:ITEM_NOTE_MUSIC]
+[NAME:page of sheet music:pages of sheet music]
+
+[ITEM_TOY:ITEM_NOTE_COMEDY]
+[NAME:note of joke ideas:notes of joke ideas]
+
+[ITEM_TOY:ITEM_NOTE_SPEECH]
+[NAME:note of speech ideas:notes of speech ideas]
+
+==========Design Notes==========
+
+[ITEM_TOY:ITEM_NOTE_COMBAT_RIFLE]
+[NAME:combat rifle design note:combat rifle design notes]
+
+[ITEM_TOY:ITEM_NOTE_ANTIMACHINE_RIFLE]
+[NAME:anti-machine rifle design note:anti-machine rifle design notes]
+
+[ITEM_TOY:ITEM_NOTE_FLAMETHROWER]
+[NAME:flamethrower design note:flamethrower design notes]
+
+[ITEM_TOY:ITEM_NOTE_MINIGUN]
+[NAME:minigun design note:minigun design notes]
+
+[ITEM_TOY:ITEM_NOTE_POWER_ARMOR]
+[NAME:power armor design note:power armor design notes]
+
+[ITEM_TOY:ITEM_NOTE_SCORPION_POWER_ARMOR]
+[NAME:scorpion PA design note:scorpion PA design notes]
+
+[ITEM_TOY:ITEM_NOTE_CYBERNETICS_MEDICAL]
+[NAME:cybernetic prosthetic design note:cybernetic prosthetic design notes]
+
+[ITEM_TOY:ITEM_NOTE_CYBERNETICS_IMPLANT_EYE]
+[NAME:cybernetic eye design note:cybernetic eye design notes]
+
+[ITEM_TOY:ITEM_NOTE_CYBERNETICS_DERMAL_ARMOUR]
+[NAME:dermal armour design note:dermal armour design notes]
+
+[ITEM_TOY:ITEM_NOTE_CYBERNETICS_IMPLANT_LUNG]
+[NAME:cybernetic lung design note:cybernetic lung design notes]
+
+[ITEM_TOY:ITEM_NOTE_CYBERNETICS_IMPLANT_NERVOUS]
+[NAME:cybernetic lung design note:redundant nervous system design notes]
+
+==========Intel Notes==========
+
+[ITEM_TOY:ITEM_NOTE_SLAVER_WEAPONS_CACHE_PONYVILLE]
+[NAME:slaver weapons cache note (Ponyville):slaver weapons cache notes (Ponyville)]
+
+[ITEM_TOY:ITEM_NOTE_SLAVER_WEAPONS_CACHE_APPLELOOSA]
+[NAME:slaver weapons cache note (Appleloosa):slaver weapons cache notes (Appleloosa)]
+
+[ITEM_TOY:ITEM_NOTE_SLAVER_WEAPONS_CACHE_FILLYDELPHIA]
+[NAME:slaver weapons cache note (Fillydelphia):slaver weapons cache notes (Fillydelphia)]
+
+[ITEM_TOY:ITEM_NOTE_SLAVER_CAMP]
+[NAME:slaver camp operations note:slaver camp operations notes]
+
+[ITEM_TOY:ITEM_NOTE_SLAVER_BASE]
+[NAME:slaver base operations note:slaver base operations notes]
+
+[ITEM_TOY:ITEM_NOTE_TALON_WEAPONS_CACHE_APPLELOOSA]
+[NAME:Talon weapons cache note (Appleloosa):Talon weapons cache notes (Appleloosa)]
+
+[ITEM_TOY:ITEM_NOTE_TALON_WEAPONS_CACHE_MANEHATTAN]
+[NAME:Talon weapons cache note (Manehattan):Talon weapons cache notes (Manehattan)]
+
+[ITEM_TOY:ITEM_NOTE_TALON_WEAPONS_CACHE_FILLYDELPHIA]
+[NAME:Talon weapons cache note (Fillydelphia):Talon weapons cache notes (Fillydelphia)]
+
+[ITEM_TOY:ITEM_NOTE_TALON_BASE]
+[NAME:Talon base operations note:Talon base operations notes]
+
+[ITEM_TOY:ITEM_NOTE_RANGER_BUNKER]
+[NAME:Steel Ranger bunker operations note:Steel Ranger bunker operations notes]
+
+[ITEM_TOY:ITEM_NOTE_RANGER_BASE]
+[NAME:Steel Ranger base operations note:Steel Ranger base operations notes]
+
+[ITEM_TOY:ITEM_NOTE_PONYVILLE]
+[NAME:Ponyville region note:Ponyville region notes]
+
+[ITEM_TOY:ITEM_NOTE_APPLELOOSA]
+[NAME:Appleloosa region note:Appleloosa region notes]
+
+[ITEM_TOY:ITEM_NOTE_MANEHATTAN]
+[NAME:Manehattan region note:Manehattan region notes]
+
+[ITEM_TOY:ITEM_NOTE_FILLYDELPHIA]
+[NAME:Fillydelphia region note:Fillydelphia region notes]
+
+[ITEM_TOY:ITEM_NOTE_CANTERLOT]
+[NAME:Canterlot region note:Canterlot region notes]
+
+==========Maps==========
+
+[ITEM_TOOL:ITEM_MAP_PONYVILLE]
+[NAME:Ponyville regional map:Ponyville regional maps]
+[VALUE:2500]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_APPLELOOSA]
+[NAME:Appleloosa regional map:Appleloosa regional maps]
+[VALUE:2500]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_MANEHATTAN]
+[NAME:Manehattan regional map:Manehattan regional maps]
+[VALUE:5000]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_FILLYDELPHIA]
+[NAME:Fillydelphia regional map:Fillydelphia regional maps]
+[VALUE:5000]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_CANTERLOT]
+[NAME:Canterlot regional map:Canterlot regional maps]
+[VALUE:10000]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_WEAPONS_CACHE_SLAVER]
+[NAME:slaver weapons cache map:slaver weapons cache maps]
+[VALUE:250]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_WEAPONS_CACHE_TALON]
+[NAME:Talon weapons cache map:Talon weapons cache maps]
+[VALUE:500]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_SLAVER_CAMP]
+[NAME:slaver camp map:slaver camp maps]
+[VALUE:100]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_RANGER_BUNKER]
+[NAME:Steel Ranger bunker map:Steel Ranger bunker maps]
+[VALUE:1000]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_SLAVER_BASE]
+[NAME:slaver base map:slaver base maps]
+[VALUE:500]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MAP_TALON_BASE]
+[NAME:Talon base map:Talon base maps]
+[VALUE:1000]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+==========Junk==========
+
+[ITEM_TOY:ITEM_SCRAP_PARTS]
+[NAME:scrap parts:scrap parts]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_DESTROYED_ROBOT_SMALL]
+[NAME:destroyed small robot:destroyed small robots]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_DESTROYED_ROBOT_MEDIUM]
+[NAME:destroyed robot:destroyed robots]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_DESTROYED_ROBOT_LARGE]
+[NAME:destroyed large robot:destroyed large robots]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_BROKEN_POWER_ARMOR]
+[NAME:broken power armor suit:broken power armor suits]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_BROKEN_POWER_ARMOR_HELMET]
+[NAME:broken power armor helmet:broken power armor helmets]
+[HARD_MAT]
+
+[ITEM_TOOL:ITEM_MINIGUN_RANGER_CORPSE]
+[NAME:steel ranger corpse (minigun):steel ranger corpses (minigun)]
+[VALUE:2000]
+[TILE:'S']
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_ROCKET_RANGER_CORPSE]
+[NAME:steel ranger corpse (demolitions):steel ranger corpses (demolitions)]
+[VALUE:2000]
+[TILE:'S']
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_CQC_RANGER_CORPSE]
+[NAME:steel ranger corpse:steel ranger corpses]
+[VALUE:1750]
+[TILE:'S']
+[HARD_MAT]
+[SIZE:30000]
+[MATERIAL_SIZE:15]
+[UNIMPROVABLE]

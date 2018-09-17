@@ -1,0 +1,1279 @@
+descriptor_color_cutiemark
+
+[OBJECT:DESCRIPTOR_COLOR]
+
+[COLOR:CM_WHISTLE]
+        [NAME:a whistle and chew toy]
+        [RGB:0:0:0]
+
+[COLOR:CM_ANIMALS]
+        [NAME:a dog, cat, and bird]
+        [RGB:0:0:0]
+
+[COLOR:CM_FISHING_ROD]
+        [NAME:a fish and rod]
+        [RGB:0:0:0]
+
+[COLOR:CM_RADHOG_HEAD]
+        [NAME:a mounted radhog's head]
+        [RGB:0:0:0]
+
+[COLOR:CM_STRAWBERRY]
+        [NAME:a wild strawberry]
+        [RGB:0:0:0]
+
+[COLOR:CM_COOKED_VEGIES]
+        [NAME:a plate of roasted vegetables]
+        [RGB:0:0:0]
+
+[COLOR:CM_BEEHIVE]
+        [NAME:a busy beehive]
+        [RGB:0:0:0]
+
+[COLOR:CM_FRUITS]
+        [NAME:a bunch of grapes and a strawberry]
+        [RGB:0:0:0]
+
+[COLOR:CM_CLEVER_STEAK]
+        [NAME:a cleaver embedded in a cut of steak]
+        [RGB:0:0:0]
+
+[COLOR:CM_CHEESE]
+        [NAME:a thick wedge of cheese]
+        [RGB:0:0:0]
+
+[COLOR:CM_APPLE]
+        [NAME:an apple]
+        [RGB:0:0:0]
+
+[COLOR:CM_POWER_DRILLS]
+        [NAME:a crossed pair of power drills]
+        [RGB:0:0:0]
+		
+[COLOR:CM_POWER_DRILL_SHOVEL]
+        [NAME:a crossed power drill and shovel]
+        [RGB:0:0:0]
+		
+[COLOR:CM_SHOVELS]
+        [NAME:a crossed pair of shovels]
+        [RGB:0:0:0]
+		
+[COLOR:CM_SHOVEL_HOE]
+        [NAME:a crossed shovel and hoe]
+        [RGB:0:0:0]
+		
+[COLOR:CM_POWER_DRILL_HOE]
+        [NAME:a crossed power drill and hoe]
+        [RGB:0:0:0]
+		
+[COLOR:CM_EXCAVATING_MACHINE]
+        [NAME:an excavating machine]
+        [RGB:0:0:0]
+
+[COLOR:CM_HACKSAW]
+        [NAME:a hacksaw]
+        [RGB:0:0:0]
+
+[COLOR:CM_HACKSAW_CRATE_OPENED]
+        [NAME:a hacksaw and an opened crate]
+        [RGB:0:0:0]
+			
+[COLOR:CM_BATTLE_AXE]
+        [NAME:a battle axe]
+        [RGB:0:0:0]
+	
+[COLOR:CM_CLAYMORE]
+        [NAME:a claymore]
+        [RGB:0:0:0]
+		
+[COLOR:CM_SWORD_SHIELD]
+        [NAME:a scratched sword and shield]
+        [RGB:0:0:0]
+		
+[COLOR:CM_MACHETE]
+        [NAME:a scratched machete]
+        [RGB:0:0:0]
+		
+[COLOR:CM_CHAINSWORD]
+        [NAME:a scratched chainsword]
+        [RGB:0:0:0]
+		
+[COLOR:CM_RIPPER]
+        [NAME:a scratched ripper]
+        [RGB:0:0:0]
+		
+[COLOR:CM_WAR_HAMMER]
+        [NAME:a war hammer]
+        [RGB:0:0:0]
+	
+[COLOR:CM_BATON]
+        [NAME:a security baton]
+        [RGB:0:0:0]
+	
+[COLOR:CM_CLUB]
+        [NAME:a club]
+        [RGB:0:0:0]
+	
+[COLOR:CM_SLEDGE_HAMMER]
+        [NAME:a scratched sledge hammer]
+        [RGB:0:0:0]
+	
+[COLOR:CM_MACE]
+        [NAME:a mace]
+        [RGB:0:0:0]
+
+[COLOR:CM_SHIELD_HORSESHOE]
+        [NAME:a scratched shield and horseshoe]
+        [RGB:0:0:0]
+
+[COLOR:CM_BLUEPRINT_RIFLE]
+        [NAME:a blueprint of a rifle]
+        [RGB:0:0:0]
+
+[COLOR:CM_ASSAULT_RIFLE]
+        [NAME:an assault rifle and magazine]
+        [RGB:0:0:0]
+
+[COLOR:CM_MACHINE_GUN]
+        [NAME:a machine gun and a belt of ammo]
+        [RGB:0:0:0]
+		
+[COLOR:CM_SNIPER_RIFLE]
+        [NAME:a sniper rifle and clip]
+        [RGB:0:0:0]
+
+[COLOR:CM_SHOTGUN]
+        [NAME:a shotgun and buckshot shells]
+        [RGB:0:0:0]
+
+[COLOR:CM_DART_GUN]
+        [NAME:a dart gun and three darts]
+        [RGB:0:0:0]
+
+[COLOR:CM_BLOW_GUN]
+        [NAME:a blow gun and three darts]
+        [RGB:0:0:0]
+		
+[COLOR:CM_LOOM_CLOTH]
+        [NAME:a loom and roll of cloth]
+        [RGB:0:0:0]
+
+[COLOR:CM_ROCK_STATUE]
+        [NAME:a marble statue]
+        [RGB:0:0:0]
+
+[COLOR:CM_ROCK_MUG]
+        [NAME:three granite mugs]
+        [RGB:0:0:0]
+
+[COLOR:CM_ROCK_POT]
+        [NAME:three rock pots]
+        [RGB:0:0:0]
+
+[COLOR:CM_SLAB_ENGRAVED]
+        [NAME:an engraved slab]
+        [RGB:0:0:0]
+		
+[COLOR:CM_PILLAR_ENGRAVED]
+        [NAME:an engraved pillar]
+        [RGB:0:0:0]
+		
+[COLOR:CM_BONE_AMULET_CARVING_KNIFE]
+        [NAME:a bone amulet and a carving knife]
+        [RGB:0:0:0]
+
+[COLOR:CM_LEATHER_BOOTS]
+        [NAME:a pair of leather boots]
+        [RGB:0:0:0]
+
+[COLOR:CM_JUMPSUIT_NEEDLE]
+        [NAME:a cloth jumpsuit and a sewing needle]
+        [RGB:0:0:0]
+
+[COLOR:CM_SEWING_NEEDLE_MACHINE]
+        [NAME:a sewing needle and a sewing machine]
+        [RGB:0:0:0]
+
+[COLOR:CM_CLOTH_GEMS]
+        [NAME:a roll of cloth surrounded by five gems]
+        [RGB:0:0:0]
+
+[COLOR:CM_HAT_HOOD_GEMS]
+        [NAME:a hat, a hood and three gems]
+        [RGB:0:0:0]
+
+[COLOR:CM_SEWING_MACHINE_GEMS]
+        [NAME:a sewing machine surrounded by three gems]
+        [RGB:0:0:0]
+
+[COLOR:CM_WOOD_CHAIR]
+        [NAME:a wood chair]
+        [RGB:0:0:0]
+
+[COLOR:CM_WOOD_CUPS]
+        [NAME:three wooden cups]
+        [RGB:0:0:0]
+
+[COLOR:CM_WOOD_TABLE_CHAIRS]
+        [NAME:an oak table and chairs]
+        [RGB:0:0:0]
+		
+[COLOR:CM_WAX_BRACELETS]
+        [NAME:three wax bracelets]
+        [RGB:0:0:0]
+
+[COLOR:CM_CUT_GEMS]
+        [NAME:three brilliant cut gems]
+        [RGB:0:0:0]
+
+[COLOR:CM_HORSESHOE_ANVIL]
+        [NAME:a horseshoe and anvil]
+        [RGB:0:0:0]
+
+[COLOR:CM_SWORD_ANVIL]
+        [NAME:a sword and anvil]
+        [RGB:0:0:0]
+
+[COLOR:CM_HAMMER_ANVIL]
+        [NAME:a hammer and anvil]
+        [RGB:0:0:0]
+
+[COLOR:CM_METAL_GOBLETS]
+        [NAME:three iron goblets]
+        [RGB:0:0:0]
+
+[COLOR:CM_CRYSTAL_VASE]
+        [NAME:a crystal glass vase]
+        [RGB:0:0:0]
+
+[COLOR:CM_CERAMIC_JUG_POT]
+        [NAME:a ceramic jug and pot]
+        [RGB:0:0:0]
+
+[COLOR:CM_GEARS]
+        [NAME:a cluster of gears]
+        [RGB:0:0:0]
+
+[COLOR:CM_CATAPULT_GEARS]
+        [NAME:a catapult and gears]
+        [RGB:0:0:0]
+
+[COLOR:CM_SCROLL]
+        [NAME:a scroll and quill]
+        [RGB:0:0:0]
+
+[COLOR:CM_SPEAR]
+        [NAME:a scratched spear]
+        [RGB:0:0:0]
+
+[COLOR:CM_HALBARD]
+        [NAME:a scratched halbard]
+        [RGB:0:0:0]
+		
+[COLOR:CM_GLAIVE]
+        [NAME:a scratched glaive]
+        [RGB:0:0:0]
+		
+[COLOR:CM_LANCE]
+        [NAME:a scratched lance]
+        [RGB:0:0:0]
+		
+[COLOR:CM_PIKE_SHIELD]
+        [NAME:a scratched pike and shield]
+        [RGB:0:0:0]
+		
+[COLOR:CM_LANCE_BOLTS]
+        [NAME:a lance surrounded by lightning bolts]
+        [RGB:0:0:0]
+		
+[COLOR:CM_CLOAK_DAGGER]
+        [NAME:a cloak and a scratched dagger]
+        [RGB:0:0:0]
+		
+[COLOR:CM_COMBAT_KNIFE_HORSESHOE]
+        [NAME:a scratched combat knife and a horseshoe]
+        [RGB:0:0:0]
+		
+[COLOR:CM_COMBAT_KNIVES]
+        [NAME:two crossed daggers]
+        [RGB:0:0:0]
+		
+[COLOR:CM_THROWING_KNIFE_HORSESHOE]
+        [NAME:a throwing knife and horseshoe]
+        [RGB:0:0:0]
+		
+[COLOR:CM_BLACKJACK_DAGGER]
+        [NAME:a crossed blackjack and dagger]
+        [RGB:0:0:0]
+		
+[COLOR:CM_THROWING_KNIFE_RING]
+        [NAME:a ring of six throwing knives]
+        [RGB:0:0:0]
+
+[COLOR:CM_RED_CROSS_SCALPEL]
+        [NAME:a red cross and scalpel]
+        [RGB:0:0:0]
+
+[COLOR:CM_RED_CROSS_SPLINT]
+        [NAME:a red cross and splint]
+        [RGB:0:0:0]
+
+[COLOR:CM_DAGGERS]
+        [NAME:three daggers]
+        [RGB:0:0:0]
+
+[COLOR:CM_SWORD]
+        [NAME:a scratched sword]
+        [RGB:0:0:0]
+
+[COLOR:CM_WHIP]
+        [NAME:a cracking whip]
+        [RGB:0:0:0]
+
+[COLOR:CM_RED_CROSS_STETHOSCOPE]
+        [NAME:a red cross and stethoscope]
+        [RGB:0:0:0]
+
+[COLOR:CM_SQUARE_COMPASS]
+        [NAME:a masonic square and compass]
+        [RGB:0:0:0]
+
+[COLOR:CM_SOAP]
+        [NAME:a bar of soap]
+        [RGB:0:0:0]
+
+[COLOR:CM_CLOTH_HALF_DYED]
+        [NAME:a half dyed piece of cloth]
+        [RGB:0:0:0]
+		
+[COLOR:CM_BURNT_WOOD]
+        [NAME:a burnt piece of wood]
+        [RGB:0:0:0]
+			
+[COLOR:CM_ASH_PILE]
+        [NAME:a pile of ashes]
+        [RGB:0:0:0]	
+	
+[COLOR:CM_POTASH_CRYSTALS]
+        [NAME:a pile of potash crystals]
+        [RGB:0:0:0]
+
+[COLOR:CM_SHEARING_SCISSORS]
+        [NAME:a set of shearing scissors]
+        [RGB:0:0:0]
+	
+[COLOR:CM_BUCKET_LYE]
+        [NAME:a bucket of lye]
+        [RGB:0:0:0]
+		
+[COLOR:CM_SCREW_PRESS]
+        [NAME:a screw press]
+        [RGB:0:0:0]
+		
+[COLOR:CM_GELDING_KNIFE]
+        [NAME:a gelding knife]
+        [RGB:0:0:0]
+
+[COLOR:CM_BUCKET_MILK]
+        [NAME:a bucket of milk]
+        [RGB:0:0:0]
+
+[COLOR:CM_SPINNING_WHEEL]
+        [NAME:a spinning wheel]
+        [RGB:0:0:0]
+
+[COLOR:CM_ANIMAL_PELT_TANNING_KNIFE]
+        [NAME:an animal pelt and a tanning knife]
+        [RGB:0:0:0]
+
+[COLOR:CM_FLOWERS]
+        [NAME:three smiling flowers]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAMPAIGN_MAP]
+        [NAME:a campaign map and soldier figurine]
+        [RGB:0:0:0]
+
+[COLOR:CM_NOTEBOOK]
+        [NAME:a notebook and quill]
+        [RGB:0:0:0]
+
+[COLOR:CM_BOOK]
+        [NAME:a book and quill]
+        [RGB:0:0:0]
+		
+[COLOR:CM_NOVEL_PEN]
+        [NAME:a novel and pen]
+        [RGB:0:0:0]
+
+[COLOR:CM_LAUREL]
+        [NAME:a laurel and quill]
+        [RGB:0:0:0]
+
+[COLOR:CM_BLACKBOARD_APPLE]
+        [NAME:a blackboard and apple]
+        [RGB:0:0:0]
+
+[COLOR:CM_BLACKBOARD_CHALK]
+        [NAME:a blackboard and chalk]
+        [RGB:0:0:0]
+
+[COLOR:CM_PAPER_CRAYONS]
+        [NAME:a piece of paper surrounded by crayons]
+        [RGB:0:0:0]
+
+[COLOR:CM_TEXTBOOK_DESK]
+        [NAME:a textbook on top of a desk]
+        [RGB:0:0:0]
+
+[COLOR:CM_DOLPHIN]
+        [NAME:a dolphin]
+        [RGB:0:0:0]
+
+[COLOR:CM_DOLPHINS]
+        [NAME:a pair of dolphins]
+        [RGB:0:0:0]
+
+[COLOR:CM_CATAPULT_BOULDERS]
+        [NAME:a catapult and pile of boulders]
+        [RGB:0:0:0]
+
+[COLOR:CM_COINS]
+        [NAME:a sack of coins]
+        [RGB:0:0:0]
+
+[COLOR:CM_FLAG]
+        [NAME:the Equestrian flag]
+        [RGB:0:0:0]
+
+[COLOR:CM_CHEVRONS]
+        [NAME:three chevrons]
+        [RGB:0:0:0]
+
+[COLOR:CM_SMILEY]
+        [NAME:a smiley face]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALLOONS]
+        [NAME:three balloons]
+        [RGB:0:0:0]
+
+[COLOR:CM_FLOWER]
+        [NAME:a smiling flower]
+        [RGB:0:0:0]
+
+[COLOR:CM_LAUREL_WREATH]
+        [NAME:a laurel wreath]
+        [RGB:0:0:0]
+
+[COLOR:CM_FLEUR_DE_LIS]
+        [NAME:a fleur-de-lis]
+        [RGB:0:0:0]
+		
+[COLOR:CM_FLEUR_DE_LISES]
+        [NAME:three fleur-de-lis]
+        [RGB:0:0:0]
+
+[COLOR:CM_APPLES]
+        [NAME:three green apples]
+        [RGB:0:0:0]
+
+[COLOR:CM_APPLES_HALF]
+        [NAME:three red apples split in half]
+        [RGB:0:0:0]
+
+[COLOR:CM_APPLE_RAINBOW]
+        [NAME:an apple colored like a rainbow]
+        [RGB:0:0:0]
+
+[COLOR:CM_SUNFLOWER]
+        [NAME:a sunflower]
+        [RGB:0:0:0]
+
+[COLOR:CM_DAISY]
+        [NAME:a daisy]
+        [RGB:0:0:0]
+
+[COLOR:CM_CARROT]
+        [NAME:a carrot]
+        [RGB:0:0:0]
+
+[COLOR:CM_CARROTS]
+        [NAME:a trio of carrots]
+        [RGB:0:0:0]
+
+[COLOR:CM_CARROT_HEART]
+        [NAME:carrots in the shape of a heart]
+        [RGB:0:0:0]
+
+[COLOR:CM_RED_CROSS]
+        [NAME:a red cross]
+        [RGB:0:0:0]
+
+[COLOR:CM_CELERY]
+        [NAME:a pair of crossed celery sticks]
+        [RGB:0:0:0]
+
+[COLOR:CM_HEARTS]
+        [NAME:a trio of red hearts]
+        [RGB:0:0:0]
+
+[COLOR:CM_RED_HEART_BANDAGE]
+        [NAME:a red heart covered with a bandage across its midsection]
+        [RGB:0:0:0]
+
+[COLOR:CM_RED_HEART]
+        [NAME:a red heart]
+        [RGB:0:0:0]
+
+[COLOR:CM_HEART_RAINBOW]
+        [NAME:a rainbow heart]
+        [RGB:0:0:0]
+
+[COLOR:CM_RAINBOW_CLOUD]
+        [NAME:a rainbow cloud]
+        [RGB:0:0:0]
+
+[COLOR:CM_HORSESHOE_RAINBOW]
+        [NAME:a rainbow horseshoe]
+        [RGB:0:0:0]
+
+[COLOR:CM_GUST]
+        [NAME:a gust of wind]
+        [RGB:0:0:0]
+
+[COLOR:CM_PLATE_FOOD]
+        [NAME:a plate of food]
+        [RGB:0:0:0]
+
+[COLOR:CM_KITCHEN_KNIFE]
+        [NAME:a kitchen knife]
+        [RGB:0:0:0]
+
+[COLOR:CM_CHOPPING_BOARD]
+        [NAME:a chopping board]
+        [RGB:0:0:0]
+
+[COLOR:CM_RAINING_CLOUD]
+        [NAME:a raining cloud]
+        [RGB:0:0:0]
+
+[COLOR:CM_HOE]
+        [NAME:a wooden hoe]
+        [RGB:0:0:0]
+
+[COLOR:CM_RIFLE]
+        [NAME:a rifle]
+        [RGB:0:0:0]
+
+[COLOR:CM_RIFLES]
+        [NAME:a pair of crossed rifles]
+        [RGB:0:0:0]
+
+[COLOR:CM_RIFLE_SKINNING_KNIFE]
+        [NAME:a rifle and a skinning knife]
+        [RGB:0:0:0]
+
+[COLOR:CM_SKINNING_KNIFE]
+        [NAME:a skinning knife]
+        [RGB:0:0:0]
+
+[COLOR:CM_SNARE]
+        [NAME:a snare]
+        [RGB:0:0:0]
+
+[COLOR:CM_CROSSBOW_HUNTING]
+        [NAME:a hunting crossbow]
+        [RGB:0:0:0]
+
+[COLOR:CM_RIFLE_ANTLERS]
+        [NAME:a rifle and a pair of elk antlers]
+        [RGB:0:0:0]
+
+[COLOR:CM_STAR]
+        [NAME:a yellow star]
+        [RGB:0:0:0]
+
+[COLOR:CM_STAR_RAINBOWS]
+        [NAME:a star with a rainbow trail]
+        [RGB:0:0:0]
+
+[COLOR:CM_STARS_COLORFUL]
+        [NAME:a trio of colorful stars]
+        [RGB:0:0:0]
+
+[COLOR:CM_BONGOS]
+        [NAME:a pair of bongos]
+        [RGB:0:0:0]
+
+[COLOR:CM_SOCCER]
+        [NAME:a soccer ball]
+        [RGB:0:0:0]
+
+[COLOR:CM_BASEBALL]
+        [NAME:a baseball]
+        [RGB:0:0:0]
+
+[COLOR:CM_BASKETBALL]
+        [NAME:a basketball]
+        [RGB:0:0:0]
+
+[COLOR:CM_FOOTBALL]
+        [NAME:a football]
+        [RGB:0:0:0]
+
+[COLOR:CM_WRENCH_BOLTS]
+        [NAME:a wrench surrounded by bolts]
+        [RGB:0:0:0]
+
+[COLOR:CM_WEIGHTS]
+        [NAME:a pair of weights]
+        [RGB:0:0:0]
+
+[COLOR:CM_CRATE_OPENED]
+        [NAME:an opened crate]
+        [RGB:0:0:0]
+		
+[COLOR:CM_TREE_CEDAR]
+        [NAME:a cedar tree]
+        [RGB:0:0:0]
+
+[COLOR:CM_TREE_APPLE]
+        [NAME:an apple tree]
+        [RGB:0:0:0]
+
+[COLOR:CM_TREE_BIRCH]
+        [NAME:a birch tree]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHOCOLATE]
+        [NAME:a chocolate cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHOCOLATE_SLICE]
+        [NAME:a slice of chocolate cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHOCOLATE_SLICE_PAIR]
+        [NAME:a pair of chocolate cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHOCOLATE_SLICES]
+        [NAME:a trio of chocolate cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_STRAWBERRY]
+        [NAME:a strawberry cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_STRAWBERRY_SLICE]
+        [NAME:a slice of strawberry cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_STRAWBERRY_SLICE_PAIR]
+        [NAME:a pair of strawberry cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_STRAWBERRY_SLICES]
+        [NAME:a trio of strawberry cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHEESE]
+        [NAME:a cheesecake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHEESE_SLICE]
+        [NAME:a slice of cheesecake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHEESE_SLICE_PAIR]
+        [NAME:a pair of cheesecake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_CHEESE_SLICES]
+        [NAME:a trio of cheesecake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_VANILLA]
+        [NAME:a vanilla cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_VANILLA_SLICE]
+        [NAME:a slice of vanilla cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_VANILLA_SLICE_PAIR]
+        [NAME:a pair of vanilla cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_VANILLA_SLICES]
+        [NAME:a trio of vanilla cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_RAINBOW]
+        [NAME:a rainbow cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_RAINBOW_SLICE]
+        [NAME:a slice of rainbow cake]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_RAINBOW_SLICE_PAIR]
+        [NAME:a pair of rainbow cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_CAKE_RAINBOW_SLICES]
+        [NAME:a trio of rainbow cake slices]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN]
+        [NAME:a muffin]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN_PAIR]
+        [NAME:a pair of muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFINS]
+        [NAME:a trio of muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN_BLUEBERRY]
+        [NAME:a blueberry muffin]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN_BLUEBERRY_PAIR]
+        [NAME:a pair of blueberry muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFINS_BLUEBERRY]
+        [NAME:a trio of blueberry muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN_CHOCOLATE]
+        [NAME:a chocolate muffin]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN_CHOCOLATE_PAIR]
+        [NAME:a pair of chocolate muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFINS_CHOCOLATE]
+        [NAME:a trio of chocolate muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN_RAINBOW]
+        [NAME:a rainbow muffin]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFIN_RAINBOW_PAIR]
+        [NAME:a pair of rainbow muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_MUFFINS_RAINBOW]
+        [NAME:a trio of rainbow muffins]
+        [RGB:0:0:0]
+
+[COLOR:CM_BOOT_SPURRED]
+        [NAME:a spurred boot]
+        [RGB:0:0:0]
+
+[COLOR:CM_LASSO]
+        [NAME:a lasso]
+        [RGB:0:0:0]
+
+[COLOR:CM_FRUITS_VEGETABLES]
+        [NAME:a cornucopia of fruits and vegetables]
+        [RGB:0:0:0]
+
+[COLOR:CM_HORSESHOE_GOLDEN]
+        [NAME:a golden horseshoe]
+        [RGB:0:0:0]
+
+[COLOR:CM_BOOKSHELF]
+        [NAME:a shelf containing various books]
+        [RGB:0:0:0]
+
+[COLOR:CM_BOOK_OPEN]
+        [NAME:an open book]
+        [RGB:0:0:0]
+
+[COLOR:CM_BOOK_QUILL]
+        [NAME:a book, inkwell and quill]
+        [RGB:0:0:0]
+
+[COLOR:CM_MAP_TREASURE]
+        [NAME:a treasure map]
+        [RGB:0:0:0]
+
+[COLOR:CM_CROWN_GOLD]
+        [NAME:a golden crown]
+        [RGB:0:0:0]
+
+[COLOR:CM_CROWN_BRONZE]
+        [NAME:a bronze crown]
+        [RGB:0:0:0]
+
+[COLOR:CM_CROWN_SILVER]
+        [NAME:a silver crown]
+        [RGB:0:0:0]
+
+[COLOR:CM_CROWN_PLATINUM]
+        [NAME:a platinum crown]
+        [RGB:0:0:0]
+
+[COLOR:CM_SPOON_PLATINUM]
+        [NAME:a platinum spoon]
+        [RGB:0:0:0]
+
+[COLOR:CM_SPOON_SILVER]
+        [NAME:a silver spoon]
+        [RGB:0:0:0]
+
+[COLOR:CM_SPOON_GOLD]
+        [NAME:a gold spoon]
+        [RGB:0:0:0]
+
+[COLOR:CM_SPOON_BRONZE]
+        [NAME:a bronze spoon]
+        [RGB:0:0:0]
+
+[COLOR:CM_SHIELD_RAINBOW]
+        [NAME:a shield with a rainbow on it]
+        [RGB:0:0:0]
+
+[COLOR:CM_STARS_RAINBOWS]
+        [NAME:a pair of crossed stars with rainbow trails]
+        [RGB:0:0:0]
+
+[COLOR:CM_ORANGE_OPEN]
+        [NAME:an opened orange]
+        [RGB:0:0:0]
+
+[COLOR:CM_ORANGE]
+        [NAME:an orange]
+        [RGB:0:0:0]
+
+[COLOR:CM_ORANGE_PAIR]
+        [NAME:a pair of oranges]
+        [RGB:0:0:0]
+
+[COLOR:CM_ORANGES]
+        [NAME:a trio of oranges]
+        [RGB:0:0:0]
+
+[COLOR:CM_MANGO]
+        [NAME:a mango]
+        [RGB:0:0:0]
+
+[COLOR:CM_MANGO_PAIR]
+        [NAME:a pair of mangos]
+        [RGB:0:0:0]
+
+[COLOR:CM_MANGOS]
+        [NAME:a trio of mangos]
+        [RGB:0:0:0]
+
+[COLOR:CM_FRUITS_SMILEY]
+        [NAME:a group of various fruits with smiling faces on them]
+        [RGB:0:0:0]
+
+[COLOR:CM_FISHING_HOOK]
+        [NAME:a fishing hook]
+        [RGB:0:0:0]
+
+[COLOR:CM_FISHING_POLE]
+        [NAME:a fishing pole]
+        [RGB:0:0:0]
+
+[COLOR:CM_FISH_ON_POLE]
+        [NAME:a fish caught on a fishing pole]
+        [RGB:0:0:0]
+
+[COLOR:CM_BEE]
+        [NAME:a bee]
+        [RGB:0:0:0]
+
+[COLOR:CM_BEE_PAIR]
+        [NAME:a pair of bees]
+        [RGB:0:0:0]
+
+[COLOR:CM_BEES]
+        [NAME:a trio of bees]
+        [RGB:0:0:0]
+
+[COLOR:CM_BEE_CROWNED]
+        [NAME:a bee with a crown on its head]
+        [RGB:0:0:0]
+
+[COLOR:CM_HONEY_JAR]
+        [NAME:a honey jar]
+        [RGB:0:0:0]
+
+[COLOR:CM_HONEY_JAR_PAIR]
+        [NAME:a pair of honey jars]
+        [RGB:0:0:0]
+
+[COLOR:CM_HONEY_JARS]
+        [NAME:a trio of honey jars]
+        [RGB:0:0:0]
+
+[COLOR:CM_BUTTERFLY_PAIR]
+        [NAME:a pair of butterflies]
+        [RGB:0:0:0]
+
+[COLOR:CM_BUTTERFLY_HORSESHOE]
+        [NAME:a butterfly perched on a horseshoe]
+        [RGB:0:0:0]
+		
+[COLOR:CM_ROARING_LION]
+        [NAME:a roaring lions head]
+        [RGB:0:0:0]
+
+[COLOR:CM_SWIRL_STARS]
+        [NAME:a magic swirl surrounded by twinkling stars]
+        [RGB:0:0:0]
+
+[COLOR:CM_HOURGLASS]
+        [NAME:an hourglass]
+        [RGB:0:0:0]
+
+[COLOR:CM_STOPWATCH]
+        [NAME:a stopwatch]
+        [RGB:0:0:0]
+
+[COLOR:CM_JEWELS]
+        [NAME:a trio of jewels]
+        [RGB:0:0:0]
+
+[COLOR:CM_FOUR_LEAF_CLOVER]
+        [NAME:a four leaf clover]
+        [RGB:0:0:0]
+
+[COLOR:CM_FOUR_LEAF_CLOVER_PAIR]
+        [NAME:a pair of four leaf clovers]
+        [RGB:0:0:0]
+
+[COLOR:CM_FOUR_LEAF_CLOVERS]
+        [NAME:a trio of four leaf clovers]
+        [RGB:0:0:0]
+
+[COLOR:CM_GAME_SYSTEM_CONTROLLER]
+        [NAME:a game system controller]
+        [RGB:0:0:0]
+
+[COLOR:CM_PIPBUCK]
+        [NAME:a pipbuck]
+        [RGB:0:0:0]
+
+[COLOR:CM_D6]
+        [NAME:a six sided die]
+        [RGB:0:0:0]
+
+[COLOR:CM_D6_PAIR]
+        [NAME:a pair of six sided die]
+        [RGB:0:0:0]
+
+[COLOR:CM_D20]
+        [NAME:a 20 sided die]
+        [RGB:0:0:0]
+
+[COLOR:CM_RECORD]
+        [NAME:a vinyl record]
+        [RGB:0:0:0]
+
+[COLOR:CM_PIE_APPLES]
+        [NAME:a pie surrounded by apples]
+        [RGB:0:0:0]
+
+[COLOR:CM_LOLLIPOP]
+        [NAME:a lollipop]
+        [RGB:0:0:0]
+
+[COLOR:CM_LOLLIPOPS]
+        [NAME:a pair of crossed lolipops]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALLOON_BLUE]
+        [NAME:a blue balloon]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALLOON_GREEN]
+        [NAME:a green balloon]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALLOON_PURPLE]
+        [NAME:a purple balloon]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALLOON_RED]
+        [NAME:a red balloon]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALLOON_YELLOW]
+        [NAME:a yellow balloon]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALLOON_PAIR]
+        [NAME:a pair of colorful balloons]
+        [RGB:0:0:0]
+
+[COLOR:CM_CRESCENT_MOON]
+        [NAME:a crescent moon]
+        [RGB:0:0:0]
+
+[COLOR:CM_ZZZ]
+        [NAME:three Z's]
+        [RGB:0:0:0]
+
+[COLOR:CM_ABC]
+        [NAME:colorful ABC]
+        [RGB:0:0:0]
+
+[COLOR:CM_MEASURING_STICK]
+        [NAME:a measuring stick]
+        [RGB:0:0:0]
+
+[COLOR:CM_CHERRY]
+        [NAME:a cherry]
+        [RGB:0:0:0]
+
+[COLOR:CM_CHERRY_PAIR]
+        [NAME:a pair of cherries]
+        [RGB:0:0:0]
+
+[COLOR:CM_PIE_CHERRIES]
+        [NAME:a pie surrounded by cherries]
+        [RGB:0:0:0]
+
+[COLOR:CM_ALLIGATOR]
+        [NAME:an alligator]
+        [RGB:0:0:0]
+
+[COLOR:CM_BUNNY]
+        [NAME:a bunny]
+        [RGB:0:0:0]
+
+[COLOR:CM_CLOUD_SUN]wca
+        [NAME:a cloud and sun]
+        [RGB:0:0:0]
+
+[COLOR:CM_OAK_TREE]mela
+        [NAME:an oak tree]
+        [RGB:0:0:0]
+
+[COLOR:CM_APPLE_GREEN_HALF]elb
+        [NAME:half a large green apple]
+        [RGB:0:0:0]
+
+[COLOR:CM_APPLES_RED]maj
+        [NAME:a trio of red apples]
+        [RGB:0:0:0]
+
+[COLOR:CM_MEADOW_GRASSY]mnla
+        [NAME:a grassy meadow]
+        [RGB:0:0:0]
+
+[COLOR:CM_HORSESHOES]mmaa
+        [NAME:three horseshoes]
+        [RGB:0:0:0]
+
+[COLOR:CM_COUCH_NOTEBOOK]psya
+        [NAME:a long couch and notebook]
+        [RGB:0:0:0]
+
+[COLOR:CM_BRAIN]
+        [NAME:a brain]
+        [RGB:0:0:0]
+
+[COLOR:CM_STATUE_SITTING]phia
+        [NAME:a sitting statue with one hoof rested upon its chin]
+        [RGB:0:0:0]
+
+[COLOR:CM_QUESTION_MARK]
+        [NAME:a question mark]
+        [RGB:0:0:0]
+		
+[COLOR:CM_RAINCLOUD_BOLT]cla
+        [NAME:a raincloud and lightning bolt]
+        [RGB:0:0:0]
+
+[COLOR:CM_TORNADO]msla
+        [NAME:a tornado]
+        [RGB:0:0:0]
+
+[COLOR:CM_BOLT_FLAMING]mslb
+        [NAME:a flaming lightning bolt]
+        [RGB:0:0:0]
+
+[COLOR:CM_BOLT_RAINBOW]rd
+        [NAME:a rainbow lightning bolt]
+        [RGB:0:0:0]
+
+[COLOR:CM_FORGE_HAMMER_ANVIL]msa
+        [NAME:a forge, hammer, and anvil]
+        [RGB:0:0:0]
+
+[COLOR:CM_CIRCLE_WEAPONS]ama
+        [NAME:a circle of swords, axes, hammers, and spears]
+        [RGB:0:0:0]
+
+[COLOR:CM_MULTI_KNIFE_WEAPONS]
+        [NAME:a multi knife with several weapons sticking out]
+        [RGB:0:0:0]
+
+[COLOR:CM_HAMMER_CHISEL_HACKSAW]
+        [NAME:a crossed hammer, chisel and hacksaw]
+        [RGB:0:0:0]
+
+[COLOR:CM_ANVIL_CABINET_CRYSTAL_VASE]
+        [NAME:an anvil, a cabinet and a crystal vase]
+        [RGB:0:0:0]
+
+[COLOR:CM_FAN_PAPER]fda
+        [NAME:a paper fan]
+        [RGB:0:0:0]
+
+[COLOR:CM_DIAMONDS_LOZENGE]rar
+        [NAME:three lozenge diamonds]
+        [RGB:0:0:0]
+
+[COLOR:CM_FIRST_AID_KIT]meda
+        [NAME:a first aid kit]
+        [RGB:0:0:0]
+
+[COLOR:CM_SHURIKENS]nina
+        [NAME:three shuriken]
+        [RGB:0:0:0]
+
+[COLOR:CM_KATANA_SHURIKENS]
+        [NAME:a katana and three shuriken]
+        [RGB:0:0:0]
+
+[COLOR:CM_LOCKPICK_MASK]thia
+        [NAME:a lockpick and mask]
+        [RGB:0:0:0]
+
+[COLOR:CM_BAG_JEWELS]
+        [NAME:a bag and three jewels]
+        [RGB:0:0:0]
+
+[COLOR:CM_TAIJITU]masa
+        [NAME:a Taijitu]
+        [RGB:0:0:0]
+
+[COLOR:CM_BA_GUA]
+        [NAME:a Taijitu inside a segmented octagon]
+        [RGB:0:0:0]
+
+[COLOR:CM_BIBLE_ROSARY]pria
+        [NAME:a bible and rosary]
+        [RGB:0:0:0]
+
+[COLOR:CM_BUTTERFLY]dna
+        [NAME:a butterfly]
+        [RGB:0:0:0]
+
+[COLOR:CM_BUTTERFLIES]fs
+        [NAME:a trio of butterflies]
+        [RGB:0:0:0]
+
+[COLOR:CM_COMPASS]adva
+        [NAME:a compass]
+        [RGB:0:0:0]
+
+[COLOR:CM_HORSESHOE_PRAYER_BEADS]wma
+        [NAME:a horseshoe wrapped in prayer beads]
+        [RGB:0:0:0]
+
+[COLOR:CM_STAR_SABRE_PAIR]capa
+        [NAME:a star and pair of crossed sabres]
+        [RGB:0:0:0]
+
+[COLOR:CM_SHERRIFF_BADGE]shea
+        [NAME:a sheriff badge]
+        [RGB:0:0:0]
+
+[COLOR:CM_TREBLE_CLEF]musa
+        [NAME:a treble clef]
+        [RGB:0:0:0]
+
+[COLOR:CM_TREBLE_CLEF_VIOLET]musb
+        [NAME:a violet treble clef]
+        [RGB:0:0:0]
+
+[COLOR:CM_LYRE]musc
+        [NAME:a lyre]
+        [RGB:0:0:0]
+
+[COLOR:CM_EIGHT_NOTES]musd
+        [NAME:a beamed pair of eight notes]
+        [RGB:0:0:0]
+
+[COLOR:CM_MONEYBAGS]mpa
+        [NAME:three moneybags]
+        [RGB:0:0:0]
+
+[COLOR:CM_WAND_CLOTH_MAGIC_DUST]maga
+        [NAME:a wand wrapped in cloth and magic dust]
+        [RGB:0:0:0]
+
+[COLOR:CM_STAR_MAGIC_SWIRLS]mma
+        [NAME:a star surrounded by magic swirls]
+        [RGB:0:0:0]
+
+[COLOR:CM_STAR_FUSCHIA_SMALL_STARS]ts
+        [NAME:a six-pointed fuschia star with five smaller stars]
+        [RGB:0:0:0]
+
+[COLOR:CM_CIRCLE_TRANSMUTATION]alca
+        [NAME:a transmutation circle]
+        [RGB:0:0:0]
+
+[COLOR:CM_STOPWATCH_SWIRLS]alca
+        [NAME:a stop watch surrounded by magic swirls]
+        [RGB:0:0:0]
+
+[COLOR:CM_TREE_GRAVESTONE]neca
+        [NAME:an apple tree and a grave stone]
+        [RGB:0:0:0]
+
+[COLOR:CM_SKULL_WAX_CANDLE]neca
+        [NAME:a skull and wax candle]
+        [RGB:0:0:0]
+
+[COLOR:CM_BALL_FLAMES]wara
+        [NAME:a ball of flames]
+        [RGB:0:0:0]
+
+[COLOR:CM_SHIELD_SUNDERED]
+        [NAME:a sundered shield]
+        [RGB:0:0:0]
+
+[COLOR:CM_HORSESHOE_SUNDERED]
+        [NAME:a sundered horseshoe]
+        [RGB:0:0:0]
+
+[COLOR:CM_TRISKELE]espa
+        [NAME:a spiral triskele]
+        [RGB:0:0:0]
+
+[COLOR:CM_EYES_SWIRLS]
+        [NAME:a pair of eyes surrounded by magic swirls]
+        [RGB:0:0:0]
+
+[COLOR:CM_DOVE]clea
+        [NAME:a spread-winged dove]
+        [RGB:0:0:0]
+
+[COLOR:CM_HEART_STARS_SWIRLS]
+        [NAME:a red heart surrounded by stars and magic swirls]
+        [RGB:0:0:0]
+
+[COLOR:CM_TALON]
+        [NAME:a talon and three scratch marks]
+        [RGB:0:0:0]
+
+[COLOR:CM_CLAW_GRASS]psya
+        [NAME:a claw and three blades of grass]
+        [RGB:0:0:0]

@@ -1,0 +1,42 @@
+
+#resizing reactions
+
+foe/reaction-product-trigger -reactionName RESIZE_FLAMETHROWER_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:STEEL_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_FLAMETHROWER_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+foe/reaction-product-trigger -reactionName RESIZE_FLAMETHROWER_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:STEEL_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_FLAMETHROWER_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+
+foe/reaction-product-trigger -reactionName RESIZE_MINIGUN_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:STEEL_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_MINIGUN_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+foe/reaction-product-trigger -reactionName RESIZE_MINIGUN_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:STEEL_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_MINIGUN_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+
+foe/reaction-product-trigger -reactionName RESIZE_LASER_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:ALUMINUM_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_LASER_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:ALUMINIUM ]
+foe/reaction-product-trigger -reactionName RESIZE_LASER_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:ALUMINUM_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_LASER_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:ALUMINUM ]
+
+foe/reaction-product-trigger -reactionName RESIZE_PLASMA_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:STEEL_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_PLASMA_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+foe/reaction-product-trigger -reactionName RESIZE_PLASMA_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:STEEL_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_PLASMA_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+
+foe/reaction-product-trigger -reactionName RESIZE_GAS_MASK_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:SYNTHETIC_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_GAS_MASK_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:SYNTHETIC ]
+foe/reaction-product-trigger -reactionName RESIZE_GAS_MASK_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:SYNTHETIC_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_GAS_MASK_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:SYNTHETIC ]
+
+foe/reaction-product-trigger -reactionName RESIZE_HAZMAT_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:SYNTHETIC_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_HAZMAT_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:SYNTHETIC ]
+foe/reaction-product-trigger -reactionName RESIZE_HAZMAT_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:SYNTHETIC_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_HAZMAT_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:SYNTHETIC ]
+
+foe/reaction-product-trigger -reactionName RESIZE_PIPBUCK_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:STEEL_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_PIPBUCK_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+foe/reaction-product-trigger -reactionName RESIZE_PIPBUCK_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:STEEL_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_PIPBUCK_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+
+foe/reaction-product-trigger -reactionName RESIZE_STEALTHBUCK_GRIFFON -command [ foe/resize-items -item \\INPUT_ITEMS -race GRIFFON -material INORGANIC:STEEL_GRIFFON ]
+foe/reaction-product-trigger -reactionName RESIZE_STEALTHBUCK_GRIFFON_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]
+foe/reaction-product-trigger -reactionName RESIZE_STEALTHBUCK_ALICORN -command [ foe/resize-items -item \\INPUT_ITEMS -race ALICORN -material INORGANIC:STEEL_ALICORN ]
+foe/reaction-product-trigger -reactionName RESIZE_STEALTHBUCK_ALICORN_UNDO -command [ foe/resize-items -item \\INPUT_ITEMS -race PONY_STABLE -material INORGANIC:STEEL ]

@@ -1,0 +1,91 @@
+item_toy_lens
+
+[OBJECT:ITEM]
+
+[ITEM_TOY:ITEM_LENS_UNIVERSAL]
+[NAME:clear lens:clear lenses]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_UNIVERSAL_MAX]
+[NAME:clear lens (pristine):clear lenses (pristine)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ALTERATION_LOW]
+[NAME:alteration lens (low-quality):alteration lenses (low-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ALTERATION_MID]
+[NAME:alteration lens (mid-quality):alteration lenses (mid-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ALTERATION_HIGH]
+[NAME:alteration lens (high-quality):alteration lenses (high-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ALTERATION_MAX]
+[NAME:alteration lens (pristine):alteration lenses (pristine)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_CONJURATION_LOW]
+[NAME:conjuration lens (low-quality):conjuration lenses (low-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_CONJURATION_MID]
+[NAME:conjuration lens (mid-quality):conjuration lenses (mid-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_CONJURATION_HIGH]
+[NAME:conjuration lens (high-quality):conjuration lenses (high-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_CONJURATION_MAX]
+[NAME:conjuration lens (pristine):conjuration lenses (pristine)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_DESTRUCTION_LOW]
+[NAME:destruction lens (low-quality):destruction lenses (low-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_DESTRUCTION_MID]
+[NAME:destruction lens (mid-quality):destruction lenses (mid-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_DESTRUCTION_HIGH]
+[NAME:destruction lens (high-quality):destruction lenses (high-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_DESTRUCTION_MAX]
+[NAME:destruction lens (pristine):destruction lenses (pristine)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ILLUSION_LOW]
+[NAME:illusion lens (low-quality):illusion lenses (low-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ILLUSION_MID]
+[NAME:illusion lens (mid-quality):illusion lenses (mid-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ILLUSION_HIGH]
+[NAME:illusion lens (high-quality):illusion lenses (high-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_ILLUSION_MAX]
+[NAME:illusion lens (pristine):illusion lenses (pristine)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_RESTORATION_LOW]
+[NAME:restoration lens (low-quality):restoration lenses (low-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_RESTORATION_MID]
+[NAME:restoration lens (mid-quality):restoration lenses (mid-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_RESTORATION_HIGH]
+[NAME:restoration lens (high-quality):restoration lenses (high-quality)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_LENS_RESTORATION_MAX]
+[NAME:restoration lens (pristine):restoration lenses (pristine)]
+[HARD_MAT]

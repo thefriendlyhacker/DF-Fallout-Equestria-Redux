@@ -1,0 +1,25 @@
+item_robot
+
+[OBJECT:ITEM]
+
+
+==========Processing Matrices==========
+
+[ITEM_TOOL:ITEM_MATRIX_PROCESSING_ROBOT_BASIC]
+[NAME:basic robot processing matrix:basic robot processing matrix]
+[VALUE:50]
+[TILE:4]
+[HARD_MAT]
+[SIZE:500]
+[MATERIAL_SIZE:3]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_MATRIX_PROCESSING_ROBOT_ADVANCED]
+[NAME:advanced robot processing matrix:advanced robot processing matrix]
+[VALUE:200]
+[TILE:4]
+[HARD_MAT]
+[SIZE:1000]
+[MATERIAL_SIZE:5]
+[UNIMPROVABLE]
+

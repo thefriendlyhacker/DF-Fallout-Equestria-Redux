@@ -1,0 +1,254 @@
+descriptor_color_cutiemark_evil
+
+[OBJECT:DESCRIPTOR_COLOR]
+
+[COLOR:DM1a]
+        [NAME:a feral dog]
+        [RGB:0:0:0]
+
+[COLOR:DM2a]
+        [NAME:a bullet]
+        [RGB:0:0:0]
+
+[COLOR:DM3a]
+        [NAME:a rotten fish]
+        [RGB:0:0:0]
+
+[COLOR:DM4a]
+        [NAME:a mounted radhog's head]
+        [RGB:0:0:0]
+
+[COLOR:DM5a]
+        [NAME:a bloody crescent moon]
+        [RGB:0:0:0]
+
+[COLOR:DM6a]
+        [NAME:a plate of rotten vegetables]
+        [RGB:0:0:0]
+
+[COLOR:DM7a]
+        [NAME:a razor scythe]
+        [RGB:0:0:0]
+
+[COLOR:DM8a]
+        [NAME:a tangle of barbed wire]
+        [RGB:0:0:0]
+
+[COLOR:DM9a]
+        [NAME:a cleaver embedded in a pony's head]
+        [RGB:0:0:0]
+
+[COLOR:DM10a]
+        [NAME:a mouldy wedge of cheese]
+        [RGB:0:0:0]
+
+[COLOR:DM11a]
+        [NAME:a rotten apple]
+        [RGB:0:0:0]
+
+[COLOR:DM11b]
+        [NAME:a noosed rope]
+        [RGB:0:0:0]
+
+[COLOR:DM12a]
+        [NAME:a crossed pair of bloodstained shovels]
+        [RGB:0:0:0]
+
+[COLOR:DM13a]
+        [NAME:a bloodstained battle axe]
+
+[COLOR:DM14a]
+        [NAME:a bloody war hammer]
+        [RGB:0:0:0]
+
+[COLOR:DM15a]
+        [NAME:a bloody shield and horseshoe]
+        [RGB:0:0:0]
+
+[COLOR:DM16a]
+        [NAME:a splayed pony torso]
+        [RGB:0:0:0]
+
+[COLOR:DM17a]
+        [NAME:a rusted assault rifle and magazine]
+        [RGB:0:0:0]
+
+[COLOR:DM18a]
+        [NAME:a ripper rifle and clip]
+        [RGB:0:0:0]
+
+[COLOR:DM19a]
+        [NAME:a bloody chainsaw]
+        [RGB:0:0:0]
+
+[COLOR:DM20a]
+        [NAME:a wall lined with barbed wire]
+        [RGB:0:0:0]
+
+[COLOR:DM21a]
+        [NAME:a blood-soaked statue]
+        [RGB:0:0:0]
+
+[COLOR:DM22a]
+        [NAME:a grinning pony skull]
+        [RGB:0:0:0]
+
+[COLOR:DM23a]
+        [NAME:three grinning skulls]
+        [RGB:0:0:0]
+
+[COLOR:DM24a]
+        [NAME:a pile of eviscerated flesh]
+        [RGB:0:0:0]
+
+[COLOR:DM25a]
+        [NAME:an amputated hoof]
+        [RGB:0:0:0]
+
+[COLOR:DM26a]
+        [NAME:a wickedly sharp hook]
+        [RGB:0:0:0]
+
+[COLOR:DM27a]
+        [NAME:three skinned cutie marks]
+        [RGB:0:0:0]
+
+[COLOR:DM28a]
+        [NAME:three hoof screws]
+        [RGB:0:0:0]
+
+[COLOR:DM29a]
+        [NAME:a bloodstained horseshoe and anvil]
+        [RGB:0:0:0]
+
+[COLOR:DM30a]
+        [NAME:a bloody sword and anvil]
+        [RGB:0:0:0]
+
+[COLOR:DM31a]
+        [NAME:a bloodstained hammer and anvil]
+        [RGB:0:0:0]
+
+[COLOR:DM32a]
+        [NAME:three goblets filled with blood]
+        [RGB:0:0:0]
+
+[COLOR:DM33a]
+        [NAME:a blood-filled glass vase]
+        [RGB:0:0:0]
+
+[COLOR:DM34a]
+        [NAME:a slave collar]
+        [RGB:0:0:0]
+
+[COLOR:DM35a]
+        [NAME:a cluster of rusty gears]
+        [RGB:0:0:0]
+
+[COLOR:DM36a]
+        [NAME:a spiked breastplate]
+        [RGB:0:0:0]
+
+[COLOR:DM37a]
+        [NAME:a bone with strips of rotting flesh]
+        [RGB:0:0:0]
+
+[COLOR:DM38a]
+        [NAME:a bloodstained spear]
+        [RGB:0:0:0]
+
+[COLOR:DM39a]
+        [NAME:a pile of guts]
+        [RGB:0:0:0]
+
+[COLOR:DM40a]
+        [NAME:a splayed open ribcage]
+        [RGB:0:0:0]
+
+[COLOR:DM41a]
+        [NAME:three bloody daggers]
+        [RGB:0:0:0]
+
+[COLOR:DM42a]
+        [NAME:a bloodstained sword]
+        [RGB:0:0:0]
+
+[COLOR:DM43a]
+        [NAME:a cracking slaver whip]
+        [RGB:0:0:0]
+
+[COLOR:DM44a]
+        [NAME:a strangling scourge]
+        [RGB:0:0:0]
+
+[COLOR:DM45a]
+        [NAME:a torture wheel and lever]
+        [RGB:0:0:0]
+
+[COLOR:DM46a]
+        [NAME:a slab of pony meat]
+        [RGB:0:0:0]
+
+[COLOR:DM47a]
+        [NAME:three angry flowers]
+        [RGB:0:0:0]
+
+[COLOR:DM48a]
+        [NAME:a rusty dagger]
+        [RGB:0:0:0]
+
+[COLOR:DM49a]
+        [NAME:a dissected pony skull]
+        [RGB:0:0:0]
+
+[COLOR:DM50a]
+        [NAME:a decapitated pony head]
+        [RGB:0:0:0]
+
+[COLOR:DM51a]
+        [NAME:a pair of torn out eyeballs]
+        [RGB:0:0:0]
+
+[COLOR:DM52a]
+        [NAME:a ripped out tongue hanging from a hook]
+        [RGB:0:0:0]
+
+[COLOR:DM53a]
+        [NAME:a skinned torso]
+        [RGB:0:0:0]
+
+[COLOR:DM54a]
+        [NAME:an emaciated wolf]
+        [RGB:0:0:0]
+
+[COLOR:DM55a]
+        [NAME:a skull and bones flag]
+        [RGB:0:0:0]
+
+[COLOR:DM56a]
+        [NAME:a burning pile of bodies]
+        [RGB:0:0:0]
+
+[COLOR:DM57a]
+        [NAME:a bloody ripper]
+        [RGB:0:0:0]
+
+[COLOR:DM58a]
+        [NAME:a bleeding heart]
+        [RGB:0:0:0]
+
+[COLOR:DM59a]
+        [NAME:a pair of manacles and chains]
+        [RGB:0:0:0]
+		
+[COLOR:DM60a]
+        [NAME:burnt away]
+        [RGB:0:0:0]
+		
+[COLOR:DM60b]
+        [NAME:distorted by growths]
+        [RGB:0:0:0]
+		
+[COLOR:DM60c]
+        [NAME:gone]
+        [RGB:0:0:0]

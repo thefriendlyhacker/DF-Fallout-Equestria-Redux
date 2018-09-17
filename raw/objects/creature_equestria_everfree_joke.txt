@@ -1,0 +1,1725 @@
+creature_equestria_everfree_joke
+
+[OBJECT:CREATURE]
+
+[CREATURE:KILLING_JOKE]
+	[FREQUENCY:5]
+	[NAME:killing joke:killing jokes:killing joke]
+	[DESCRIPTION:A blue flower native to the Everfree Forest, fond of playing "pranks" on those unlucky enough to touch it. Since the disappearence of the Elements of Harmony after the Last Day, these "pranks" have grown more deadly.]
+	[CASTE_NAME:killing joke:killing jokes:killing joke]
+	[CREATURE_TILE:'j'][COLOR:3:0:0]
+	[POPULATION_NUMBER:10:20]
+	[NATURAL]
+	[AMBUSHPREDATOR]
+	[LARGE_ROAMING][MEANDERER]
+	[CLUSTER_NUMBER:2:4]
+	[CANNOT_UNDEAD]
+	[STANCE_CLIMBER]	
+	[NO_EAT][NO_DRINK][NO_DIZZINESS][NO_FEVERS][NO_SLEEP][NO_VEGETATION_PERTURB][NOBONES][NOBREATHE][NOEXERT][NOFEAR][NONAUSEA][NOSKULL]
+	[NOT_BUTCHERABLE]
+	[OPPOSED_TO_LIFE]
+	[BIOME:NOT_FREEZING][GOOD]
+	[PARALYZEIMMUNE]
+	[EXTRAVISION]
+	[SWIMS_INNATE]
+	[HOMEOTHERM:10067]
+	[PREFSTRING:deadly pranks]
+	[NATURAL_SKILL:SNEAK:10]
+	[MATERIAL_FORCE_MULTIPLIER:NONE:NONE:1:2]
+	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:2100:1900:1700:1500:2500:2900]
+	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:2500:2300:2100:1900:2700:2900]
+	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:4200:3800:3400:3000:5000:5800]
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2100:1900:1700:1500:2500:2900]
+	[BODY:KILLINGJOKE:HEART:BRAIN:MOUTH]
+	[BODY_DETAIL_PLAN:KILLINGJOKE_MATERIALS]
+	[BODY_DETAIL_PLAN:KILLINGJOKE_TISSUES]
+	[BODY_DETAIL_PLAN:KILLINGJOKE_TISSUE_LAYERS:SKIN:MUSCLE]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:FLOATER_POSITIONS]
+	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_GHOUL_TEMPLATE]
+		[STATE_NAME_ADJ:ALL_SOLID:frozen killing joke sap]
+		[STATE_NAME_ADJ:LIQUID:killing joke sap]
+		[STATE_NAME_ADJ:GAS:boiling killing joke sap]
+		[PREFIX:NONE]
+	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+	[PUS:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+	[BODY_SIZE:0:0:12000]
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+	[MAXAGE:10:500]
+	[ALL_ACTIVE]
+	[CASTE:NORMAL]
+		[NO_GENDER]
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:BODY_UPPER:SKIN]
+			[TL_COLOR_MODIFIER:BLUE:1:CERULEAN:1:COBALT:1:DARK_BLUE:1:LIGHT_BLUE:1:MIDNIGHT_BLUE:1:PALE_BLUE:1]
+				[TLCM_NOUN:flowers:PLURAL]
+		[SET_TL_GROUP:BY_CATEGORY:BODY_LOWER:SKIN]
+			[TL_COLOR_MODIFIER:BLACK:1]
+				[TLCM_NOUN:vine:SINGULAR]
+		[CAN_DO_INTERACTION:INFILTRATE]
+			[CDI:ADV_NAME:Infiltrate]
+			[CDI:TARGET:A:SELF_ONLY]
+			[CDI:VERB:blend into the surroundings:blends into the surroundings:NA]
+			[CDI:WAIT_PERIOD:200]
+		[CAN_DO_INTERACTION:KILLING_JOKE_ONE]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:are suddenly smaller!:is suddenly smaller!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_TWO]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:are suddenly bigger!:is suddenly bigger!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_THREE]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:suddenly adopt a crazed look!:suddenly adopts a crazed look!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_FOUR]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:start babbling incoherently!:starts babbling incoherently!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_SIX]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:suddenly seem very unlucky!:suddenly seems unlucky!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_SEVEN]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:horn starts to rot!:horn starts to rot!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_EIGHT]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:suddenly feel like a pain in the flank!:suddenly feels like a pain in the flank!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_NINE]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:feel like vomitting blood over the state of affairs!:feels like vomitting blood over the state of affairs!]
+			[CDI:WAIT_PERIOD:2400]
+		[CAN_DO_INTERACTION:KILLING_JOKE_TEN]
+			[CDI:ADV_NAME:Joke]
+			[CDI:TARGET:A:TOUCHABLE]
+			[CDI:TARGET_RANGE:A:1]
+			[CDI:MAX_TARGET_NUMBER:A:1]
+			[CDI:USAGE_HINT:ATTACK]
+			[CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body]
+			[CDI:TARGET_VERB:suddenly bleed from thousands of gaping wounds!:suddenly bleeds from thousands of gaping wounds!]
+			[CDI:WAIT_PERIOD:2400]
+
+if/when I get around to fixing up interaction_everfree genderswaps, rebracket everything except missing earth lord.			
+also, wastelanders etc are missing
+
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_WATER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_WATER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_FARMER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_FARMER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_COOK}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_COOK}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_FARMING_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_FARMING_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_MINING}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_MINING}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_SCAVENGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_SCAVENGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_WOODWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_WOODWORDER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_STONEWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_STONEWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_METALWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_METALWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_CRAFTER_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_CRAFTER_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_MECHANIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_MECHANIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_SOCIALITE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_ANIMAL_HANDLER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_ANIMAL_HANDLER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_HUNTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_HUNTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_COMBAT_EDGED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_COMBAT_BLUNT}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_COMBAT_BLUNT}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_POLEARMS}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_POLEARMS}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_COMBAT_RANGED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_COMBAT_RANGED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_UNDERHANDED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_UNDERHANDED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_MEDIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_MEDIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_TEACHER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_TEACHER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_WRITER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_WRITER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_SCHOLAR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_SCHOLAR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_NEGOTIATOR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_NEGOTIATOR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_MUSICIAN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_MUSICIAN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_COMBAT_LEADER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_COMBAT_LEADER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_THIEF}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_THIEF}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_MARTIAL_ARTIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_MARTIAL_ARTIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_ADVENTURER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_ADVENTURER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_PRIEST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_PRIEST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_PSYCHOLOGIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_PSYCHOLOGIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_NINJA}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_NINJA}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_CAPTAIN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_CAPTAIN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_YIN_YANG}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_YIN_YANG}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_WILD_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_WILD_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_SOCIAL_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_SOCIAL_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_WEAPON_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_WEAPON_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_CRAFTING_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_CRAFTING_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M__LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F__LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_M_EARTH_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_F_EARTH_LORD}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_FFREE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_MSLAVE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_FSLAVE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_MBLANK_SLAVER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_FBLANK_SLAVER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_MBLANK_RANGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_EARTH_FBLANK_RANGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_WATER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_WATER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_FARMER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_FARMER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_COOK}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_COOK}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_FARMING_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_FARMING_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_MINING}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_MINING}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_SCAVENGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_SCAVENGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_WOODWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_WOODWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_STONEWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_STONEWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_METALWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_METALWORKER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_CLOTHIER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_CLOTHIER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_CRAFTER_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_CRAFTER_MISC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_MECHANIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_MECHANIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_SOCIALITE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_SOCIALITE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_ANIMAL_HANDLER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_ANIMAL_HANDLER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_HUNTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_HUNTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_COMBAT_EDGED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_COMBAT_EDGED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_COMBAT_BLUNT}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_COMBAT_BLUNT}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_COMBAT_POLEARMS}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_COMBAT_POLEARMS}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_COMBAT_UNDERHANDED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_COMBAT_UNDERHANDED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_COMBAT_RANGED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_COMBAT_RANGED}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_MEDIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_MEDIC}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_TEACHER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_TEACHER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_WRITER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_WRITER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_SCHOLAR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_SCHOLAR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_NEGOTIATOR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_NEGOTIATOR}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_MUSICIAN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_MUSICIAN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_COMBAT_LEADER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_COMBAT_LEADER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_THIEF}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_THIEF}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_MARTIAL_ARTIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_MARTIAL_ARTIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_ADVENTURER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_ADVENTURER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_PRIEST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_PRIEST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_PSYCHOLOGIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_PSYCHOLOGIST}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_NINJA}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_NINJA}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_YIN_YANG}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_YIN_YANG}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_CAPTAIN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_CAPTAIN}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_ALTERATION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_ALTERATION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_CONJURATION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_CONJURATION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_DESTRUCTION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_DESTRUCTION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_ILLUSION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_ILLUSION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_RESTORATION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_RESTORATION_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_M_MAGIC_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_F_MAGIC_MASTER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_MFREE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_FFREE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_MSLAVE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_FSLAVE}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_MBLANK_SLAVER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_FBLANK_SLAVER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_MBLANK_RANGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a mare!:turns into a mare!}
+			{CDI:WAIT_PERIOD:2400}
+		{CAN_DO_INTERACTION:KILLING_JOKE_FIVE_UNICORN_FBLANK_RANGER}
+			{CDI:ADV_NAME:Joke}
+			{CDI:TARGET:A:TOUCHABLE}
+			{CDI:TARGET_RANGE:A:1}
+			{CDI:MAX_TARGET_NUMBER:A:1}
+			{CDI:USAGE_HINT:ATTACK}
+			{CDI:VERB:wrap yourself around a creature's body:wraps itself around a creature's body}
+			{CDI:TARGET_VERB:turn into a stallion!:turns into a stallion!}
+			{CDI:WAIT_PERIOD:2400}

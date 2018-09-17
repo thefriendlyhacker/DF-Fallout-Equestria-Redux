@@ -1,0 +1,202 @@
+#listing known spells
+foe/reaction-trigger -reactionName LIST_KNOWN_SPELLS -command [ foe/print-syns -unit \\TARGET_ID -reqSynText "Knowledge" -textBefore " has learned: " -textAfter "." ]
+
+#===========Alteration spells=============
+
+#telekinetic discipline
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_AETHER_BIND -resetPolicy ResetDuration -syndrome "Aether Bind School Tag"
+foe/swap-syndrome -name "Aether Bind" -tickRate 2000 -oldSyn "Aether Bind School Tag" -newSyn "Aether Bind Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_AETHER_BIND -resetPolicy ResetDuration -syndrome "Aether Bind Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_AETHER_BIND -resetPolicy ResetDuration -syndrome "Aether Bind Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_AETHER_BIND -resetPolicy ResetDuration -syndrome "Aether Bind Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_SLOW -resetPolicy ResetDuration -syndrome "Slow School Tag"
+foe/swap-syndrome -name "Slow" -tickRate 2000 -oldSyn "Slow School Tag" -newSyn "Slow Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_SLOW -resetPolicy ResetDuration -syndrome "Slow Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_SLOW -resetPolicy ResetDuration -syndrome "Slow Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_MASTER_PARALYZE -resetPolicy ResetDuration -syndrome "Paralyze Master Knowledge"
+
+#time discipline
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_TIME_STUTTER -resetPolicy ResetDuration -syndrome "Time Stutter School Tag"
+foe/swap-syndrome -name "Time Stutter" -tickRate 2000 -oldSyn "Time Stutter School Tag" -newSyn "Time Stutter Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_TIME_STUTTER -resetPolicy ResetDuration -syndrome "Time Stutter Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_TIME_STUTTER -resetPolicy ResetDuration -syndrome "Time Stutter Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_TIME_STUTTER -resetPolicy ResetDuration -syndrome "Time Stutter Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_TIME_DILATION -resetPolicy ResetDuration -syndrome "Time Dilation School Tag"
+foe/swap-syndrome -name "Time Dilation" -tickRate 2000 -oldSyn "Time Dilation School Tag" -newSyn "Time Dilation Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_TIME_DILATION -resetPolicy ResetDuration -syndrome "Time Dilation Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_TIME_DILATION -resetPolicy ResetDuration -syndrome "Time Dilation Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_MASTER_TIME_STOP -resetPolicy ResetDuration -syndrome "Time Stop Master Knowledge"
+
+#antirobotics discipline
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_DISRUPT_ROBOT -resetPolicy ResetDuration -syndrome "Disrupt Robot School Tag"
+foe/swap-syndrome -name "Disrupt Robot" -tickRate 2000 -oldSyn "Disrupt Robot School Tag" -newSyn "Disrupt Robot Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_DISRUPT_ROBOT -resetPolicy ResetDuration -syndrome "Disrupt Robot Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_DISRUPT_ROBOT -resetPolicy ResetDuration -syndrome "Disrupt Robot Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_APPRENTICE_DISRUPT_ROBOT -resetPolicy ResetDuration -syndrome "Disrupt Robot Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_DISABLE_ROBOT -resetPolicy ResetDuration -syndrome "Disable Robot School Tag"
+foe/swap-syndrome -name "Disable Robot" -tickRate 2000 -oldSyn "Disable Robot School Tag" -newSyn "Disable Robot Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_DISABLE_ROBOT -resetPolicy ResetDuration -syndrome "Disable Robot Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_ADEPT_DISABLE_ROBOT -resetPolicy ResetDuration -syndrome "Disable Robot Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ALTERATION_MASTER_OVERLOAD_ROBOT -resetPolicy ResetDuration -syndrome "Overload Robot Master Knowledge"
+
+
+#===============Conjuration spells==========
+
+#balefire discipline
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BALEFIRE_INFUSION -resetPolicy ResetDuration -syndrome "Balefire Infusion School Tag"
+foe/swap-syndrome -name "Balefire Infusion" -tickRate 2000 -oldSyn "Balefire Infusion School Tag" -newSyn "Balefire Infusion Apprentice School Knowledge" -notSynClass [ "ALTERATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BALEFIRE_INFUSION -resetPolicy ResetDuration -syndrome "Balefire Infusion Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BALEFIRE_INFUSION -resetPolicy ResetDuration -syndrome "Balefire Infusion Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BALEFIRE_INFUSION -resetPolicy ResetDuration -syndrome "Balefire Infusion Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_SOUL_ROT -resetPolicy ResetDuration -syndrome "Soul Rot School Tag"
+foe/swap-syndrome -name "Soul Rot" -tickRate 2000 -oldSyn "Soul Rot School Tag" -newSyn "Soul Rot Adept School Knowledge" -notSynClass [ "ALTERATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_SOUL_ROT -resetPolicy ResetDuration -syndrome "Soul Rot Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_SOUL_ROT -resetPolicy ResetDuration -syndrome "Soul Rot Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_MASTER_BALEFUL_SPIRITFIRE -resetPolicy ResetDuration -syndrome "Baleful Spiritfire Master Knowledge"
+
+#infusion discipline
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_RAD_SHIELD -resetPolicy ResetDuration -syndrome "Rad Shield School Tag"
+foe/swap-syndrome -name "Rad Shield" -tickRate 2000 -oldSyn "Rad Shield School Tag" -newSyn "Rad Shield Apprentice School Knowledge" -notSynClass [ "ALTERATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_RAD_SHIELD -resetPolicy ResetDuration -syndrome "Rad Shield Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_RAD_SHIELD -resetPolicy ResetDuration -syndrome "Rad Shield Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_RAD_SHIELD -resetPolicy ResetDuration -syndrome "Rad Shield Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_INFUSED_UNLIFE -resetPolicy ResetDuration -syndrome "Infused Unlife School Tag"
+foe/swap-syndrome -name "Infused Unlife" -tickRate 2000 -oldSyn "Infused Unlife School Tag" -newSyn "Infused Unlife Adept School Knowledge" -notSynClass [ "ALTERATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_INFUSED_UNLIFE -resetPolicy ResetDuration -syndrome "Infused Unlife Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_INFUSED_UNLIFE -resetPolicy ResetDuration -syndrome "Infused Unlife Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_MASTER_NECROSPIRIT -resetPolicy ResetDuration -syndrome "Necrospirit Master Knowledge"
+
+#sanguimancy discipline
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BLOODLET -resetPolicy ResetDuration -syndrome "Bloodlet School Tag"
+foe/swap-syndrome -name "Bloodlet" -tickRate 2000 -oldSyn "Bloodlet School Tag" -newSyn "Bloodlet Apprentice School Knowledge" -notSynClass [ "ALTERATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BLOODLET -resetPolicy ResetDuration -syndrome "Bloodlet Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BLOODLET -resetPolicy ResetDuration -syndrome "Bloodlet Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_APPRENTICE_BLOODLET -resetPolicy ResetDuration -syndrome "Bloodlet Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_CRIMSON_GIFT -resetPolicy ResetDuration -syndrome "Crimson Gift School Tag"
+foe/swap-syndrome -name "Crimson Gift" -tickRate 2000 -oldSyn "Crimson Gift School Tag" -newSyn "Crimson Gift Adept School Knowledge" -notSynClass [ "ALTERATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_CRIMSON_GIFT -resetPolicy ResetDuration -syndrome "Crimson Gift Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_ADEPT_CRIMSON_GIFT -resetPolicy ResetDuration -syndrome "Crimson Gift Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_CONJURATION_MASTER_EVISCERATE -resetPolicy ResetDuration -syndrome "Exanguinate Master Knowledge"
+
+
+
+#===========Destruction Spells==============
+
+#suffering discipline
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_PAIN -resetPolicy ResetDuration -syndrome "Pain School Tag"
+foe/swap-syndrome -name "Pain" -tickRate 2000 -oldSyn "Pain School Tag" -newSyn "Pain Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_PAIN -resetPolicy ResetDuration -syndrome "Pain Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_PAIN -resetPolicy ResetDuration -syndrome "Pain Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_PAIN -resetPolicy ResetDuration -syndrome "Pain Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_TORMENT -resetPolicy ResetDuration -syndrome "Torment School Tag"
+foe/swap-syndrome -name "Torment" -tickRate 2000 -oldSyn "Torment School Tag" -newSyn "Torment Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_TORMENT -resetPolicy ResetDuration -syndrome "Torment Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_TORMENT -resetPolicy ResetDuration -syndrome "Torment Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_MASTER_AGONY -resetPolicy ResetDuration -syndrome "Agony Master Knowledge"
+
+#disease discipline
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_FEVER -resetPolicy ResetDuration -syndrome "Fever School Tag"
+foe/swap-syndrome -name "Fever" -tickRate 2000 -oldSyn "Fever School Tag" -newSyn "Fever Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_FEVER -resetPolicy ResetDuration -syndrome "Fever Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_FEVER -resetPolicy ResetDuration -syndrome "Fever Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_FEVER -resetPolicy ResetDuration -syndrome "Fever Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_AFFLICTION -resetPolicy ResetDuration -syndrome "Affliction School Tag"
+foe/swap-syndrome -name "Affliction" -tickRate 2000 -oldSyn "Affliction School Tag" -newSyn "Affliction Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_AFFLICTION -resetPolicy ResetDuration -syndrome "Affliction Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_AFFLICTION -resetPolicy ResetDuration -syndrome "Affliction Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_MASTER_PLAGUE -resetPolicy ResetDuration -syndrome "Plague Master Knowledge"
+
+#ruin discipline
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_SUNDER -resetPolicy ResetDuration -syndrome "Sunder School Tag"
+foe/swap-syndrome -name "Sunder" -tickRate 2000 -oldSyn "Sunder School Tag" -newSyn "Sunder Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_SUNDER -resetPolicy ResetDuration -syndrome "Sunder Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_SUNDER -resetPolicy ResetDuration -syndrome "Sunder Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_APPRENTICE_SUNDER -resetPolicy ResetDuration -syndrome "Sunder Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_REND -resetPolicy ResetDuration -syndrome "Rend School Tag"
+foe/swap-syndrome -name "Rend" -tickRate 2000 -oldSyn "Rend School Tag" -newSyn "Rend Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_REND -resetPolicy ResetDuration -syndrome "Rend Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_ADEPT_REND -resetPolicy ResetDuration -syndrome "Rend Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_DESTRUCTION_MASTER_IMPLOSION -resetPolicy ResetDuration -syndrome "Implosion Master Knowledge"
+
+
+
+#Illusion spells
+
+#trickery discipline
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DISORIENTATE -resetPolicy ResetDuration -syndrome "Disorientate School Tag"
+foe/swap-syndrome -name "Disorientate" -tickRate 2000 -oldSyn "Disorientate School Tag" -newSyn "Disorientate Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DISORIENTATE -resetPolicy ResetDuration -syndrome "Disorientate Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DISORIENTATE -resetPolicy ResetDuration -syndrome "Disorientate Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DISORIENTATE -resetPolicy ResetDuration -syndrome "Disorientate Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_SHADOW_SHIELD -resetPolicy ResetDuration -syndrome "Shadow Form School Tag"
+foe/swap-syndrome -name "Shadow Form" -tickRate 2000 -oldSyn "Shadow Form School Tag" -newSyn "Shadow Form Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_SHADOW_SHIELD -resetPolicy ResetDuration -syndrome "Shadow Form Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_SHADOW_SHIELD -resetPolicy ResetDuration -syndrome "Shadow Form Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_MASTER_CONFUSION -resetPolicy ResetDuration -syndrome "Confusion Master Knowledge"
+
+#manipulation discipline
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DAZE -resetPolicy ResetDuration -syndrome "Daze School Tag"
+foe/swap-syndrome -name "Daze" -tickRate 2000 -oldSyn "Daze School Tag" -newSyn "Daze Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DAZE -resetPolicy ResetDuration -syndrome "Daze Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DAZE -resetPolicy ResetDuration -syndrome "Daze Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_DAZE -resetPolicy ResetDuration -syndrome "Daze Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_SLUMBER -resetPolicy ResetDuration -syndrome "Slumber School Tag"
+foe/swap-syndrome -name "Slumber" -tickRate 2000 -oldSyn "Slumber School Tag" -newSyn "Slumber Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_SLUMBER -resetPolicy ResetDuration -syndrome "Slumber Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_SLUMBER -resetPolicy ResetDuration -syndrome "Slumber Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_MASTER_RAGE -resetPolicy ResetDuration -syndrome "Rage Master Knowledge"
+
+#horror discipline
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_FRIGHTEN -resetPolicy ResetDuration -syndrome "Frighten School Tag"
+foe/swap-syndrome -name "Frighten" -tickRate 2000 -oldSyn "Frighten School Tag" -newSyn "Frighten Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" "RESTORATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_FRIGHTEN -resetPolicy ResetDuration -syndrome "Frighten Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_FRIGHTEN -resetPolicy ResetDuration -syndrome "Frighten Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_APPRENTICE_FRIGHTEN -resetPolicy ResetDuration -syndrome "Frighten Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_FEAR -resetPolicy ResetDuration -syndrome "Fear School Tag"
+foe/swap-syndrome -name "Fear" -tickRate 2000 -oldSyn "Fear School Tag" -newSyn "Fear Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" "RESTORATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_FEAR -resetPolicy ResetDuration -syndrome "Fear Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_ADEPT_FEAR -resetPolicy ResetDuration -syndrome "Fear Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_ILLUSION_MASTER_CLOAK_OF_THE_NIGHTMARE -resetPolicy ResetDuration -syndrome "Cloak of the Nightmare Master Knowledge"
+
+
+
+#Restoration spells
+
+#rejuvenation discipline
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_HEAL -resetPolicy ResetDuration -syndrome "Heal School Tag"
+foe/swap-syndrome -name "Heal" -tickRate 2000 -oldSyn "Heal School Tag" -newSyn "Heal Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_HEAL -resetPolicy ResetDuration -syndrome "Heal Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_HEAL -resetPolicy ResetDuration -syndrome "Heal Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_HEAL -resetPolicy ResetDuration -syndrome "Heal Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_TIDES_OF_WELLBEING -resetPolicy ResetDuration -syndrome "Tides of Wellbeing School Tag"
+foe/swap-syndrome -name "Tides of Wellbeing" -tickRate 2000 -oldSyn "Tides of Wellbeing School Tag" -newSyn "Tides of Wellbeing Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_TIDES_OF_WELLBEING -resetPolicy ResetDuration -syndrome "Tides of Wellbeing Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_TIDES_OF_WELLBEING -resetPolicy ResetDuration -syndrome "Tides of Wellbeing Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_MASTER_REGENERATION -resetPolicy ResetDuration -syndrome "Regeneration Master Knowledge"
+modtools/interaction-trigger -onAttackStr "casts regeneration" -onDefendStr "is rapidly cured of all injuries!" -command [ full-heal -unit \\DEFENDER_ID ]
+
+
+#vigor discipline
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_STOICISM -resetPolicy ResetDuration -syndrome "Stoicism School Tag"
+foe/swap-syndrome -name "Stoicism" -tickRate 2000 -oldSyn "Stoicism School Tag" -newSyn "Stoicism Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_STOICISM -resetPolicy ResetDuration -syndrome "Stoicism Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_STOICISM -resetPolicy ResetDuration -syndrome "Stoicism Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_STOICISM -resetPolicy ResetDuration -syndrome "Stoicism Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_HEROISM -resetPolicy ResetDuration -syndrome "Heroism School Tag"
+foe/swap-syndrome -name "Heroism" -tickRate 2000 -oldSyn "Heroism School Tag" -newSyn "Heroism Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_HEROISM -resetPolicy ResetDuration -syndrome "Heroism Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_HEROISM -resetPolicy ResetDuration -syndrome "Heroism Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_MASTER_TITANS_PHYSIQUE -resetPolicy ResetDuration -syndrome "Titan's Physique Master Knowledge"
+
+#protection discipline
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_SPELL_GUARD -resetPolicy ResetDuration -syndrome "Spell Guard School Tag"
+foe/swap-syndrome -name "Spell Guard" -tickRate 2000 -oldSyn "Spell Guard School Tag" -newSyn "Spell Guard Apprentice School Knowledge" -notSynClass [ "CONJURATION_APPRENTICE_SCHOOL" "DESTRUCTION_APPRENTICE_SCHOOL" "ILLUSION_APPRENTICE_SCHOOL" "ALTERATION_APPRENTICE_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_SPELL_GUARD -resetPolicy ResetDuration -syndrome "Spell Guard Apprentice General Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_SPELL_GUARD -resetPolicy ResetDuration -syndrome "Spell Guard Adept Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_APPRENTICE_SPELL_GUARD -resetPolicy ResetDuration -syndrome "Spell Guard Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_STEADFAST_WARD -resetPolicy ResetDuration -syndrome "Steadfast Ward School Tag"
+foe/swap-syndrome -name "Steadfast Ward" -tickRate 2000 -oldSyn "Steadfast Ward School Tag" -newSyn "Steadfast Ward Adept School Knowledge" -notSynClass [ "CONJURATION_ADEPT_SCHOOL" "DESTRUCTION_ADEPT_SCHOOL" "ILLUSION_ADEPT_SCHOOL" "ALTERATION_ADEPT_SCHOOL" ] -resetPolicy DoNothing
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_STEADFAST_WARD -resetPolicy ResetDuration -syndrome "Steadfast Ward Adept General Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_ADEPT_STEADFAST_WARD -resetPolicy ResetDuration -syndrome "Steadfast Ward Master Knowledge"
+foe/reaction-trigger -reactionName STUDY_RESTORATION_MASTER_LIFE_SHIELD -resetPolicy ResetDuration -syndrome "Life Shield Master Knowledge"
+

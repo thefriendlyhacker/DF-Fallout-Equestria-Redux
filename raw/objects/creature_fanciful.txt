@@ -1,0 +1,30 @@
+creature_fanciful
+
+[OBJECT:CREATURE]
+
+[CREATURE:TANK]
+	[NAME:tank:tanks:tank]
+	[CREATURE_TILE:145][COLOR:6:0:0]
+	[FANCIFUL]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:armor and heavy weaponry]
+	[ALL_ACTIVE]
+	[NO_GENDER]
+	
+[CREATURE:RAPTOR]
+	[NAME:raptor cloudship:raptor cloudships:raptor cloudship]
+	[CREATURE_TILE:154][COLOR:0:0:1]
+	[FANCIFUL]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:speed and maneuverability]
+	[ALL_ACTIVE]
+	[NO_GENDER]
+	
+[CREATURE:THUNDERHEAD]
+	[NAME:thunderhead cloudship:thunderhead cloudships:thunderhead cloudship]
+	[CREATURE_TILE:154][COLOR:0:0:1]
+	[FANCIFUL]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:destructive power]
+	[ALL_ACTIVE]
+	[NO_GENDER]

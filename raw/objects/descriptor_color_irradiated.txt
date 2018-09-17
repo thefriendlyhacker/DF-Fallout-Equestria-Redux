@@ -1,0 +1,31 @@
+descriptor_color_irradiated
+
+[OBJECT:DESCRIPTOR_COLOR]
+
+[COLOR:DECAYED]
+	[NAME:decayed]
+	[RGB:233:116:81]
+
+[COLOR:NECROTIC]
+	[NAME:necrotic]
+	[RGB:85:104:50]
+	
+[COLOR:ROTTED]
+	[NAME:rotted]
+	[RGB:205:92:92]
+	
+[COLOR:PEELED]
+	[NAME:peeling off in large chunks]
+	[RGB:205:92:92]
+	
+[COLOR:GLOWING]
+	[NAME:glowing]
+	[RGB:173:255:47]
+	
+[COLOR:LUMINESCENT]
+	[NAME:luminescent]
+	[RGB:173:255:47]
+	
+[COLOR:RADIOACTIVE]
+	[NAME:radioactive]
+	[RGB:173:255:47]

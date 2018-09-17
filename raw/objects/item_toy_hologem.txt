@@ -1,0 +1,437 @@
+item_toy_hologem
+
+[OBJECT:ITEM]
+
+==========Research Hologems==========
+
+[ITEM_TOY:ITEM_HOLOGEM_DATA]
+[NAME:data hologem:data hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_PRISMATIC]
+[NAME:prismatic hologem:prismatic hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DATA_KINETIC_TALISMAN]
+[NAME:kinetic talisman data hologem:kinetic talisman data hologems]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_DATA_ADVANCED_ROBOT_PROCESSING_MATRIX]
+[NAME:advanced robot processing matrix data hologem:advanced robot processing matrix data hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DATA_POWER_ARMOR_PROCESSING_MATRIX]
+[NAME:power armor processing matrix data hologem:power armor processing matrix data hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DATA_SCORPION_POWER_ARMOR_PROCESSING_MATRIX]
+[NAME:scorpion PA processing matrix data hologem:scorpion PA processing matrix data hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DATA_NEURAL_INTERFACE_TALISMAN]
+[NAME:neural interface talisman data hologem:neural interface talisman data hologems]
+[HARD_MAT]
+
+==========Design Hologems==========
+
+[ITEM_TOY:ITEM_HOLOGEM_DESIGN_KINETIC_TALISMAN]
+[NAME:kinetic talisman design hologem:kinetic talisman design hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESIGN_ADVANCED_ROBOT_PROCESSING_MATRIX]
+[NAME:advanced robot processing matrix design hologem:advanced robot processing matrix design hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESIGN_NEURAL_INTERFACE_TALISMAN]
+[NAME:neural interface talisman design hologem:neural interface talisman design hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESIGN_POWER_ARMOR_PROCESSING_MATRIX]
+[NAME:power armor processing matrix design hologem:power armor processing matrix design hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESIGN_SCORPION_POWER_ARMOR_PROCESSING_MATRIX]
+[NAME:scorpion PA processing matrix design hologem:scorpion PA processing matrix design hologems]
+[HARD_MAT]
+
+==========Training Hologems==========
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_CHECKLIST]
+[NAME:checklist hologem:checklist hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_CLOTHESMAKING]
+[NAME:clothesmaking hologem:clothesmaking hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_GEMCRAFTING]
+[NAME:gemcrafting hologem:gemcrafting hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_HIGH_SOCIETY]
+[NAME:high society hologem:high society hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_SOCIETY]
+[NAME:social skills hologem:social skills hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_ARCADE]
+[NAME:arcade hologem:arcade hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_COOKING]
+[NAME:cooking hologem:cooking hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_FIRST_AID]
+[NAME:first aid hologem:first aid hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_DIAGNOSIS]
+[NAME:diagnosis hologem:diagnosis hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_SURGERY_GENERAL]
+[NAME:general surgery hologem:general surgery hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_SURGERY_ORTHOPEDIC]
+[NAME:orthopedic surgery hologem:orthopedic surgery hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_VETERINARY]
+[NAME:veterinary hologem:veterinary hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_SIMULATOR_MELEE]
+[NAME:melee simulator hologem:melee simulator hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_SIMULATOR_FIREARMS]
+[NAME:firearms simulator hologem:firearms simulator hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_SIMULATOR_ARTILLERY]
+[NAME:artillery simulator hologem:artillery simulator hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_MILITARY_TACTICS]
+[NAME:military tactics hologem:military tactics hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_ARMORSMITHING]
+[NAME:armorsmithing hologem:armorsmithing hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_WEAPONSMITHING]
+[NAME:weaponsmithing hologem:weaponsmithing hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_METALSMITHING]
+[NAME:metalsmithing hologem:metalsmithing hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_ENGINEERING]
+[NAME:engineering hologem:engineering hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_TRAINING_BLACK_OPS]
+[NAME:black ops hologem:black ops hologems]
+[HARD_MAT]
+
+==========AI Hologems==========
+
+[ITEM_TOY:ITEM_HOLOGEM_AI_MACINTOSH]
+[NAME:Mr. Macintosh AI hologem:Mr. Macintosh AI hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_AI_REDHEART]
+[NAME:Nurse Redheart AI hologem:Nurse Redheart AI hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_AI_PINKAMENA]
+[NAME:Pinkamena AI hologem:Pinkamena AI hologems]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_AI_PROTECTAPONY]
+[NAME:Protectapony Mk.II AI hologem:Protectapony Mk.II AI hologems]
+[HARD_MAT]
+
+==========Spell Hologems (Blank)==========
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_LOW]
+[NAME:alteration hologem (basic):alteration hologems (basic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_MID]
+[NAME:alteration hologem (advanced):alteration hologems (advanced)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_HIGH]
+[NAME:alteration hologem (prismatic):alteration hologems (prismatic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_LOW]
+[NAME:conjuration hologem (basic):conjuration hologems (basic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_MID]
+[NAME:conjuration hologem (advanced):conjuration hologems (advanced)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_HIGH]
+[NAME:conjuration hologem (prismatic):conjuration hologems (prismatic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_LOW]
+[NAME:destruction hologem (basic):destruction hologems (basic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_MID]
+[NAME:destruction hologem (advanced):destruction hologems (advanced)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_HIGH]
+[NAME:destruction hologem (prismatic):destruction hologems (prismatic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_LOW]
+[NAME:illusion hologem (basic):illusion hologems (basic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_MID]
+[NAME:illusion hologem (advanced):illusion hologems (advanced)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_HIGH]
+[NAME:illusion hologem (prismatic):illusion hologems (prismatic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_LOW]
+[NAME:restoration hologem (basic):restoration hologems (basic)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_MID]
+[NAME:restoration hologem (advanced):restoration hologems (advanced)]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_HIGH]
+[NAME:restoration hologem (prismatic):restoration hologems (prismatic)]
+[HARD_MAT]
+
+==========Spell Hologems==========
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_APPRENTICE_AETHER_BIND]
+[NAME:hologem of aether bind:hologems of aether bind]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_ADEPT_SLOW]
+[NAME:hologem of slow:hologems of slow]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_MASTER_PARALYZE]
+[NAME:hologem of paralyze:hologems of paralyze]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_APPRENTICE_TIME_STUTTER]
+[NAME:hologem of time stutter:hologems of time stutter]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_ADEPT_TIME_DILATION]
+[NAME:hologem of time dilation:hologems of time dilation]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_MASTER_TIME_STOP]
+[NAME:hologem of time stop:hologems of time stop]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_APPRENTICE_DISRUPT_ROBOT]
+[NAME:hologem of disrupt robot:hologems of disrupt robot]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_ADEPT_DISABLE_ROBOT]
+[NAME:hologem of disable robot:hologems of disable robot]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ALTERATION_MASTER_OVERLOAD_ROBOT]
+[NAME:hologem of overload robot:hologems of overload robot]
+[HARD_MAT]
+
+
+
+
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_APPRENTICE_BALEFIRE_INFUSION]
+[NAME:hologem of balefire infusion:hologems of balefire infusion]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_ADEPT_SOUL_ROT]
+[NAME:hologem of soul rot:hologems of soul rot]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_MASTER_BALEFUL_SPIRITFIRE]
+[NAME:hologem of baleful spiritfire:hologems of baleful spiritfire]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_APPRENTICE_RAD_SHIELD]
+[NAME:hologem of rad shield:hologems of rad shield]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_ADEPT_INFUSED_UNLIFE]
+[NAME:hologem of infused unlife:hologems of infused unlife]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_MASTER_NECROSPIRIT]
+[NAME:hologem of necrospirit:hologems of necrospirit]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_APPRENTICE_BLOODLET]
+[NAME:hologem of bloodlet:hologems of bloodlet]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_ADEPT_CRIMSON_GIFT]
+[NAME:hologem of crimson gift:hologems of crimson gift]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_CONJURATION_MASTER_EXANGUINATE]
+[NAME:hologem of exanguinate:hologems of exanguinate]
+[HARD_MAT]
+
+
+
+
+
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_APPRENTICE_PAIN]
+[NAME:hologem of pain:hologems of pain]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_ADEPT_TORMENT]
+[NAME:hologem of torment:hologems of torment]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_MASTER_AGONY]
+[NAME:hologem of agony:hologems of agony]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_APPRENTICE_FEVER]
+[NAME:hologem of fever:hologems of fever]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_ADEPT_AFFLICTION]
+[NAME:hologem of affliction:hologems of affliction]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_MASTER_PLAGUE]
+[NAME:hologem of plague:hologems of plague]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_APPRENTICE_SUNDER]
+[NAME:hologem of sunder:hologems of sunder]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_ADEPT_REND]
+[NAME:hologem of rend:hologems of rend]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_DESTRUCTION_MASTER_IMPLOSION]
+[NAME:hologem of implosion:hologems of implosion]
+[HARD_MAT]
+
+
+
+
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_APPRENTICE_DISORIENTATE]
+[NAME:hologem of disorientate:hologems of disorientate]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_ADEPT_SHADOW_FORM]
+[NAME:hologem of shadow form:hologems of shadow form]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_MASTER_CONFUSION]
+[NAME:hologem of confusion:hologems of confusion]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_APPRENTICE_DAZE]
+[NAME:hologem of daze:hologems of daze]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_ADEPT_SLUMBER]
+[NAME:hologem of slumber:hologems of slumber]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_MASTER_RAGE]
+[NAME:hologem of rage:hologems of rage]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_APPRENTICE_FRIGHTEN]
+[NAME:hologem of frighten:hologems of frighten]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_ADEPT_FEAR]
+[NAME:hologem of fear:hologems of fear]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_ILLUSION_MASTER_CLOAK_OF_THE_NIGHTMARE]
+[NAME:hologem of cloak of the nightmare:hologems of cloak of the nightmare]
+[HARD_MAT]
+
+
+
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_APPRENTICE_HEAL]
+[NAME:hologem of heal:hologems of heal]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_ADEPT_TIDES_OF_WELLBEING]
+[NAME:hologem of tides of wellbeing:hologems of tides of wellbeing]
+[HARD_MAT]
+
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_MASTER_REGENERATION]
+[NAME:hologem of regeneration:hologems of regeneration]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_APPRENTICE_STOICISM]
+[NAME:hologem of stoicism:hologems of stoicism]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_ADEPT_HEROISM]
+[NAME:hologem of guarded soul:hologems of heroism]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_MASTER_TITANS_PHYSIQUE]
+[NAME:hologem of antimage binding:hologems of titan's physique]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_APPRENTICE_SPELL_GUARD]
+[NAME:hologem of spellshield:hologems of spell guard]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_ADEPT_STEADFAST_WARD]
+[NAME:hologem of steadfast ward:hologems of steadfast ward]
+[HARD_MAT]
+
+[ITEM_TOY:ITEM_HOLOGEM_RESTORATION_MASTER_LIFE_SHIELD]
+[NAME:hologem of life shield:hologems of life shield]
+[HARD_MAT]

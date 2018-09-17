@@ -1,0 +1,7 @@
+item_siegeammo
+
+[OBJECT:ITEM]
+
+[ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA]
+[NAME:artillery shell:artillery shells]
+[CLASS:BALLISTA]
