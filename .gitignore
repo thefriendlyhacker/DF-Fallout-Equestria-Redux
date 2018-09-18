@@ -1,0 +1,37 @@
+*
+!*/
+!/.gitignore
+!/README.md
+!/dfhack.init
+!/onLoad-spells.init
+!/onLoad-reactions.init
+!/onLoad-resizing.init
+!/onLoad-equipment.init
+!/onLoad.init
+!/FoE changelog.txt
+!/FoE install readme.txt
+!/raw/graphics/graphics_wasteland_canine.txt
+!/raw/graphics/graphics_wasteland_domestic.txt
+!/raw/graphics/graphics_wasteland_herbivore.txt
+!/raw/graphics/graphics_wasteland_IMP.txt
+!/raw/graphics/graphics_wasteland_insect.txt
+!/raw/graphics/graphics_wasteland_ocean.txt
+!/raw/graphics/graphics_wasteland_other_sentient.txt
+!/raw/graphics/graphics_wasteland_reptile.txt
+!/raw/graphics/graphics_wasteland_robot.txt
+!/raw/graphics/graphics_wasteland_rodent.txt
+!/raw/graphics/graphics_wasteland_unsorted.txt
+!/raw/graphics/graphics_generalzoi_pony.txt
+!/raw/graphics/graphics_generalzoi_pony_slave.txt
+!/raw/graphics/graphics_generalzoi_pony_stable.txt
+!/data/sound/song_game.ogg
+!/data/sound/song_title.ogg
+!/data/init/init.txt
+!/data/init/world_gen.txt
+!/raw/objects/**
+!/raw/graphics/lycaeon/**
+!/raw/graphics/generalzoi/**
+!/raw/graphics/deon/**
+!/hack/scripts/foe/**
+!/hack/scripts/ranged/**
+!/twbt/**
