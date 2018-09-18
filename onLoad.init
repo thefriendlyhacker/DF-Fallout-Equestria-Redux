@@ -14,7 +14,7 @@ modtools/item-trigger -itemType ITEM_DESTROYED_ROBOT_MEDIUM -command [ foe/strip
 modtools/item-trigger -itemType ITEM_DESTROYED_ROBOT_LARGE -command [ foe/strip-dead-dwarf-flag -item \\ITEM_ID ]  -onEquip [ Hauled ]
 
 #fixing crappy genetic model with randomization workaround
-foe/random-tlcm -name CM -tissueName "cutie mark"
-foe/random-tlcm -name CM -tissueName "mane and tail"
-foe/random-tlcm -name CM -tissueName "coat"
-foe/random-tlcm -name CM -tissueName "eyes"
+foe/random-tlcm -name "cutie mark" -tissueName "cutie mark"
+foe/random-tlcm -name "mane and tail" -tissueName "mane and tail"
+foe/random-tlcm -name "coat" -tissueName "coat"
+foe/random-tlcm -name "eyes" -tissueName "eyes"
