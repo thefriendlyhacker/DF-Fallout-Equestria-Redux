@@ -1,23 +1,30 @@
-0.41.6-beta1
+0.41.6
 major changes
-- complete stable caste overhaul
+- stable caste overhaul
 - massive increase in number of used cutie marks
 - autofire script, used for all firearms but hunting and anti-machine rifles
 - SMGs and automatic rifles
 - added Glaive and Ripsaw Glaive, using the piker skill, and the Storm Glaive, a Ripsaw Glaive/twin linked SMG hybrid
+- added Tissue Layer Color Modifier randomization script to work around DF genetics, so all ponies won't have identical coat colors and lots of CM duplication
+
 
 minor tweaks
-- cut killing joke gender changing interactions until I can be bothered going over all the interactions converting them to the new stable caste system
+- cut killing joke gender changing interactions until I can be bothered going over all the interactions converting them to the new stable caste system (which may be never)
 - added reanimated griffon sprite
 - made royal jelly and honey solid at room temp
-- alteration time stutter/stop give noexert for their duration
+- alteration school's time stutter/stop give noexert for their duration
 - tweaked preset worldgen cavern heights.
-- tweaked revolver muzzle velocity
+- tweaked some ranged weapon velocity/projectile sizes
 - tweaked amr mat size
 - gun making reactions now all use steel
+- redid ammo reactions, they also produce more ammo for the same metal input
+- cut projectile disassembly reactions until I get around to overhauling them
+- cut strand extraction entirely, metal thread making now done through the forge from wafers/bars
+- bismuth bronze can no longer be used for weapons, because it was annoying and redundant
 
 bug fixes
 -fixed bad alteration hologem cutting reactions
+
 
 0.41.5
 major changes
