@@ -23,13 +23,6 @@ item_ammo
 	[ATTACK:EDGE:4:1000:strike:strikes:NO_SUB:1000]
 		[ATTACK_PREPARE_AND_RECOVER:4:2]
 
-[ITEM_AMMO:ITEM_AMMO_BULLET_SMALL_LOOSE] 7.65 Parabellum
-	[NAME:loose small caliber bullet:small caliber bullets]
-	[CLASS:AMMO_LOW_BULLET]
-	[SIZE:2]
-	[ATTACK:EDGE:4:1000:strike:strikes:NO_SUB:1000]
-		[ATTACK_PREPARE_AND_RECOVER:4:2]
-
 [ITEM_AMMO:ITEM_AMMO_BULLET_MEDIUM] 7.62x51mm NATO
 	[NAME:medium caliber bullet:medium caliber rounds]
 	[CLASS:AMMO_MEDIUM]
@@ -37,13 +30,6 @@ item_ammo
 	[ATTACK:EDGE:8:5000:strike:strikes:NO_SUB:1000] 
 		[ATTACK_PREPARE_AND_RECOVER:4:2]
 
-[ITEM_AMMO:ITEM_AMMO_LOOSE_BULLET_MEDIUM] 7.62x51mm NATO
-	[NAME:loose medium caliber bullet:medium caliber bullets]
-	[CLASS:AMMO_MEDIUM_BULLET]
-	[SIZE:2]
-	[ATTACK:EDGE:8:5000:strike:strikes:NO_SUB:1000] 
-		[ATTACK_PREPARE_AND_RECOVER:4:2]
-	
 [ITEM_AMMO:ITEM_AMMO_BULLET_LARGE] 20mm
 	[NAME:large caliber bullet:large caliber rounds]
 	[CLASS:AMMO_HIGH]
@@ -51,23 +37,9 @@ item_ammo
 	[ATTACK:EDGE:40:12000:strike:strikes:NO_SUB:1000]
 		[ATTACK_PREPARE_AND_RECOVER:4:2]
 
-[ITEM_AMMO:ITEM_AMMO_LOOSE_BULLET_LARGE] 20mm
-	[NAME:loose large caliber bullet:large caliber bullets]
-	[CLASS:AMMO_HIGH_BULLET]
-	[SIZE:30]
-	[ATTACK:EDGE:40:12000:strike:strikes:NO_SUB:1000]
-		[ATTACK_PREPARE_AND_RECOVER:4:2]
-
 [ITEM_AMMO:ITEM_AMMO_BULLET_LARGE_EXPLOSIVE] 20mm, explosive tipped
 	[NAME:large caliber explosive bullet:large caliber explosive rounds]
 	[CLASS:AMMO_HIGH]
-	[SIZE:100]
-	[ATTACK:EDGE:10000:500:strike:strikes:NO_SUB:1000]
-		[ATTACK_PREPARE_AND_RECOVER:4:2]
-
-[ITEM_AMMO:ITEM_AMMO_LOOSE_BULLET_LARGE_EXPLOSIVE] 20mm, explosive tipped
-	[NAME:loose large caliber explosive bullet:large caliber explosive bullets]
-	[CLASS:AMMO_HIGH_BULLET]
 	[SIZE:100]
 	[ATTACK:EDGE:10000:500:strike:strikes:NO_SUB:1000]
 		[ATTACK_PREPARE_AND_RECOVER:4:2]
