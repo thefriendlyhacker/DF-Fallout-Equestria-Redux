@@ -1,3 +1,14 @@
+0.41.7
+major changes
+
+minor tweaks
+- giant cave spiders now use tough chitin templates
+- made soap and tallow generic
+- did some cleaning up of template mats (removing unused leather/parchment and such)
+
+bug fixes
+
+
 0.41.6
 major changes
 - stable caste overhaul
