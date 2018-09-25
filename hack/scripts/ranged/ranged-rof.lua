@@ -33,8 +33,8 @@ Data does not persist across saves, which will mean that loading saves made in t
 Usage::
     -name str
         name of the command.  Not optional.
-    -clear name (not implemented atm)
-        unregisters a named command. If arg is used with no name, unregisters every command 
+    -clear name
+        unregisters a named command.
     -reset name (not implemented atm)
         clears all persistant data associated with the named command. If used with no name, clears all data
     -reqProjType subtype or [ subtype1 subtype2 ... ]
@@ -66,16 +66,11 @@ Usage::
 ]====]
 eventful = require 'plugins.eventful'
 utils = require 'utils'
-
---load and init persistant table elements
-local persist= require 'persist-table'
-
+rm= require 'ranged-module'
+persist= require 'persist-table'
 
 persist.GlobalTable.rangedRof=persist.GlobalTable.rangedRof or {}
 local rangedRof=persist.GlobalTable.rangedRof
-
---holds individual commands as anon functions, don't need to persist this so long as onLoad does it's thing
-rangedTriggers=rangedTriggers or {}
 
 --3 dimension sparse table for command/creature/firing weapon combos, 
 --holds the position of a unit in a command's delay set, on a per weapon basis
@@ -89,7 +84,6 @@ rangedRof.rangedResetTimes=rangedRof.rangedResetTimes or {}
 --if necessary, restart timers
 if not rangedResetTimes then
   rangedResetTimes=rangedRof.rangedResetTimes
-  --print('test1')
   for func,i in pairs(rangedResetTimes['_children']) do
     for unit,j in pairs(i['_children'] or {}) do
       for weapon,k in pairs(j['_children'] or {}) do
@@ -99,22 +93,11 @@ if not rangedResetTimes then
   end
 end
 
-
-
 eventful.enableEvent(eventful.eventType.UNLOAD,1)
 eventful.onUnload.rangedTriggerModule = function()
- rangedTriggers = {}
- rangedArrayPos = nil
- rangedResetTimes = nil
+  rangedArrayPos = nil
+  rangedResetTimes = nil
 end
-
-function eventfulFunc(projectile)
-  if projectile.distance_flown~=0 then return end
-  for funcName,func in pairs(rangedTriggers) do
-    if func(projectile,funcName) then return end
-  end
- end
-eventful.onProjItemCheckMovement.rangedTriggerModule = eventfulFunc
 
 function createTimeout(func,unit_id,weapon_id,ticks)
   local func=tostring(func)
@@ -142,8 +125,8 @@ function createTimeout(func,unit_id,weapon_id,ticks)
   dfhack.timeout(1,'ticks',timeoutFunc)
 end
 
-function getCommandFunc(reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset)
-  return function (proj,funcName)
+function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset)
+  return function (proj,tags)
     if not proj.firer then return false end
     local weapon=df.item.find(proj.bow_id)
     local fid=tostring(proj.firer.id)
@@ -239,7 +222,8 @@ local validArgs = utils.invert({
  'timeMult',
  'neverReset',
  'delayBase',
- 'delayMult'
+ 'delayMult',
+ 'priority'
 })
 
 if moduleMode then return end
@@ -252,12 +236,11 @@ if args.help then
 end
 
 if args.clear then
-  return --todo, code below won't work
-  --rangedTriggers[args.clear]=nil
-  --rangedArrayPos[args.clear]=nil
-  --if dfhack.timeoutActive(rangedDelayedReset[args.clear]) then
-   -- dfhack.timeoutActive(rangedDelayedReset[args.clear],nil)
-  --end
+  if args.name then
+    rm.deregisterMoveTrigger(args.name)
+  else
+    error("must have name to clear")
+  end
 end
 
 if args.reset then
@@ -273,6 +256,7 @@ local timeMult={0}
 local resetBase=0
 local resetMult=5
 local neverReset=false
+local priority=0
 
 if type(args.reqProjMat)=='string' then
   reqProjMats={args.reqProjMat}
@@ -359,4 +343,13 @@ end
 
 if not args.name then error("-name must be specified") end
 
-rangedTriggers[args.name]=getCommandFunc(reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset)
+if args.priority then
+  if tonumber(args.priority) then
+    priority=tonumber(args.priority)
+  else
+    error("priority must be a number")
+  end
+end
+
+
+rm.registerFiringTrigger(args.name, priority, getCommandFunc(args.name, reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset))
