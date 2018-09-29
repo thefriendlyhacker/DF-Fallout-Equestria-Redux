@@ -152,7 +152,7 @@ item_weapon_ranged
 	[ATTACK_PREPARE_AND_RECOVER:3:4]
 
 [ITEM_WEAPON:ITEM_WEAPON_SHOTGUN_RIPPER] Talons
-[NAME:shotgun rifle:shotgun rifles]
+[NAME:ripper shotgun:ripper shotguns]
 [SIZE:1200]
 [SKILL:SPEAR]
 [RANGED:CROSSBOW:AMMO_SHOTGUN]
