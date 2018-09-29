@@ -87,7 +87,7 @@ function callLoop(proj,trigType,tags,pos1,pos2)
      if priority < pos1 and ((not newPos) or (priority > newPos)) then newPos=priority end
     end
     pos1=newPos
-  until pos==nil
+  until pos1==nil
 end
 
 function onProjMovement(proj)

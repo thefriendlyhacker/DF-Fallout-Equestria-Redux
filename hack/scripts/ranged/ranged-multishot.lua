@@ -99,9 +99,7 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     local weapon=df.item.find(proj.bow_id)
     local fid=tostring(proj.firer.id)
     local wid=tostring(proj.bow_id)
-    --dismembered limbs require this
-    print("test2")
-    
+    --dismembered limbs require this    
     if not weapon and (next(reqWeaponMats) or next(reqWeaponTypes)) then return false end
 
     local projType,projSubtype,projMatType,projMatIndex=proj.item:getType(),proj.item:getSubtype(),proj.item.mat_type,proj.item.mat_index
@@ -119,7 +117,6 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     end
     if #reqProjMats>0 and not found then return false end
     
-    print("test3")
     found=false
     for _,mat in ipairs(reqWeaponMats) do
       if mat==dfhack.matinfo.decode(weapon):getToken() then found=true end
@@ -138,7 +135,6 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     end
     if #reqProjTypes>0 and not found then return false end
     
-    print("test4")
     found=false
     if #reqWeaponTypes>0 then
       for _,itype in ipairs(reqWeaponTypes) do
@@ -149,12 +145,10 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     end 
     if #reqWeaponTypes>0 and not found then return false end
     
-    print("test5")
     local newProjs={}
     local dist, maxDiv
     dist=math.sqrt((proj.origin_pos.x-proj.target_pos.x)^2+(proj.origin_pos.y-proj.target_pos.y)^2+(proj.origin_pos.z-proj.target_pos.z)^2)
     maxDiv=dist/20*divergence
-    print("test newProjNbr=",newProjNbr)
     --now the meaty bit - create new projectiles and delete the old one if necessary
     for i = 1, newProjNbr do
       local randAngle, randDist = math.random()*2*math.pi,math.random()*maxDiv
