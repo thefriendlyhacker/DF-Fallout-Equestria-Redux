@@ -32,17 +32,17 @@ Data does not persist across saves, which will mean that loading saves made in t
 
 Usage::
     -name str
-        name of the command.  Not optional.
+        name of the command.  Not optional.  Must be unique.
     -clear name
         unregisters a named command.
     -reset name (not implemented atm)
         clears all persistant data associated with the named command. If used with no name, clears all data
-    -reqProjType subtype or [ subtype1 subtype2 ... ]
-        only runs command if the projectile is one of the appropriate subtypes
-        example: ITEM_AMMO_BOLTS
-    -reqWeaponType subtype or [ subtype1 subtype2 ... ]
-        only runs command if the weapon is of one of the appropriate subtypes
-        example: ITEM_WEAPON_CROSSBOW
+    -reqProjType type or [ type1 type2 ... ]
+        only runs command if the projectile is one of the appropriate types
+        example: AMMO:ITEM_AMMO_BOLTS or GLOB:NONE
+    -reqWeaponType type or [ type1 type2 ... ]
+        only runs command if the weapon is of one of the appropriate types
+        example: WEAPON:ITEM_WEAPON_CROSSBOW
     -reqProjMat mat or [ mat1 mat2 ... ]
         only runs command if the projectile is one of the appropriate material(s)
         examples: INORGANIC:IRON, CREATURE_MAT:DWARF:BRAIN
@@ -50,19 +50,29 @@ Usage::
         only runs command if the weapon is one of the appropriate material(s) 
         same format as -reqProjMat 
     -timeBase nbr or [ nbr1 nbr2 ... ] (default 0)
+        flat modifer to the unit's firing time, see above for details
     -timeMult nbr or [ nbr1 nbr2 ... ](default 0)
-        timeBase and timeMult are used to set the time until the next attack
-        at least one must be set, and the number can be negative or non-integer
-        if they are both multi-element tables, they must be of equal length
-        -timeBase is a flat number of ticks
-        -timeMulti is a multiplier of the base firing delay of the unit
-        see above for details
+        multiplier to the unit's firing time, see above for details
     -neverReset
         never resets position in a loop
     -resetBase nbr (default 0)
     -resetMult nbr (default 5)
       determines how long until a unit's position in the command's firing delay set is reset 
       works similarly to timeBase and timeMult, see above for details
+    -priority nbr (default 0)
+      determines the order in which scripts are checked.  Order is undefined for scripts of equal priority
+    -processSecondaries
+      by default, ranged-rof ignores secondary projectiles 
+      i.e. it only runs once per multi-shot burst spawned by other ranged-module scripts.
+      this arg disables that behavior
+    -allowMultTrigs
+      by default, ranged-rof only runs once per projectile.  This arg disables that behavior
+    -tags str or [ str1 str2 ... ]
+      adds tags for the purpose of signaling other scripts using ranged-module
+    -reqTags str or [ str1 str2 ... ]
+      will only run when scripts with the associated tags have run on this projectile this tick of movement.
+    -forbiddenTags str or [ str1 str2 ... ]
+      will not run when scripts with the associated tags have run on this projectile this tick of movement.
 ]====]
 eventful = require 'plugins.eventful'
 utils = require 'utils'
@@ -125,15 +135,27 @@ function createTimeout(func,unit_id,weapon_id,ticks)
   dfhack.timeout(1,'ticks',timeoutFunc)
 end
 
-function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset)
+function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset, processSecondaries, allowMultTrigs, scriptTags, reqTags, forbiddenTags)
   return function (proj,tags)
     if not proj.firer then return false end
+    if tags._secondaryProj and not processSecondaries then return end
+    if tags._rof and allowMultTrigs then return end
+    if reqTags then
+      for tag,_ in reqTags do
+        if tags[tag]==nil then return end
+      end 
+    end
+    if forbiddenTags then
+      for tag,_ in forbiddenTags do
+        if tags[tag]~=nil then return end
+      end
+    end
     local weapon=df.item.find(proj.bow_id)
     local fid=tostring(proj.firer.id)
     local wid=tostring(proj.bow_id)
-    --dismembered limbs require this
+
     
-    if not weapon then return false end
+    if not weapon and (next(reqWeaponMats) or next(reqWeaponTypes)) then return false end
 
     --first off,checks to see if this conforms to the command requirements
 
@@ -150,20 +172,18 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     if #reqWeaponMats>0 and not found then return false end
     
     found=false
-    if #reqProjTypes>0 and proj.item:getSubtype() ~= -1 then
-      for _,itype in ipairs(reqProjTypes) do
-        if  dfhack.items.getSubtypeDef(proj.item:getType(),proj.item:getSubtype()).id == itype then
-          found=true 
-        end
+    for _,itype in ipairs(reqProjTypes) do
+      if dfhack.items.findType(itype)==proj.item:getType() and dfhack.items.findSubtype(itype)==proj.item:getSubtype() then
+        found=true 
       end
     end
     if #reqProjTypes>0 and not found then return false end
     
     
     found=false
-    if #reqWeaponTypes>0 and weapon:getSubtype() ~= -1 then
+    if #reqWeaponTypes>0 then
       for _,itype in ipairs(reqWeaponTypes) do
-        if  dfhack.items.getSubtypeDef(weapon:getType(),weapon:getSubtype()).id == itype then
+        if dfhack.items.findType(itype)==weapon:getType() and dfhack.items.findSubtype(itype)==weapon:getSubtype() then
           found=true 
         end
       end
@@ -203,7 +223,9 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
         rangedArrayPos[funcName][fid][wid]=tostring(1)
       end
     end
-    return true
+    returnTags={["_rof"]=true}
+    if scriptTags then for i,j in pairs(scriptTags) do returnTags[i]=j end end
+    return returnTags
     
   end
   
@@ -223,7 +245,13 @@ local validArgs = utils.invert({
  'neverReset',
  'delayBase',
  'delayMult',
- 'priority'
+ 'priority',
+ 'processSecondaries',
+ 'allowMultTrigs',
+ 'tags',
+ 'reqTags',
+ 'forbiddenTags'
+ 
 })
 
 if moduleMode then return end
@@ -257,6 +285,11 @@ local resetBase=0
 local resetMult=5
 local neverReset=false
 local priority=0
+local processSecondaries=false
+local allowMultTrigs=false
+local tags=nil
+local reqTags=nil
+local forbiddenTags=nil
 
 if type(args.reqProjMat)=='string' then
   reqProjMats={args.reqProjMat}
@@ -351,5 +384,24 @@ if args.priority then
   end
 end
 
+if args.processSecondaries then processSecondaries=true end
+if args.allowMultTrigs then allowMultTrigs=true end
+if args.tags and type(args.tags)=='table' then
+  tags=args.tags
+elseif args.tags then
+  tags={args.tags}
+end
 
-rm.registerFiringTrigger(args.name, priority, getCommandFunc(args.name, reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset))
+if args.reqTags and type(args.reqTags)=='table' then
+  reqTags=args.reqTags
+elseif args.reqTags then
+  reqTags={args.reqTags}
+end
+
+if args.forbiddenTags and type(args.forbiddenTags)=='table' then
+  forbiddenTags=args.forbiddenTags
+elseif args.forbiddenTags then
+  forbiddenTags={args.forbiddenTags}
+end
+
+rm.registerFiringTrigger(args.name, priority, getCommandFunc(args.name, reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset,processSecondaries,allowMultTrigs,tags,reqTags,forbiddenTags))

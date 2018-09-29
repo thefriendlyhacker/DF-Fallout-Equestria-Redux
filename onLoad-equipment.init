@@ -157,14 +157,14 @@ modtools/item-trigger -itemType ITEM_ARMOR_POWER_SCORPION -onUnequip [ Worn ] -c
 
 #auto-fire
 
-ranged/ranged-rof -name "revolver" -reqWeaponType [ ITEM_WEAPON_PISTOL_REVOLVER ITEM_WEAPON_PISTOL_LITTLE_MACINTOSH ] -timeBase [ -30 -30 -30 -30 -30 -80  ] -timeMult [ 1 1 1 1 1 3 ]
+ranged/ranged-rof -name "revolver rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_PISTOL_REVOLVER WEAPON:ITEM_WEAPON_PISTOL_LITTLE_MACINTOSH ] -timeBase [ -30 -30 -30 -30 -30 -80  ] -timeMult [ 1 1 1 1 1 3 ]
 #------------------
-ranged/ranged-rof -name "combat pistol" -reqWeaponType ITEM_WEAPON_PISTOL_COMBAT -timeBase [ -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -40 ] -timeMult [ 1 1 1 1 1 1 1 1 1 1 1 2 ]
+ranged/ranged-rof -name "combat pistol rof" -reqWeaponType WEAPON:ITEM_WEAPON_PISTOL_COMBAT -timeBase [ -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -40 ] -timeMult [ 1 1 1 1 1 1 1 1 1 1 1 2 ]
 #------------------
-ranged/ranged-rof -name "service rifles" -reqWeaponType [ ITEM_WEAPON_RIFLE_COMBAT ITEM_WEAPON_RIFLE_RIPPER ITEM_WEAPON_RIFLE_CHAIN ] -timeBase [ 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 -40 ] -timeMult [ 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 2 ]
+ranged/ranged-rof -name "service rifles rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_RIFLE_COMBAT WEAPON:ITEM_WEAPON_RIFLE_RIPPER WEAPON:ITEM_WEAPON_RIFLE_CHAIN ] -timeBase [ 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 -40 ] -timeMult [ 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 2 ]
 #------------------
-ranged/ranged-rof -name "smg" -reqWeaponType ITEM_WEAPON_SUB_MACHINE_GUN -timeBase [ 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -40 ] -timeMult [ 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 ]
+ranged/ranged-rof -name "smg rof" -reqWeaponType WEAPON:ITEM_WEAPON_SUB_MACHINE_GUN -timeBase [ 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -40 ] -timeMult [ 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 ]
 #------------------
-ranged/ranged-rof -name "automatic rifle" -reqWeaponType ITEM_WEAPON_RIFLE_AUTOMATIC -timeBase [ 4 4 4 -30 ] -timeMult [ 0 0 0 1 ]
+ranged/ranged-rof -name "automatic rifle rof" -reqWeaponType WEAPON:ITEM_WEAPON_RIFLE_AUTOMATIC -timeBase [ 4 4 4 -30 ] -timeMult [ 0 0 0 1 ]
 #------------------
-ranged/ranged-rof -name "storm glaive" -reqWeaponType ITEM_WEAPON_GLAIVE_STORM -timeBase [ 2 2 2 2 2 2 2 2 2 -30 ] -timeMult [ 0 0 0 0 0 0 0 0 0 1 ]
+ranged/ranged-rof -name "storm glaive rof" -reqWeaponType WEAPON:ITEM_WEAPON_GLAIVE_STORM -timeBase [ 2 2 2 2 2 2 2 2 2 -30 ] -timeMult [ 0 0 0 0 0 0 0 0 0 1 ]
