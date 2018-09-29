@@ -166,6 +166,7 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     if not dontReplaceProj then
       results.proj=table.remove(newProjs)
       proj.flags.to_be_deleted=true
+      proj.unk22=1 --making velocity something trivial, so proj does nothing if it is up close
     end
     return results
   end
@@ -319,7 +320,7 @@ end
 if args.dontReplaceProj then
   dontReplaceProj=true
 end
-print(args.priority)
+
 if args.priority then
   if tonumber(args.priority) then
     priority=tonumber(args.priority)

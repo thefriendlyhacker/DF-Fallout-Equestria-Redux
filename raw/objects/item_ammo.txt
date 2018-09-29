@@ -6,17 +6,10 @@ item_ammo
 	[NAME:pellet:pellets]
 	[CLASS:PELLET]
 	[SIZE:1]
-	[ATTACK:EDGE:10:100:strike:strikes:NO_SUB:1000]
+	[ATTACK:EDGE:4:100:strike:strikes:NO_SUB:1000]
 		[ATTACK_PREPARE_AND_RECOVER:4:2]
 
-[ITEM_AMMO:ITEM_AMMO_PELLET_ADV]
-	[NAME:pellet:pellets]
-	[CLASS:PELLET]
-	[SIZE:1]
-	[ATTACK:EDGE:1:100:strike:strikes:NO_SUB:1000]
-		[ATTACK_PREPARE_AND_RECOVER:4:2]
-
-[ITEM_AMMO:ITEM_AMMO_BULLET_SMALL] 7.65 Parabellum
+[ITEM_AMMO:ITEM_AMMO_BULLET_SMALL] .45 ACP
 	[NAME:small caliber bullet:small caliber rounds]
 	[CLASS:AMMO_LOW]
 	[SIZE:2]
@@ -59,7 +52,7 @@ item_ammo
 		[ATTACK_PREPARE_AND_RECOVER:4:2]
 
 [ITEM_AMMO:ITEM_AMMO_SHOTGUN_SHELL_BUCKSHOT]10 gauge, 8 pellets
-	[NAME:shotgun shell:shotgun shells]
+	[NAME:shotgun buckshot shell:shotgun buckshot shells]
 	[CLASS:AMMO_SHOTGUN]
 	[SIZE:9]
 	[ATTACK:EDGE:30:12000:strike:strikes:NO_SUB:1000]

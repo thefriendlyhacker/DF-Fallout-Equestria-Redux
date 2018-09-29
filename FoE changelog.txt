@@ -1,13 +1,20 @@
 0.41.7
 major changes
+-added combat/pump shotguns, buckshot and slugs
+-added canister rounds for AMRs - basically a high velocity buckshot round
+-changed ripper rifle to ripper shotgun, leaving the chain rifle as the combo medium caliber weapon
 
 minor tweaks
 - giant cave spiders now use tough chitin templates
 - made soap and tallow generic
 - did some cleaning up of template mats (removing unused leather/parchment and such)
+- tweaked pellets,since they are now pulling double duty as buckshot 
+- removed adv specific pellets
+- added force batons to a couple of salvage boxes
+- upped amount of pellets from MWT reaction
 
 bug fixes
-
+- fixed bad header on reaction_bowyer file (probably wasn't doing anything, but still)
 
 0.41.6
 major changes

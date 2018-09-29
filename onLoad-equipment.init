@@ -161,7 +161,7 @@ ranged/ranged-rof -name "revolver rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_PISTO
 #------------------
 ranged/ranged-rof -name "combat pistol rof" -reqWeaponType WEAPON:ITEM_WEAPON_PISTOL_COMBAT -timeBase [ -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -30 -40 ] -timeMult [ 1 1 1 1 1 1 1 1 1 1 1 2 ]
 #------------------
-ranged/ranged-rof -name "service rifles rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_RIFLE_COMBAT WEAPON:ITEM_WEAPON_RIFLE_RIPPER WEAPON:ITEM_WEAPON_RIFLE_CHAIN ] -timeBase [ 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 -40 ] -timeMult [ 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 2 ]
+ranged/ranged-rof -name "service rifles rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_RIFLE_COMBAT WEAPON:ITEM_WEAPON_RIFLE_CHAIN ] -timeBase [ 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 5 -30 5 -40 ] -timeMult [ 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 2 ]
 #------------------
 ranged/ranged-rof -name "smg rof" -reqWeaponType WEAPON:ITEM_WEAPON_SUB_MACHINE_GUN -timeBase [ 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -30 4 4 4 4 4 -40 ] -timeMult [ 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 ]
 #------------------
@@ -169,11 +169,11 @@ ranged/ranged-rof -name "automatic rifle rof" -reqWeaponType WEAPON:ITEM_WEAPON_
 #------------------
 ranged/ranged-rof -name "storm glaive rof" -reqWeaponType WEAPON:ITEM_WEAPON_GLAIVE_STORM -timeBase [ 2 2 2 2 2 2 2 2 2 -30 ] -timeMult [ 0 0 0 0 0 0 0 0 0 1 ]
 #------------------
-ranged/ranged-rof -name "auto shotgun rof" -reqWeaponType WEAPON:ITEM_WEAPON_SHOTGUN_COMBAT -timeBase [ -30 -30 -30 -30 -30 -30 -30 -40 ] -timeMult [ 1 1 1 1 1 1 1 2 ]
+ranged/ranged-rof -name "auto shotgun rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_SHOTGUN_COMBAT WEAPON:ITEM_WEAPON_SHOTGUN_RIPPER ] -reqProjType [ AMMO:ITEM_AMMO_SHOTGUN_SHELL_BUCKSHOT ] -timeBase [ -15 -15 -15 -15 -15 -15 -15 -40 ] -timeMult [ 0.5 0.5 0.5 0.5 0.5 0.5 0.5 2 ]
 
 
 #multishot
 
-ranged/ranged-multishot -name "buckshot multishot"  -reqProjType AMMO:ITEM_AMMO_SHOTGUN_SHELL_BUCKSHOT -newProjNbr 8 -newProjType AMMO:ITEM_AMMO_PELLET -divergence 3
+ranged/ranged-multishot -name "buckshot multishot"  -reqProjType AMMO:ITEM_AMMO_SHOTGUN_SHELL_BUCKSHOT -newProjNbr 8 -newProjType AMMO:ITEM_AMMO_PELLET -divergence 3 -priority " -1"
 #------------------
-ranged/ranged-multishot -name "amr canister multishot" -reqProjType AMMO:ITEM_AMMO_BULLET_LARGE_CANISTER -newProjNbr 12 -newProjType AMMO:ITEM_AMMO_PELLET -divergence 2
+ranged/ranged-multishot -name "amr canister multishot" -reqProjType AMMO:ITEM_AMMO_BULLET_LARGE_CANISTER -newProjNbr 12 -newProjType AMMO:ITEM_AMMO_PELLET -divergence 2 -priority " -1"

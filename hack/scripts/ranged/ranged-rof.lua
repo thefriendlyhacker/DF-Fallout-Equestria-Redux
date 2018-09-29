@@ -313,7 +313,7 @@ elseif type(args.reqWeaponType)=='table' then
 end
 
 
-if not args.timeBase and not args.timeMult then
+if (not args.timeBase) and (not args.timeMult) then
   error("-timeBase or -timeMult must be defined")
 end
 
