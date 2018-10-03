@@ -176,4 +176,4 @@ ranged/ranged-rof -name "auto shotgun rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_S
 
 ranged/ranged-multishot -name "buckshot multishot"  -reqProjType AMMO:ITEM_AMMO_SHOTGUN_SHELL_BUCKSHOT -newProjNbr 8 -newProjType AMMO:ITEM_AMMO_PELLET -divergence 3 -priority " -1"
 #------------------
-ranged/ranged-multishot -name "amr canister multishot" -reqProjType AMMO:ITEM_AMMO_BULLET_LARGE_CANISTER -newProjNbr 12 -newProjType AMMO:ITEM_AMMO_PELLET -divergence 2 -priority " -1"
+ranged/ranged-multishot -name "amr canister multishot" -reqProjType AMMO:ITEM_AMMO_BULLET_LARGE_CANISTER -newProjNbr 20 -newProjType AMMO:ITEM_AMMO_PELLET -divergence 4 -priority " -1"
