@@ -1,8 +1,8 @@
 To install Fallout Equestria Redux:
-1. Download/unzip a fresh installation of Dwarf Fortress 44.10
+1. Download/unzip a fresh installation of Dwarf Fortress 44.12
 2. Install dfhack
 3. Install your graphics pack.  Fallout Equestria's sprites are designed to match the style of phoebus, but it is ultimately up to you.  If you do choose a different pack, then you will need to change init.txt after you copy Fallout Equestria Redux across (see below).
-4. Delete raw/objects
+4. Delete raw/objects from your fresh DF installation
 5. Copy the contents of the DF FoE Redux folder into your dwarf fortress installation, with the exception of the TWBT folder.  When asked, merge and replace everything.
 6. Run the Dwarf Fortress executable and enjoy.
 
@@ -19,4 +19,4 @@ Because TWBT doesn't include an install guide, and is generally included with ot
 1. copy the twbt.plug.dll file inside the dfhack version folder into hack/plugins
 2. copy all .pngs except the spacefox files into data/art
 3. copy colors.lua into hack/scripts
-4. copy overrides.txt into data/init (your graphics pack will probably have a replacement for this)
+4. copy overrides.txt into data/init (your graphics pack will probably overwrite this)
