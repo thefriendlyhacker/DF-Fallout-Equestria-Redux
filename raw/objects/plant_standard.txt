@@ -463,7 +463,6 @@ plant_standard
 
 corn was producing unusable item, so here are some raws ripped of cave wheat and mangled until they resemble corn
 [PLANT:CORN]
-	[FREQUENCY:5]
 	[NAME:corn][NAME_PLURAL:corn][ADJ:corn]
 	[USE_MATERIAL_TEMPLATE:STRUCTURAL:STRUCTURAL_PLANT_TEMPLATE]
 		[MATERIAL_VALUE:2]
@@ -521,7 +520,7 @@ corn was producing unusable item, so here are some raws ripped of cave wheat and
 	[BIOME:ANY_TEMPERATE][BIOME:ANY_TROPICAL]
 	[SPRING][SUMMER][AUTUMN][WINTER]
 	[DRY]
-	[UNDERGROUND_DEPTH:1:2]
+	[FREQUENCY:5]
 	[SHRUB_TILE:24][DEAD_SHRUB_TILE:24]
 	[PICKED_COLOR:6:0:0]
 	[SHRUB_COLOR:2:0:0][DEAD_SHRUB_COLOR:0:0:1]
