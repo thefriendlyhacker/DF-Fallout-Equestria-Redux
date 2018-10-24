@@ -2,7 +2,11 @@ local _ENV = mkmodule("ranged-module")
 eventful = require 'plugins.eventful'
 utils = require 'utils'
 
-triggers=triggers or {["move"]={},["impact"]={}}
+triggers=triggers or {["move"]={},["impact"]={},["firing"]={}}
+pos1List=pos1List or {["move"]={},["impact"]={},["firing"]={}}
+pos2List=pos2List or {["move"]={},["impact"]={},["firing"]={}}
+tagsList=tagsList or {["move"]={},["impact"]={},["firing"]={}}
+
 
 --adding or removing triggers while running a trigguer is undefined.
 
@@ -12,9 +16,9 @@ function registerMoveTrigger(name,priority, trigger)
 end
 
 --wrapper for registerTrigger, type of move trigger
+
 function registerFiringTrigger(name,priority,trigger)
-  local wrapFunc=function(proj,tags) if proj.distance_flown~=0 then return else trigger(proj,tags) end end
-  registerMoveTrigger(name,priority,wrapFunc)
+  registerTrigger(name,priority,trigger,"firing")
 end
 
 function registerTrigger(name,priority,trigger,trigType)
@@ -47,7 +51,27 @@ end
 
 
 --supports recursion, called with tags,pos1,pos2=nil initially
-function callLoop(proj,trigType,tags,pos1,pos2)
+function callLoop(proj,trigType)
+  local tags,pos1,pos2
+  --check to see if this proj is registered as a secondary Projectile, and initialize as necessary
+  if pos1List[trigType][proj.id] then
+    tags=tagsList[trigType][proj.id]
+    pos1=pos1List[trigType][proj.id]
+    pos2=pos2List[trigType][proj.id]
+    --the inner loop (individual commands) skips to the next command already, so that is fine
+    --however, the outer loop (commands by priority) does not, so have to skip along if necessary
+    local nextCommand,nextPos2
+    nextPos2,nextCommand=next(triggers[trigType][pos1],pos2)
+    if nextPos2==nil then
+      pos2=nil
+      local newPos=nil
+      for priority,_ in pairs(triggers[trigType]) do
+      if priority < pos1 and ((not newPos) or (priority > newPos)) then newPos=priority end
+      end
+      if not newPos then return end
+    end
+    pos1=newPos
+  end
   if next(triggers[trigType])==nil then 
     return 
   end
@@ -67,18 +91,20 @@ function callLoop(proj,trigType,tags,pos1,pos2)
       if results then
         if results.terminate then return end
         if results.secondaryProjectiles and results.processSecondaries then
-          for i,j in pairs(results.secondaryProjectiles) do
+          for _,secProj in pairs(results.secondaryProjectiles) do
             local secTags={}
             secTags._secondary=true
             for k,l in pairs(tags) do secTags[k]=l end
             if results.secondaryTags then
               for k,l in pairs(results.secondaryTags) do secTags[k]=l end
             end
-            callLoop(j,trigType,secTags,pos1,pos2)
+            pos1List[trigType][secProj.id]=pos1
+            pos2List[trigType][secProj.id]=pos2
+            tagsList[trigType][secProj.id]=secTags
           end
         end
         if results.proj then proj=results.proj end
-        if results.tags then for i,j in results.tags do tags[i]=j end end
+        if results.tags then for i,j in pairs(results.tags) do tags[i]=j end end
       end
       pos2,command=next(commands,pos2)
     until pos2==nil
@@ -90,6 +116,27 @@ function callLoop(proj,trigType,tags,pos1,pos2)
   until pos1==nil
 end
 
+function onTickFiringCheck()
+  firingTimeout=dfhack.timeout(1,'ticks',onTickFiringCheck)
+  pos1List["firing"]={}
+  pos2List["firing"]={}
+  tagsList["firing"]={}
+  local nextProj=df.global.world.proj_list.next
+  if nextProj then
+    repeat
+      if nextProj.item.distance_flown==0 then
+        callLoop(nextProj.item,"firing")
+      end
+      nextProj=nextProj.next
+    until not nextProj
+  end
+end
+
+firingTimeout=firingTimeout or nil
+if not firingTimeout then
+  firingTimeout=dfhack.timeout(1,'ticks',onTickFiringCheck)
+end
+
 function onProjMovement(proj)
   callLoop(proj,"move",{})
 end
@@ -97,7 +144,8 @@ end
 eventful.onProjItemCheckMovement.rangedModule = onProjMovement
 eventful.enableEvent(eventful.eventType.UNLOAD,1)
 eventful.onUnload.rangedTriggerModule = function()
- triggers = {}
+  triggers = nil
+  firingTimeout=nil
 end
 --takes a template projectile, item details and creating unit, and creates an initialised projectile
 function createProjectile(proj,itemType,itemSubtype,matType,matIndex,creator)
