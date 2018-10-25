@@ -141,12 +141,12 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     if tags._secondaryProj and not processSecondaries then return end
     if tags._rof and allowMultTrigs then return end
     if reqTags then
-      for tag,_ in reqTags do
+      for tag,_ in pairs(reqTags) do
         if tags[tag]==nil then return end
       end 
     end
     if forbiddenTags then
-      for tag,_ in forbiddenTags do
+      for tag,_ in pairs(forbiddenTags) do
         if tags[tag]~=nil then return end
       end
     end
@@ -386,22 +386,34 @@ end
 
 if args.processSecondaries then processSecondaries=true end
 if args.allowMultTrigs then allowMultTrigs=true end
+
 if args.tags and type(args.tags)=='table' then
-  tags=args.tags
+  for _,tag in pairs(args.tags) do
+    tags[tag]=true
+  end
 elseif args.tags then
-  tags={args.tags}
+  tags[args.tags]=true
 end
 
 if args.reqTags and type(args.reqTags)=='table' then
-  reqTags=args.reqTags
+  reqTags={}
+  for _,tag in pairs(args.reqTags) do
+    reqTags[tag]=true
+  end
 elseif args.reqTags then
-  reqTags={args.reqTags}
+  reqTags={}
+  reqTags[args.reqTags]=true
 end
 
 if args.forbiddenTags and type(args.forbiddenTags)=='table' then
-  forbiddenTags=args.forbiddenTags
+  forbiddenTags={}
+  for _,tag in pairs(args.forbiddenTags) do
+    forbiddenTags[tag]=true
+  end
 elseif args.forbiddenTags then
-  forbiddenTags={args.forbiddenTags}
+  forbiddenTags={}
+  forbiddenTags[args.forbiddenTags]=true
 end
+
 
 rm.registerFiringTrigger(args.name, priority, getCommandFunc(args.name, reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset,processSecondaries,allowMultTrigs,tags,reqTags,forbiddenTags))

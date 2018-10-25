@@ -52,12 +52,17 @@ end
 
 --supports recursion, called with tags,pos1,pos2=nil initially
 function callLoop(proj,trigType)
-  local tags,pos1,pos2
+  local tags,pos1,pos2={},nil,nil
   --check to see if this proj is registered as a secondary Projectile, and initialize as necessary
   if pos1List[trigType][proj.id] then
     tags=tagsList[trigType][proj.id]
     pos1=pos1List[trigType][proj.id]
     pos2=pos2List[trigType][proj.id]
+    --don't need these any more
+    tagsList[trigType][proj.id]=nil
+    pos1List[trigType][proj.id]=nil
+    pos2List[trigType][proj.id]=nil
+    print(tags,pos1,pos2)
     --the inner loop (individual commands) skips to the next command already, so that is fine
     --however, the outer loop (commands by priority) does not, so have to skip along if necessary
     local nextCommand,nextPos2
@@ -72,6 +77,7 @@ function callLoop(proj,trigType)
     end
     pos1=newPos
   end
+  
   if next(triggers[trigType])==nil then 
     return 
   end
@@ -81,7 +87,6 @@ function callLoop(proj,trigType)
       if priority>pos1 then pos1=priority end
     end
   end
-  tags=tags or {}
   repeat
     commands=triggers[trigType][pos1]
     local command
@@ -90,11 +95,14 @@ function callLoop(proj,trigType)
       local results=command(proj,tags)
       if results then
         if results.terminate then return end
-        if results.secondaryProjectiles and results.processSecondaries then
+        if results.secondaryProjectiles then
           for _,secProj in pairs(results.secondaryProjectiles) do
             local secTags={}
             secTags._secondary=true
             for k,l in pairs(tags) do secTags[k]=l end
+            if results.tags then 
+              for k,l in pairs(results.tags) do secTags[k]=l end
+            end
             if results.secondaryTags then
               for k,l in pairs(results.secondaryTags) do secTags[k]=l end
             end
@@ -103,7 +111,6 @@ function callLoop(proj,trigType)
             tagsList[trigType][secProj.id]=secTags
           end
         end
-        if results.proj then proj=results.proj end
         if results.tags then for i,j in pairs(results.tags) do tags[i]=j end end
       end
       pos2,command=next(commands,pos2)
@@ -151,7 +158,13 @@ end
 function createProjectile(proj,itemType,itemSubtype,matType,matIndex,creator)
   local newProjItem = df.item.find(dfhack.items.createItem(itemType, itemSubtype, matType, matIndex, creator))
   newProjItem.flags.forbid = true
-  newProjItem.quality = proj.item.quality
+  if not newProjItem.quality==nil then
+    if proj.item.quality==nil then
+      newProjItem.quality=0
+    else
+      newProjItem.quality=proj.item.quality
+    end
+  end
   local newProj = dfhack.items.makeProjectile(newProjItem)
   --link, don't need to touch
   --id, don't need to touch

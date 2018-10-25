@@ -35,7 +35,7 @@ Usage::
         clears all persistant data associated with the named command. If used with no name, clears all data
     -reqProjType type or [ type1 type2 ... ]
         only runs command if the projectile is one of the appropriate types
-        example: AMMO:ITEM_AMMO_BOLTS,
+        example: AMMO:ITEM_AMMO_BOLTS or GLOB:NONE
     -reqProjType type or [ type1 type2 ... ]
         only runs command if the projectile is one of the appropriate subtypes
         example: AMMO:ITEM_AMMO_BOLTS
@@ -83,14 +83,14 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
   return function (proj,tags)
     if not proj.firer then return false end
     if tags._secondaryProj and not processSecondaries then return end
-    if tags._rof and allowMultTrigs then return end
+    if tags._multishot and allowMultTrigs then return end
     if reqTags then
-      for tag,_ in reqTags do
+      for tag,_ in pairs(reqTags) do
         if tags[tag]==nil then return end
       end 
     end
     if forbiddenTags then
-      for tag,_ in forbiddenTags do
+      for tag,_ in pairs(forbiddenTags) do
         if tags[tag]~=nil then return end
       end
     end
@@ -109,7 +109,7 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     for i,mat in ipairs(reqProjMats) do
       if mat==dfhack.matinfo.decode(proj.item):getToken() then 
         found=true
-        if #newProjTypes>0 then
+        if #newProjMats>0 then
           projMatType=dfhack.matinfo.find(newProjMats[i])['type']
           projMatIndex=dfhack.matinfo.find(newProjMats[i])['index']
         end
@@ -160,8 +160,7 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
       table.insert(newProjs,newProj)
     end
     local results={}
-    results.secondaryProjectiles=newProj
-    results.processSecondaries=true
+    results.secondaryProjectiles=newProjs
     results.tags=scriptTags
     if not dontReplaceProj then
       results.proj=table.remove(newProjs)
@@ -331,22 +330,33 @@ end
 
 if args.processSecondaries then processSecondaries=true end
 if args.allowMultTrigs then allowMultTrigs=true end
+
 if args.tags and type(args.tags)=='table' then
-  tags=args.tags
+  for _,tag in pairs(args.tags) do
+    tags[tag]=true
+  end
 elseif args.tags then
-  tags={args.tags}
+  tags[args.tags]=true
 end
 
 if args.reqTags and type(args.reqTags)=='table' then
-  reqTags=args.reqTags
+  reqTags={}
+  for _,tag in pairs(args.reqTags) do
+    reqTags[tag]=true
+  end
 elseif args.reqTags then
-  reqTags={args.reqTags}
+  reqTags={}
+  reqTags[args.reqTags]=true
 end
 
 if args.forbiddenTags and type(args.forbiddenTags)=='table' then
-  forbiddenTags=args.forbiddenTags
+  forbiddenTags={}
+  for _,tag in pairs(args.forbiddenTags) do
+    forbiddenTags[tag]=true
+  end
 elseif args.forbiddenTags then
-  forbiddenTags={args.forbiddenTags}
+  forbiddenTags={}
+  forbiddenTags[args.forbiddenTags]=true
 end
 
 rm.registerFiringTrigger(args.name, priority, getCommandFunc(args.name, reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, newProjMats, newProjTypes, newProjNbr, divergence, dontReplaceProj,processSecondaries,allowMultTrigs,tags,reqTags,forbiddenTags))
