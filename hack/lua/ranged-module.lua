@@ -52,7 +52,12 @@ end
 
 --supports recursion, called with tags,pos1,pos2=nil initially
 function callLoop(proj,trigType)
-  local tags,pos1,pos2={},nil,nil
+  --if there aren't any triggers, just return
+  if next(triggers[trigType])==nil then 
+    return 
+  end
+  
+  local tags,pos1,pos2={},nil,nil--pos1 is current priority, pos2 is position within a particular priority table
   --check to see if this proj is registered as a secondary Projectile, and initialize as necessary
   if pos1List[trigType][proj.id] then
     tags=tagsList[trigType][proj.id]
@@ -61,37 +66,38 @@ function callLoop(proj,trigType)
     --don't need these any more
     tagsList[trigType][proj.id]=nil
     pos1List[trigType][proj.id]=nil
-    pos2List[trigType][proj.id]=nil
-    print(tags,pos1,pos2)
-    --the inner loop (individual commands) skips to the next command already, so that is fine
-    --however, the outer loop (commands by priority) does not, so have to skip along if necessary
-    local nextCommand,nextPos2
-    nextPos2,nextCommand=next(triggers[trigType][pos1],pos2)
-    if nextPos2==nil then
-      pos2=nil
-      local newPos=nil
-      for priority,_ in pairs(triggers[trigType]) do
-      if priority < pos1 and ((not newPos) or (priority > newPos)) then newPos=priority end
-      end
-      if not newPos then return end
-    end
-    pos1=newPos
+    pos2List[trigType][proj.id]=nil 
   end
+  --main callback loop
+  --for clarity, the loop goes like this
+    --first iteration, find highest priority (pos1), find first command in that priority table (pos2), process that command
+    --next iteration, same priority, find next command in priority table, process command
+    --...eventually, find last command in priority, process command
+    --find no more commands for that priority, position in priority table (pos2) is nil so do nothing that loop  
+    --position in priority table is nil so find next highest priority, find first command, prosess result
+    --...eventually, cannot find any more commands in lowest priority, position in priority table is nil, do nothing that loop
+    --search for more priorities, don't find any, don't look for or process any commands, meet terminate condition for loop, leave loop
   
-  if next(triggers[trigType])==nil then 
-    return 
-  end
-  if not pos1 then
-    pos1=next(triggers[trigType])
-    for priority,_ in pairs(triggers[trigType]) do
-      if priority>pos1 then pos1=priority end
-    end
-  end
+  local command,commands
   repeat
-    commands=triggers[trigType][pos1]
-    local command
-    pos2,command=next(commands,pos2)
-    repeat
+    --if pos2==nil then the loop is either starting or has just finished a priority, and we need to find the next one
+    if pos2==nil then
+      local nextPos1=nil
+      for priority,nextCommands in pairs(triggers[trigType]) do
+        --pick the highest priority (with table of funcs) that is lower than the current priority position (if any)
+        if (nextPos1==nil or priority>nextPos1) and (not pos1 or priority<pos1) then
+          nextPos1=priority
+          commands=nextCommands
+        end
+      end
+      pos1=nextPos1
+    end
+    --now go to the next position in the priority table, if there is a next priority table
+    if not (pos1==nil) then
+      pos2,command=next(triggers[trigType][pos1],pos2)
+    end
+    --run the command
+    if not (pos2==nil) then
       local results=command(proj,tags)
       if results then
         if results.terminate then return end
@@ -111,15 +117,9 @@ function callLoop(proj,trigType)
             tagsList[trigType][secProj.id]=secTags
           end
         end
-        if results.tags then for i,j in pairs(results.tags) do tags[i]=j end end
+      if results.tags then for i,j in pairs(results.tags) do tags[i]=j end end
       end
-      pos2,command=next(commands,pos2)
-    until pos2==nil
-    local newPos=nil
-    for priority,_ in pairs(triggers[trigType]) do
-     if priority < pos1 and ((not newPos) or (priority > newPos)) then newPos=priority end
     end
-    pos1=newPos
   until pos1==nil
 end
 
