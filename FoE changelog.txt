@@ -11,7 +11,7 @@ major changes
 minor tweaks
 - giant cave spiders now use tough chitin templates
 - made soap and tallow generic
-- did some cleaning up of template mats (removing unused leather/parchment and such)
+- did some cleaning up of template mats (removing unused leather/parchment and such). Will do more later.
 - tweaked pellets,since they are now pulling double duty as buckshot 
 - removed adv specific pellets
 - added force batons to a couple of salvage boxes
@@ -20,9 +20,10 @@ minor tweaks
 - strand extraction removed, adamantine cloth created by converting bars to thread at forge.
 - hellhounds now have internal graspers in their hands.  This allows their hands to be protected by combat armor (since stables can't make gloves)
 - made some changes to griffon/stable pony caste skills, to go along with weapon skill changes
-- the hunting rifle now uses crossbow(gunner), to go along with planned bow=heavy weapons
+- the hunting rifle now uses crossbow(gunner), to go along with planned bow=heavy weapons, blowgun=energy/special weapons
 - increased the ammo cost of the minigun battle saddle
 - spear ponies now use the pike pony sprite (because I like how it looks better)
+- hacksaw is now not a serious weapon.  On the bright side, it should be cheaper to embark with if you just want something to cut trees with.
 
 bug fixes
 - fixed bad header on reaction_bowyer file (probably wasn't doing anything, but still)

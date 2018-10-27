@@ -25,7 +25,7 @@ local utils = require 'utils'
 local repeatUtil = require 'repeat-util'
 local syndromeUtil = require 'syndrome-util'
 
-ffidTickRate=1 -- on low tickrates this murders fps
+ffidTickRate=20 -- on low tickrates this murders fps
 ffidActive = ffidActive or false
 resetPolicy=syndromeUtil.ResetPolicy["ResetDuration"]
 
