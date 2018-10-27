@@ -5,6 +5,8 @@ major changes
 - Buckshot and canister rounds have inherently higher accuracy (blasts of pellets are more likely to connect than a single bullet)
 - changed ripper rifle to ripper shotgun, leaving the chain rifle as the combo medium caliber weapon
 - minigun now shoots proper medium caliber bullets, firing about 90 rounds per burst with a long cooldown
+- added the axe and chain axe
+- consolodated melee skills.  All maces are now hammers, all daggers(except the knife) are now swords, all pikes are spears
 
 minor tweaks
 - giant cave spiders now use tough chitin templates
@@ -17,7 +19,10 @@ minor tweaks
 - added orewood processing to prism smelter
 - strand extraction removed, adamantine cloth created by converting bars to thread at forge.
 - hellhounds now have internal graspers in their hands.  This allows their hands to be protected by combat armor (since stables can't make gloves)
-
+- made some changes to griffon/stable pony caste skills, to go along with weapon skill changes
+- the hunting rifle now uses crossbow(gunner), to go along with planned bow=heavy weapons
+- increased the ammo cost of the minigun battle saddle
+- spear ponies now use the pike pony sprite (because I like how it looks better)
 
 bug fixes
 - fixed bad header on reaction_bowyer file (probably wasn't doing anything, but still)
@@ -27,6 +32,8 @@ bug fixes
 - fixed bug in corn.  It should *hopefully* show up now.
 - bug fixed in plant burning, so it should now be usable
 - marauder ponies now have graphics
+- changed how ffid works, so it hopefully shouldn't result in diagnosis spam any more
+- removed some duplicate pony graphics raws
 
 0.41.6
 major changes

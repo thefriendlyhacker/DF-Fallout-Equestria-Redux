@@ -169,7 +169,7 @@ ranged/ranged-rof -name "automatic rifle rof" -reqWeaponType WEAPON:ITEM_WEAPON_
 #------------------
 ranged/ranged-rof -name "storm glaive rof" -reqWeaponType WEAPON:ITEM_WEAPON_GLAIVE_STORM -timeBase [ 2 2 2 2 2 2 2 2 2 -30 ] -timeMult [ 0 0 0 0 0 0 0 0 0 1 ]
 #------------------
-ranged/ranged-rof -name "auto shotgun rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_SHOTGUN_COMBAT WEAPON:ITEM_WEAPON_SHOTGUN_RIPPER ] -reqProjType [ AMMO:ITEM_AMMO_SHOTGUN_SHELL_BUCKSHOT ] -timeBase [ -15 -15 -15 -15 -15 -15 -15 -40 ] -timeMult [ 0.5 0.5 0.5 0.5 0.5 0.5 0.5 2 ]
+ranged/ranged-rof -name "auto shotgun rof" -reqWeaponType [ WEAPON:ITEM_WEAPON_SHOTGUN_COMBAT WEAPON:ITEM_WEAPON_SHOTGUN_RIPPER ] -reqProjType [ AMMO:ITEM_AMMO_SHOTGUN_SHELL_BUCKSHOT ] -timeBase [ -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -80 ] -timeMult [ 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 3 ]
 
 
 #multishot
