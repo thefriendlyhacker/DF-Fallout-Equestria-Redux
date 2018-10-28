@@ -103,7 +103,6 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
       end
     end
     if #reqProjMats>0 and not found then return false end
-    
     found=false
     for _,mat in ipairs(reqWeaponMats) do
       if mat==dfhack.matinfo.decode(weapon):getToken() then found=true end
@@ -155,7 +154,6 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     end
     if maxVelocity and newVel>maxVelocity then newVel=maxVelocity end
     if maxVelocity or velocity then proj.unk22=math.floor(newVel) end
-    
     local results={}
     results.tags=scriptTags
     return results

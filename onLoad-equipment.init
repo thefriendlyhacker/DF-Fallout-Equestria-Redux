@@ -186,3 +186,17 @@ ranged/ranged-properties -name "multishot cone accuracy booster" -reqTags "multi
 ranged/ranged-multishot -name "minigun multishot" -reqProjType GLOB:NONE -reqProjMat INORGANIC:MEDIUM_CALIBER_MINIGUN -newProjType AMMO:ITEM_AMMO_BULLET_MEDIUM -newProjMat INORGANIC:STEEL -tags "minigun projectile" -divergence 3 -priority 2  -newProjNbr 6 
 
 ranged/ranged-properties -name "minigun velocity adjustment" -reqTags "minigun projectile" -force 40000 -maxVelocity 3400 -priority 1 -reqProjType AMMO:ITEM_AMMO_BULLET_MEDIUM
+
+
+#medium caliber globs
+ranged/ranged-multishot -name "medium caliber substitution" -reqProjType GLOB:NONE -reqProjMat  INORGANIC:MEDIUM_CALIBER -newProjMat INORGANIC:STEEL  -newProjType AMMO:ITEM_AMMO_BULLET_MEDIUM -priority 1 -newProjNbr 1 -tags "glob bullet medium"
+ranged/ranged-properties -name "glob medium caliber velocity boost" -reqTags "glob bullet medium" -reqProjType AMMO:ITEM_AMMO_BULLET_MEDIUM -velocity 2800 -priority 0
+
+#small caliber globs
+ranged/ranged-multishot -name "small caliber substitution" -reqProjType GLOB:NONE -reqProjMat  INORGANIC:SMALL_CALIBER  -newProjMat INORGANIC:STEEL -newProjType AMMO:ITEM_AMMO_BULLET_SMALL -priority 1 -newProjNbr 1 -tags "glob bullet small"
+ranged/ranged-properties -name "glob small caliber velocity boost" -reqTags "glob bullet small" -reqProjType AMMO:ITEM_AMMO_BULLET_SMALL -velocity 1100 -priority 0
+
+
+#energy bolts
+ranged/ranged-multishot -name "energy bolt substitution" -reqProjType GLOB:NONE -reqProjMat [ INORGANIC:LASERBOLT INORGANIC:LASERBOLT2 INORGANIC:PLASMABOLT ] -newProjType AMMO:ITEM_AMMO_ENERGY_BOLT -priority 1 -newProjNbr 1 -tags "glob energy bolt"
+ranged/ranged-properties -name "glob energy bolt velocity boost" -reqTags "glob energy bolt" -reqProjType AMMO:ITEM_AMMO_ENERGY_BOLT -velocity 5000 -priority 0

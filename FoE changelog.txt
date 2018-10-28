@@ -5,8 +5,10 @@ major changes
 - Buckshot and canister rounds have inherently higher accuracy (blasts of pellets are more likely to connect than a single bullet)
 - changed ripper rifle to ripper shotgun, leaving the chain rifle as the combo medium caliber weapon
 - minigun now shoots proper medium caliber bullets, firing about 90 rounds per burst with a long cooldown
+- laser and plasma weapons now fire proper cutting energy blasts. Lasers have higher rof but suck against armor, plasma go through steel but have slow rof
+- other interaction based bullet weapons now shoot actual bullets
 - added the axe and chain axe
-- consolodated melee skills.  All maces are now hammers, all daggers(except the knife) are now swords, all pikes are spears
+- consolidated melee skills.  All maces are now hammers, all daggers(except the knife) are now swords, all pikes are spears
 
 minor tweaks
 - giant cave spiders now use tough chitin templates

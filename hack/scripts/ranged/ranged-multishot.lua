@@ -163,7 +163,7 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     results.secondaryProjectiles=newProjs
     results.tags=scriptTags
     if not dontReplaceProj then
-      results.proj=table.remove(newProjs)
+      --results.proj=table.remove(newProjs)  ranged module doesn't currently handle swapping primary projectiles properly, so *skip*
       proj.flags.to_be_deleted=true
       proj.unk22=1 --making velocity something trivial, so proj does nothing if it is up close
     end

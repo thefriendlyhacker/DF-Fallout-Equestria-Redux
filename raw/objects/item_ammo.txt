@@ -64,3 +64,37 @@ item_ammo
 	[SIZE:150]
 	[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
 		[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+-----------Energy Ammo-----------------
+		
+[ITEM_AMMO:ITEM_AMMO_E_CELL]
+	[NAME:energy cell:energy cells]
+	[CLASS:AMMO_E_CELL]
+	[SIZE:1]
+	[ATTACK:EDGE:500:20:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_AMMO:ITEM_AMMO_MICRO_SPARK_CORE]
+	[NAME:micro-spark core:micro-spark cores]
+	[CLASS:AMMO_MICRO_SPARK_CORE]
+	[SIZE:1]
+	[ATTACK:EDGE:500:20:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_AMMO:ITEM_AMMO_ION_CHARGE_PACK]
+	[NAME:ion charge pack:ion charge packs]
+	[CLASS:AMMO_ION_CHARGE_PACK]
+	[SIZE:1]
+	[ATTACK:EDGE:500:20:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+
+-----------Energy Projectiles--------------
+
+		
+[ITEM_AMMO:ITEM_AMMO_ENERGY_BOLT]
+	[NAME:bolt:bolts]
+	[CLASS:LASER_BOLT]
+	[SIZE:1]
+	[ATTACK:EDGE:500:500:stab:stabs:NO_SUB:1000]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]

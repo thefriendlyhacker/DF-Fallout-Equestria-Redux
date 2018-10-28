@@ -19,6 +19,10 @@ end
 
 function registerFiringTrigger(name,priority,trigger)
   registerTrigger(name,priority,trigger,"firing")
+  --I can't be bothered figuring out a better way of doing this
+  if not firingTimeout then
+    firingTimeout=dfhack.timeout(1,'ticks',onTickFiringCheck)
+  end
 end
 
 function registerTrigger(name,priority,trigger,trigType)
@@ -166,6 +170,21 @@ function createProjectile(proj,itemType,itemSubtype,matType,matIndex,creator)
     end
   end
   local newProj = dfhack.items.makeProjectile(newProjItem)
+  
+  --if newProj is created midair then dfhack "helpfully" makes it a falling projectile
+  --this prevents the above call from creating a projectile, so we need to "borrow" the one dfhack made
+  if newProj==nil then
+    local projLink=df.global.world.proj_list
+    repeat
+      projLink=projLink.next
+      if projLink~=nil then
+        if projLink.item.item==newProjItem then
+          newProj=projLink.item
+        end
+      else error("error - cannot create projectile from new item for unknown reason") end
+    until newProj
+  end
+  
   --link, don't need to touch
   --id, don't need to touch
   newProj.firer=proj.firer
