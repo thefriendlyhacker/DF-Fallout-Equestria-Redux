@@ -277,6 +277,12 @@ item_misc
 [ITEM_TOY:ITEM_NOTE_CYBERNETICS_IMPLANT_NERVOUS]
 [NAME:cybernetic lung design note:redundant nervous system design notes]
 
+[ITEM_TOY:ITEM_NOTE_PULSE_ENERGY_WEAPON]
+[NAME:pulse energy weapon design note:pulse energy weapon design notes]
+
+[ITEM_TOY:ITEM_NOTE_NOVA_ENERGY_WEAPON]
+[NAME:nova energy weapon design note:nova energy weapon design notes]
+
 ==========Intel Notes==========
 
 [ITEM_TOY:ITEM_NOTE_SLAVER_WEAPONS_CACHE_PONYVILLE]

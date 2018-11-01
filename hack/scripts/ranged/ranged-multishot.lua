@@ -82,8 +82,7 @@ rm= require 'ranged-module'
 function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, newProjMats, newProjTypes, newProjNbr, divergence, dontReplaceProj, processSecondaries, allowMultTrigs, scriptTags, reqTags, forbiddenTags)
   return function (proj,tags)
     if not proj.firer then return false end
-    if tags._secondaryProj and not processSecondaries then return end
-    if tags._multishot and allowMultTrigs then return end
+    if tags._secondary and not processSecondaries then return end
     if reqTags then
       for tag,_ in pairs(reqTags) do
         if tags[tag]==nil then return end
@@ -94,7 +93,7 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
         if tags[tag]~=nil then return end
       end
     end
-    if not allowMultTrigs and tags._multishot then return end
+    if (not allowMultTrigs) and tags._multishot then return end
     scriptTags._multishot=true
     local weapon=df.item.find(proj.bow_id)
     local fid=tostring(proj.firer.id)
@@ -116,6 +115,11 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
       end
     end
     if #reqProjMats>0 and not found then return false end
+    
+    if #reqProjMats==0 and #newProjMats==1 then
+      projMatType=dfhack.matinfo.find(newProjMats[1])['type']
+      projMatIndex=dfhack.matinfo.find(newProjMats[1])['index']
+    end
     
     found=false
     for _,mat in ipairs(reqWeaponMats) do
@@ -165,7 +169,6 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
     if not dontReplaceProj then
       --results.proj=table.remove(newProjs)  ranged module doesn't currently handle swapping primary projectiles properly, so *skip*
       proj.flags.to_be_deleted=true
-      proj.unk22=1 --making velocity something trivial, so proj does nothing if it is up close
     end
     return results
   end

@@ -296,8 +296,6 @@ if args.maxVelocity then
     maxVelocity=tonumber(args.maxVelocity)
   else error("-maxVelocity must be a number") end  
 end
-
--- these may be true or false, deal
 if args.piercing then 
   if args.piercing==true then
     piercing=true 
@@ -305,7 +303,7 @@ if args.piercing then
     piercing=true
   elseif args.piercing=="false" then
     piercing=false
-  else error("-piercing must be true or false") end
+  else piercing=true end
 end
 if args.delete then 
   if args.delete==true then

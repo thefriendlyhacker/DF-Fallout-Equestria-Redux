@@ -197,6 +197,95 @@ ranged/ranged-multishot -name "small caliber substitution" -reqProjType GLOB:NON
 ranged/ranged-properties -name "glob small caliber velocity boost" -reqTags "glob bullet small" -reqProjType AMMO:ITEM_AMMO_BULLET_SMALL -velocity 1100 -priority 0
 
 
-#energy bolts
+#glob energy bolts
 ranged/ranged-multishot -name "energy bolt substitution" -reqProjType GLOB:NONE -reqProjMat [ INORGANIC:LASERBOLT INORGANIC:LASERBOLT2 INORGANIC:PLASMABOLT ] -newProjType AMMO:ITEM_AMMO_ENERGY_BOLT -priority 1 -newProjNbr 1 -tags "glob energy bolt"
 ranged/ranged-properties -name "glob energy bolt velocity boost" -reqTags "glob energy bolt" -reqProjType AMMO:ITEM_AMMO_ENERGY_BOLT -velocity 5000 -priority 0
+
+#=========energy weapons===========
+
+#-----ROF pistols--------
+#cell rof
+ranged/ranged-rof -name "energy pistol cell rof" -priority 10 -reqWeaponType [ "WEAPON:ITEM_WEAPON_NOVA_PISTOL" "WEAPON_ITEM_WEAPON_NOVA_PISTOL" ] -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_CELL" "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" ] -timeBase [ -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -40 ] -timeMult [ 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 2 ]
+#pack rof
+ranged/ranged-rof -name "energy pistol pack rof" -priority 10 -reqWeaponType [ "WEAPON:ITEM_WEAPON_NOVA_PISTOL" "WEAPON_ITEM_WEAPON_NOVA_PISTOL" ] -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_PACK" "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" ] -timeBase [ -5 -5 -40 ] -timeMult [ 0.25 0.25 2 ]
+#----ROF rifles-----
+#cell rof
+ranged/ranged-rof -name "energy rifle cell rof" -priority 10 -reqWeaponType [ "WEAPON:ITEM_WEAPON_NOVA_RIFLE" "WEAPON_ITEM_WEAPON_NOVASURGE_RIFLE" ] -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_CELL" "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" ] -timeBase [ -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -40 ] -timeMult [ 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 2 ]
+#pack rof
+ranged/ranged-rof -name "energy rifle pack rof" -priority 10 -reqWeaponType [ "WEAPON:ITEM_WEAPON_NOVA_RIFLE" "WEAPON_ITEM_WEAPON_NOVASURGE_RIFLE" ] -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_PACK" "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" ] -timeBase [ -5 -5 -5 -5 -5 -40 ] -timeMult [ 0.25 0.25 0.25 0.25 0.25 2 ]
+#---ROF multi pulsar---
+#cell rof 
+ranged/ranged-rof -name "multi pulsar cell rof" -priority 10 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_CELL" "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" ] -timeBase [ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 -10 ] -timeMult [ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 ] 
+#pack rof
+ranged/ranged-rof -name "multi pulsar pack rof" -priority 10 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_PACK" "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" ] -timeBase [ 1 1 -20 ] -timeMult [ 0 0 1 ]
+#---ROF light caster---
+#cell rof
+ranged/ranged-rof -name "light caster cell rof" -priority 10 -reqWeaponType "WEAPON:ITEM_WEAPON_LIGHT_CASTER" -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_CELL" "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" ] -timeBase  [ -5 ] -timeMult [ 0.25 ]
+#pack rof
+ranged/ranged-rof -name "light caster pack rof" -priority 10 -reqWeaponType "WEAPON:ITEM_WEAPON_LIGHT_CASTER" -reqProjType [ "AMMO:ITEM_AMMO_ENERGY_PACK" "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" ] -timeBase [ -10 ] -timeMult  [ 1 ] 
+
+#---nova pistol---
+
+#ecell shots
+ranged/ranged-multishot -name "nova pistol ecell proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -newProjMat "INORGANIC:LASERBOLT_PISTOL" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST_SHALLOW" -newProjNbr 1
+ranged/ranged-properties -name "nova pistol ecell properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -velocity 2000
+#epack shots
+ranged/ranged-multishot -name "nova pistol epack proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -newProjMat "INORGANIC:LASERBOLT_PISTOL" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST_SHALLOW" -newProjNbr 4 -divergence 5
+ranged/ranged-properties -name "nova pistol epack properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -velocity 2000
+#mscore shots
+ranged/ranged-multishot  -name "nova pistol mscore proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -newProjMat "INORGANIC:LASERBOLT_PISTOL" -newProjType "AMMO:ITEM_AMMO_ENERGY_BOLT" -newProjNbr 1
+ranged/ranged-properties -name "nova pistol mscore properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -velocity 2000
+#msclust shots
+ranged/ranged-multishot -name "nova pistol msclust proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -newProjMat "INORGANIC:LASERBOLT_PISTOL_HEAVY" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST" -newProjNbr 1
+ranged/ranged-properties -name "nova pistol msclust properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -velocity 2000
+
+#---nova rifle---
+
+#ecell shots
+ranged/ranged-multishot -name "nova rifle ecell proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -newProjMat "INORGANIC:LASERBOLT_RIFLE" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST_SHALLOW" -newProjNbr 1
+ranged/ranged-properties -name "nova rifle ecell properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -velocity 3000
+#epack shots
+ranged/ranged-multishot -name "nova rifle epack proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -newProjMat "INORGANIC:LASERBOLT_RIFLE" -newProjType "AMMO:ITEM_AMMO_ENERGY_BOLT" -newProjNbr 1
+ranged/ranged-properties -name "nova rifle epack properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -velocity 3000
+#mscore shots
+ranged/ranged-multishot  -name "nova rifle mscore proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -newProjMat "INORGANIC:LASERBOLT_RIFLE" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST" -newProjNbr 1
+ranged/ranged-properties -name "nova rifle mscore properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -velocity 5000
+#msclust shots
+ranged/ranged-multishot -name "nova rifle msclust proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -newProjMat "INORGANIC:LASERBOLT_RIFLE" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST" -newProjNbr 3 -divergence 2 -allowMultTrigs -dontReplaceProj
+ranged/ranged-multishot -name "nova rifle msclust proj replacement2" -priority 7 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -newProjMat "INORGANIC:LASERBOLT_RIFLE" -newProjType "AMMO:ITEM_AMMO_ENERGY_BOLT" -newProjNbr 3 -divergence 2 -allowMultTrigs
+ranged/ranged-properties -name "nova rifle msclust properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_RIFLE" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -velocity 5000 -tags "multishot cone"
+
+#---multi pulsar---
+
+#ecell shots
+ranged/ranged-multishot -name "multi-pulsar ecell proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -newProjMat "INORGANIC:LASERBOLT_RIFLE" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST_SHALLOW" -newProjNbr 1
+ranged/ranged-properties -name "multi-pulsar ecell properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -velocity 5000
+#epack shots
+ranged/ranged-multishot -name "multi-pulsar epack proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -newProjMat "INORGANIC:LASERBOLT_RIFLE_HEAVY" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST_SHALLOW" -newProjNbr 1
+ranged/ranged-properties -name "multi-pulsar epack properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -velocity 5000
+#mscore shots
+ranged/ranged-multishot  -name "multi-pulsar mscore proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -newProjMat "INORGANIC:LASERBOLT_RIFLE" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST" -newProjNbr 1
+ranged/ranged-properties -name "multi-pulsar mscore properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -velocity 5000
+#msclust shots
+ranged/ranged-multishot -name "multi-pulsar msclust proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -newProjMat "INORGANIC:LASERBOLT_RIFLE_HEAVY" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST" -newProjNbr 3 -divergence 3
+ranged/ranged-properties -name "multi-pulsar msclust properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_MULTI_PULSAR" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -velocity 5000 -tags
+
+
+#---nova pistol---
+
+#ecell shots
+ranged/ranged-multishot -name "nova pistol ecell proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -newProjMat "INORGANIC:PLASMABOLT_PISTOL" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST_BLUNT" -newProjNbr 1
+ranged/ranged-properties -name "nova pistol ecell properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_CELL" -velocity 2000
+#epack shots
+ranged/ranged-multishot -name "nova pistol epack proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -newProjMat "INORGANIC:PLASMABOLT_PISTOL" -newProjType "AMMO:ITEM_AMMO_ENERGY_BLAST_SHALLOW" -newProjNbr 1
+ranged/ranged-properties -name "nova pistol epack properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_ENERGY_PACK" -velocity 2000
+#mscore shots
+ranged/ranged-multishot  -name "nova pistol mscore proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -newProjMat "INORGANIC:PLASMABOLT_PISTOL" -newProjType "AMMO:ITEM_AMMO_ENERGY_BOLT" -newProjNbr 1
+ranged/ranged-properties -name "nova pistol mscore properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CORE" -velocity 2000
+#msclust shots
+ranged/ranged-multishot -name "nova pistol msclust proj replacement" -priority 8 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -newProjMat "INORGANIC:PLASMABOLT_PISTOL" -newProjType "AMMO:ITEM_AMMO_ENERGY_BOLT" -newProjNbr 1
+ranged/ranged-properties -name "nova pistol msclust properties" -priority 9 -reqWeaponType "WEAPON:ITEM_WEAPON_NOVA_PISTOL" -reqProjType "AMMO:ITEM_AMMO_MICRO_SPARK_CLUSTER" -velocity 2000 -piercing
+
+#---novasurge rifle---
+
+#---light caster---

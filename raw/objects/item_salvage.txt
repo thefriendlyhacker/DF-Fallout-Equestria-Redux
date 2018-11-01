@@ -700,6 +700,22 @@ item_salvage
 [MATERIAL_SIZE:1]
 [UNIMPROVABLE]
 
+[ITEM_TOOL:ITEM_SCHEMATICS_PULSE_ENERGY_WEAPON]
+[NAME:pulse energy weapon schematics:pulse energy weapon schematics]
+[VALUE:30000]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
+[ITEM_TOOL:ITEM_SCHEMATICS_NOVA_ENERGY_WEAPON]
+[NAME:nova energy weapon schematics:nova energy weapon schematics]
+[VALUE:30000]
+[TILE:167]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+[UNIMPROVABLE]
+
 [ITEM_TOOL:ITEM_SCHEMATICS_CYBERNETICS_MEDICAL]
 [NAME:cybernetic prosthetic schematic:cybernetic prosthetic schematics]
 [VALUE:30000]
