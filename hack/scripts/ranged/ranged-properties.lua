@@ -138,8 +138,8 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
       proj.target_pos.x = proj.target_pos.x + targetX
       proj.target_pos.y = proj.target_pos.y + targetY
     end 
-    if not piercing==nil then proj.flags.piercing=piercing end
-    if not delete==nil then proj.flags.to_be_deleted=delete end
+    if not (piercing==nil) then proj.flags.piercing=piercing proj.fall_threshold=60 end
+    if not (delete==nil) then proj.flags.to_be_deleted=delete end
     if hitRatingBase then
       proj.hit_rating = math.floor(proj.hit_rating*hitRatingMult+hitRatingBase) --accuracy of the attack I *think*
     end
@@ -223,6 +223,8 @@ local priority=0
 local tags={}
 local reqTags=nil
 local forbiddenTags=nil
+local piercing=nil
+local delete=nil
 
 if type(args.reqProjMat)=='string' then
   reqProjMats={args.reqProjMat}
@@ -312,7 +314,7 @@ if args.delete then
     delete=true
   elseif args.delete=="false" then
     delete=false
-  else error("-piercing must be true or false") end
+  else error("-delete must be true or false") end
 end
 --vel,maxvel,velmult,force,hitbase,hitmult,piercing,delete,
 if args.priority then

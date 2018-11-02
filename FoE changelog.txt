@@ -7,10 +7,11 @@ major changes
 - Buckshot and canister rounds have inherently higher accuracy (blasts of pellets are more likely to connect than a single bullet)
 - changed ripper rifle to ripper shotgun, leaving the chain rifle as the combo medium caliber weapon
 - minigun now shoots proper medium caliber bullets, firing about 90 rounds per burst with a long cooldown
-- laser and plasma weapons now fire proper cutting energy blasts. Lasers have higher rof but suck against armor, plasma go through steel but have slow rof
+- laser and plasma weapons now fire proper cutting energy blasts. Lasers are cheaper but suck against good armor, plasma goes through steel but costs more
 - other interaction based bullet weapons now shoot actual bullets
 - added the axe and chain axe
 - consolidated melee skills.  All maces are now hammers, all daggers(except the knife) are now swords, all pikes are spears
+- ranged weapon skills now follow fallout convention - Crossbows are small guns, bows are big guns, blowguns are energy weapons
 
 minor tweaks
 - giant cave spiders now use tough chitin templates
@@ -28,6 +29,9 @@ minor tweaks
 - increased the ammo cost of the minigun battle saddle
 - spear ponies now use the pike pony sprite (because I like how it looks better)
 - hacksaw is now not a serious weapon.  On the bright side, it should be cheaper to embark with if you just want something to cut trees with.
+- cut pulse laser and plasma caster - not needed now that there are proper energy weapons
+- altered energy weapons for robots/saddles to match new system
+- changed a bunch of profession names, to go with ranged weapon skill changes
 
 bug fixes
 - fixed bad header on reaction_bowyer file (probably wasn't doing anything, but still)
