@@ -457,7 +457,7 @@ creature_griffon
 	[PROFESSION_NAME:SWORDSMAN:swordsgriffon:swordsgriffons]
 	[PROFESSION_NAME:MACEMAN:macegriffon:macegriffons]
 	[PROFESSION_NAME:PIKEMAN:piker:pikers]
-	[PROFESSION_NAME:BOWMAN:siege gunner:siege gunners]
+	[PROFESSION_NAME:BOWMAN:heavy gunner:heavy gunners]
 	[PROFESSION_NAME:WRESTLER:skirmisher:skirmishers]
 	[PROFESSION_NAME:MASTER_WRESTLER:brawler:brawlers]
 	[PROFESSION_NAME:MASTER_AXEMAN:butcher:butchers]

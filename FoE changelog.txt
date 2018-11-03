@@ -32,6 +32,8 @@ minor tweaks
 - cut pulse laser and plasma caster - not needed now that there are proper energy weapons
 - altered energy weapons for robots/saddles to match new system
 - changed a bunch of profession names, to go with ranged weapon skill changes
+- tweaked some salvage drops
+- removed intelligent and slow learner from robobrains
 
 bug fixes
 - fixed bad header on reaction_bowyer file (probably wasn't doing anything, but still)
