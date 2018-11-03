@@ -11,7 +11,7 @@ major changes
 - other interaction based bullet weapons now shoot actual bullets
 - added the axe and chain axe
 - consolidated melee skills.  All maces are now hammers, all daggers(except the knife) are now swords, all pikes are spears
-- ranged weapon skills now follow fallout convention - Crossbows are small guns, bows are big guns, blowguns are energy weapons
+- ranged weapon skills different convention - Crossbows are energy weapons, bows conventional firearms and heavy weapons
 
 minor tweaks
 - giant cave spiders now use tough chitin templates

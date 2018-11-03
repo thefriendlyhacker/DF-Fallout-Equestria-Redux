@@ -52,7 +52,7 @@ reaction_simulator_VR
 	[SKILL:RANGED_COMBAT]
 	
 [REACTION:TRAIN_CROSSBOW]
-	[NAME:train gunnery (firearms simulator hologem)]
+	[NAME:train energy weapon operation (firearms simulator hologem)]
 	[BUILDING:VR_SIMULATOR:NONE]
 	[REAGENT:A:1:TOY:ITEM_HOLOGEM_TRAINING_SIMULATOR_FIREARMS:NONE:NONE][PRESERVE_REAGENT]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:TRAINING]
@@ -66,7 +66,7 @@ reaction_simulator_VR
 	[SKILL:THROW]
 	
 [REACTION:TRAIN_BOW]
-	[NAME:train sniping (firearms simulator hologem)]
+	[NAME:train firearms operation (firearms simulator hologem)]
 	[BUILDING:VR_SIMULATOR:NONE]
 	[REAGENT:A:1:TOY:ITEM_HOLOGEM_TRAINING_SIMULATOR_FIREARMS:NONE:NONE][PRESERVE_REAGENT]
 	[PRODUCT:100:1:BOULDER:NONE:INORGANIC:TRAINING]
