@@ -738,6 +738,7 @@ although alunite makes potassium alum and ammonium alum might be the one for tan
 [STATE_NAME_ADJ:LIQUID:raw star]
 [STATE_NAME_ADJ:LIQUID:liquid ether]
 [STATE_NAME_ADJ:GAS:gaseous ether]
+[METAL_ORE:ADAMANTINE:25]
 [DISPLAY_COLOR:3:7:1]
 [TILE:139]
 [MATERIAL_VALUE:250]

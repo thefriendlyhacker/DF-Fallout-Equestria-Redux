@@ -9,6 +9,7 @@
 !/onLoad-equipment.init
 !/onLoad.init
 !/FoE changelog.txt
+!/hack/lua/ranged-module.lua
 !/FoE install readme.txt
 !/raw/graphics/graphics_wasteland_canine.txt
 !/raw/graphics/graphics_wasteland_domestic.txt

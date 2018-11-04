@@ -1,3 +1,51 @@
+0.41.7
+major changes
+- added combat/pump shotguns, buckshot and slugs
+- added many energy weapons, energy weapon ammo and appropriate reactions, and removed old robronco energy weapon parts
+- added canister rounds for AMRs - basically a high velocity buckshot round
+- renamed ranged skills. Skills now follow the fallout style small guns/big guns/energy weapons convention.
+- Buckshot and canister rounds have inherently higher accuracy (blasts of pellets are more likely to connect than a single bullet)
+- changed ripper rifle to ripper shotgun, leaving the chain rifle as the combo medium caliber weapon
+- minigun now shoots proper medium caliber bullets, firing about 90 rounds per burst with a long cooldown
+- laser and plasma weapons now fire proper cutting energy blasts. Lasers are cheaper but suck against good armor, plasma goes through steel but costs more
+- other interaction based bullet weapons now shoot actual bullets
+- added the axe and chain axe
+- consolidated melee skills.  All maces are now hammers, all daggers(except the knife) are now swords, all pikes are spears
+- ranged weapon skills different convention - Crossbows are energy weapons, bows conventional firearms and heavy weapons
+
+minor tweaks
+- giant cave spiders now use tough chitin templates
+- made soap and tallow generic
+- did some cleaning up of template mats (removing unused leather/parchment and such). Will do more later.
+- tweaked pellets,since they are now pulling double duty as buckshot 
+- removed adv specific pellets
+- added force batons to a couple of salvage boxes
+- upped amount of pellets from MWT reaction
+- added orewood processing to prism smelter
+- strand extraction removed, adamantine cloth created by converting bars to thread at forge.
+- hellhounds now have internal graspers in their hands.  This allows their hands to be protected by combat armor (since stables can't make gloves)
+- made some changes to griffon/stable pony caste skills, to go along with weapon skill changes
+- the hunting rifle now uses crossbow(gunner), to go along with planned bow=heavy weapons, blowgun=energy/special weapons
+- increased the ammo cost of the minigun battle saddle
+- spear ponies now use the pike pony sprite (because I like how it looks better)
+- hacksaw is now not a serious weapon.  On the bright side, it should be cheaper to embark with if you just want something to cut trees with.
+- cut pulse laser and plasma caster - not needed now that there are proper energy weapons
+- altered energy weapons for robots/saddles to match new system
+- changed a bunch of profession names, to go with ranged weapon skill changes
+- tweaked some salvage drops
+- removed intelligent and slow learner from robobrains
+
+bug fixes
+- fixed bad header on reaction_bowyer file (probably wasn't doing anything, but still)
+- fixed order of griffon body preventing body armor from covering lower body.
+- fixed a couple of bugs in the ranged-module scripts
+- fixed broken millable reactions
+- fixed bug in corn.  It should *hopefully* show up now.
+- bug fixed in plant burning, so it should now be usable
+- marauder ponies now have graphics
+- changed how ffid works, so it hopefully shouldn't result in diagnosis spam any more
+- removed some duplicate pony graphics raws
+
 0.41.6
 major changes
 - stable caste overhaul

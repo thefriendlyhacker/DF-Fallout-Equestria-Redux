@@ -34,25 +34,6 @@ item_misc
 [MATERIAL_SIZE:6]
 [UNIMPROVABLE]
 
-[ITEM_TOOL:ITEM_PLASMA_CASTER]
-[NAME:plasma caster:plasma casters]
-[VALUE:200]
-[TILE:168]
-[HARD_MAT]
-[SIZE:600]
-[MATERIAL_SIZE:2]
-[UNIMPROVABLE]
-
-[ITEM_TOOL:ITEM_PULSE_LASER]
-[NAME:pulse laser:pulse lasers]
-[VALUE:50]
-[TILE:168]
-[HARD_MAT]
-[SIZE:600]
-[MATERIAL_SIZE:2]
-[UNIMPROVABLE]
-
-
 [ITEM_TOOL:ITEM_MINE_HE]
 [NAME:HE mine:HE mines]
 [VALUE:150]
@@ -276,6 +257,12 @@ item_misc
 
 [ITEM_TOY:ITEM_NOTE_CYBERNETICS_IMPLANT_NERVOUS]
 [NAME:cybernetic lung design note:redundant nervous system design notes]
+
+[ITEM_TOY:ITEM_NOTE_PULSE_ENERGY_WEAPON]
+[NAME:pulse energy weapon design note:pulse energy weapon design notes]
+
+[ITEM_TOY:ITEM_NOTE_NOVA_ENERGY_WEAPON]
+[NAME:nova energy weapon design note:nova energy weapon design notes]
 
 ==========Intel Notes==========
 

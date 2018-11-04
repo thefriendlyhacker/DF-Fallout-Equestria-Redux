@@ -13,7 +13,7 @@ interaction_ffid
 		[SYNDROME]
 			[SYN_NAME:ffid ally tagged][SYN_NO_HOSPITAL]
 			[SYN_CLASS:FFID_ALLY]
-			[CE_CAN_DO_INTERACTION:START:0:END:20]
+			[CE_CAN_DO_INTERACTION:START:0:END:21]
 				[CDI:INTERACTION:ENEMY_FFID_TAGGER]
 				[CDI:ADV_NAME:tag an enemy with ffid indicator]
 				[CDI:TARGET:A:LINE_OF_SIGHT]
@@ -27,14 +27,21 @@ interaction_ffid
 		[SYNDROME]
 			[SYN_NAME:ffid not enemy tagged][SYN_NO_HOSPITAL]
 			[SYN_CLASS:FFID_NOT_ENEMY]
-			[CE_ADD_TAG:START:0:END:20] dummy add tag, for duration
+			[CE_ADD_TAG:START:0:END:21] dummy add tag, for duration
 	[I_EFFECT:ADD_SYNDROME]
 			[IE_TARGET:A]
 			[IE_IMMEDIATE]
 		[SYNDROME]
 			[SYN_NAME:ffid not ally tagged][SYN_NO_HOSPITAL]
 			[SYN_CLASS:FFID_NOT_ALLY]
-			[CE_ADD_TAG:START:0:END:20] dummy add tag, for duration
+			[CE_ADD_TAG:START:0:END:21] dummy add tag, for duration
+	[I_EFFECT:ADD_SYNDROME]
+			[IE_TARGET:A]
+			[IE_IMMEDIATE]
+		[SYNDROME]
+			[SYN_NAME:ffid enemy tagged][SYN_NO_HOSPITAL]
+			[SYN_CLASS:FFID_ENEMY]
+			[CE_ADD_TAG:START:0:END:21] dummy add tag, for duration
 
 [INTERACTION:ENEMY_FFID_TAGGER]
 	[I_SOURCE:CREATURE_ACTION]
@@ -47,6 +54,6 @@ interaction_ffid
 		[IE_TARGET:A]
 		[IE_IMMEDIATE]
 		[SYNDROME]
-			[SYN_NAME:ffid enemy tagged][SYN_NO_HOSPITAL]
+			[SYN_NAME:ffid enemy tagged by ally][SYN_NO_HOSPITAL]
 			[SYN_CLASS:FFID_ENEMY]
-			[CE_ADD_TAG:START:0:END:20] dummy add tag, for duration
+			[CE_ADD_TAG:START:0:END:50] dummy add tag, for duration
