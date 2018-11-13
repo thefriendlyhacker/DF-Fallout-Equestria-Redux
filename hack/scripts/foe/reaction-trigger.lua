@@ -139,7 +139,6 @@ eventful.onJobCompleted.reactionTrigger = function(job)
  if not job.reaction_name or not reactionHooks[job.reaction_name] then
   return
  end
-
  local worker,building = getWorkerAndBuilding(job)
  worker = df.unit.find(worker)
  building = df.building.find(building)

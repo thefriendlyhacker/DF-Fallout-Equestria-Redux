@@ -114,338 +114,338 @@ creature_pony_stable
 	each +/- changes by 250
 	
 	-------------Common-------------
-	[CASTE:EARTH_F_WATER][POP_RATIO:3000]*
+	[CASTE:EARTH_F_WATER][CASTE_NAME:water earth pony:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She feels at home in the water, and knows how to pull edible life from the irradiated rivers of Equestria.]
-	[CASTE:EARTH_M_WATER][POP_RATIO:3000]*
+	[CASTE:EARTH_M_WATER][CASTE_NAME:water earth pony:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He feels at home in the water, and knows how to pull edible life from the irradiated rivers of Equestria.]
-	[CASTE:UNICORN_F_WATER][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_WATER][CASTE_NAME:water unicorn:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She feels at home in the water, and knows how to pull edible life from the irradiated rivers of Equestria.]
-	[CASTE:UNICORN_M_WATER][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_WATER][CASTE_NAME:water unicorn:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He feels at home in the water, and knows how to pull edible life from the irradiated rivers of Equestria.]
-	[CASTE:EARTH_F_FARMER][POP_RATIO:5000]++++ ++++
+	[CASTE:EARTH_F_FARMER][CASTE_NAME:earth pony farmer:earth ponies:earth pony][POP_RATIO:5000]++++ ++++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is an expert on finding or growing edible plants in the wastes, and can turn them into delicious meals for the Stable.]
-	[CASTE:EARTH_M_FARMER][POP_RATIO:5000]++++ ++++
+	[CASTE:EARTH_M_FARMER][CASTE_NAME:earth pony farmer:earth ponies:earth pony][POP_RATIO:5000]++++ ++++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is an expert on finding or growing edible plants in the wastes, and can turn them into delicious food and drink for the Stable.]
-	[CASTE:UNICORN_F_FARMER][POP_RATIO:1500]---- --
+	[CASTE:UNICORN_F_FARMER][CASTE_NAME:unicorn farmer:unicorns:unicorn][POP_RATIO:1500]---- --
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Unusually for a unicorn, she is an expert on finding or growing edible plants in the wastes, and also knows how to turn them into delicious meals for the Stable.]
-	[CASTE:UNICORN_M_FARMER][POP_RATIO:1500]---- --
+	[CASTE:UNICORN_M_FARMER][CASTE_NAME:unicorn farmer:unicorns:unicorn][POP_RATIO:1500]---- --
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Unusually for a unicorn, he is an expert on finding or growing edible plants in the wastes, and also knows how to turn them into delicious food and drink for the Stable.]
-	[CASTE:EARTH_F_COOK][POP_RATIO:3000]*
+	[CASTE:EARTH_F_COOK][CASTE_NAME:earth pony chef:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is knowledgeable about acquiring raw foodstuffs from a variety of sources, and can make a tasty dish or a fine wine out of almost anything.]
-	[CASTE:EARTH_M_COOK][POP_RATIO:3000]*
+	[CASTE:EARTH_M_COOK][CASTE_NAME:earth pony chef:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is knowledgeable about acquiring raw foodstuffs from a variety of sources, and can make a tasty dish out of almost anything.]
-	[CASTE:UNICORN_F_COOK][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_COOK][CASTE_NAME:unicorn chef:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is knowledgeable about acquiring raw foodstuffs from a variety of sources, and can make a tasty dish or a fine wine out of almost anything.]
-	[CASTE:UNICORN_M_COOK][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_COOK][CASTE_NAME:unicorn chef:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is knowledgeable about acquiring raw foodstuffs from a variety of sources, and can make a tasty dish out of almost anything.]
-	[CASTE:EARTH_F_FARMING_MISC][POP_RATIO:4000]++++
+	[CASTE:EARTH_F_FARMING_MISC][CASTE_NAME:earth pony farmhand:earth ponies:earth pony][POP_RATIO:4000]++++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is adept at the various miscellaneous tasks that keep pony society running.]
-	[CASTE:EARTH_M_FARMING_MISC][POP_RATIO:4000]++++
+	[CASTE:EARTH_M_FARMING_MISC][CASTE_NAME:earth pony farmhand:earth ponies:earth pony][POP_RATIO:4000]++++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is adept at the various miscellaneous tasks that keep pony society running.]
-	[CASTE:UNICORN_F_FARMING_MISC][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_FARMING_MISC][CASTE_NAME:unicorn farmhand:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is adept at the various miscellaneous tasks that keep pony society running.]
-	[CASTE:UNICORN_M_FARMING_MISC][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_FARMING_MISC][CASTE_NAME:unicorn farmhand:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is adept at the various miscellaneous tasks that keep pony society running.]
-	[CASTE:EARTH_F_MINING][POP_RATIO:5000]++++ ++++
+	[CASTE:EARTH_F_MINING][CASTE_NAME:earth pony miner:earth ponies:earth pony][POP_RATIO:5000]++++ ++++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. An expert at tilling the soil and working the earth, she embodies the earth pony nature.]
-	[CASTE:EARTH_M_MINING][POP_RATIO:5000]++++ ++++
+	[CASTE:EARTH_M_MINING][CASTE_NAME:earth pony miner:earth ponies:earth pony][POP_RATIO:5000]++++ ++++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. An expert at tilling the soil and working the earth, he embodies the earth pony nature.]
-	[CASTE:UNICORN_F_MINING][POP_RATIO:1500]---- --
+	[CASTE:UNICORN_F_MINING][CASTE_NAME:unicorn miner:unicorns:unicorn][POP_RATIO:1500]---- --
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can feel every nook, crack, and grain of the earth beneath her hooves, and knows how to hollow out space underground for habitation or industry.]
-	[CASTE:UNICORN_M_MINING][POP_RATIO:1500]---- --
+	[CASTE:UNICORN_M_MINING][CASTE_NAME:unicorn miner:unicorns:unicorn][POP_RATIO:1500]---- --
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can feel every nook, crack, and grain of the earth beneath his hooves, and knows how to hollow out space underground for habitation or industry.]
-	[CASTE:EARTH_F_SCAVENGER][POP_RATIO:3000]*
+	[CASTE:EARTH_F_SCAVENGER][CASTE_NAME:earth pony scavenger:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is adept at scavenging for wood and supplies in the post-war wasteland.]
-	[CASTE:EARTH_M_SCAVENGER][POP_RATIO:3000]*
+	[CASTE:EARTH_M_SCAVENGER][CASTE_NAME:earth pony scavenger:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is adept at scavenging for wood and supplies in the post-war wasteland.]
-	[CASTE:UNICORN_F_SCAVENGER][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_SCAVENGER][CASTE_NAME:unicorn scavenger:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is adept at scavenging for wood and supplies in the post-war wasteland.]
-	[CASTE:UNICORN_M_SCAVENGER][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_SCAVENGER][CASTE_NAME:unicorn scavenger:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is adept at scavenging for wood and supplies in the post-war wasteland.]
-	[CASTE:EARTH_F_WOODWORKER][POP_RATIO:3000]*
+	[CASTE:EARTH_F_WOODWORKER][CASTE_NAME:earth pony woodworker:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is adept at making furniture and other useful items from wood.]
-	[CASTE:EARTH_M_WOODWORKER][POP_RATIO:3000]*
+	[CASTE:EARTH_M_WOODWORKER][CASTE_NAME:earth pony woodworker:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is adept at making furniture and other useful items from wood.]
-	[CASTE:UNICORN_F_WOODWORKER][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_WOODWORKER][CASTE_NAME:unicorn woodworker:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is adept at making furniture and other useful items from wood.]
-	[CASTE:UNICORN_M_WOODWORKER][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_WOODWORKER][CASTE_NAME:unicorn woodworker:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is adept at making furniture and other useful items from wood.]
-	[CASTE:EARTH_F_STONEWORKER][POP_RATIO:3000]*
+	[CASTE:EARTH_F_STONEWORKER][CASTE_NAME:earth pony stoneworker:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can carve any form out of the living stone.]
-	[CASTE:EARTH_M_STONEWORKER][POP_RATIO:3000]*
+	[CASTE:EARTH_M_STONEWORKER][CASTE_NAME:earth pony stoneworker:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can carve any form out of the living stone.]
-	[CASTE:UNICORN_F_STONEWORKER][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_STONEWORKER][CASTE_NAME:unicorn stoneworker:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can carve any form out of the living stone.]
-	[CASTE:UNICORN_M_STONEWORKER][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_STONEWORKER][CASTE_NAME:unicorn stoneworker:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can carve any form out of the living stone.]
-	[CASTE:EARTH_F_METALWORKER][POP_RATIO:3000]*
+	[CASTE:EARTH_F_METALWORKER][CASTE_NAME:earth pony metalworker:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master with the hammer and forge, she adores crafting works of art, be they weapons, armor, or everyday objects.]
-	[CASTE:EARTH_M_METALWORKER][POP_RATIO:3000]*
+	[CASTE:EARTH_M_METALWORKER][CASTE_NAME:earth pony metalworker:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master with the hammer and forge, he adores crafting works of art, be they weapons, armor, or everyday objects.]
-	[CASTE:UNICORN_F_METALWORKER][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_METALWORKER][CASTE_NAME:unicorn metalworker:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master with the hammer and forge, she adores crafting works of art, be they weapons, armor, or everyday objects.]
-	[CASTE:UNICORN_M_METALWORKER][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_METALWORKER][CASTE_NAME:unicorn metalworker:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master with the hammer and forge, he adores crafting works of art, be they weapons, armor, or everyday objects.]
-	[CASTE:EARTH_F_CLOTHIER][POP_RATIO:1500]---- --
+	[CASTE:EARTH_F_CLOTHIER][CASTE_NAME:earth pony clothier:earth ponies:earth pony][POP_RATIO:1500]---- --
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A renowned fashion artist, she can produce anything from simple jumpsuits and leather cloaks to gem-encursted clothes for the elite of society.]
-	[CASTE:EARTH_M_CLOTHIER][POP_RATIO:1500]---- --
+	[CASTE:EARTH_M_CLOTHIER][CASTE_NAME:earth pony clothier:earth ponies:earth pony][POP_RATIO:1500]---- --
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A renowned fashion artist, he can produce anything from simple jumpsuits and leather cloaks to gem-encursted clothes for the elite of society.]
-	[CASTE:UNICORN_F_CLOTHIER][POP_RATIO:6000]++++ ++++ ++++
+	[CASTE:UNICORN_F_CLOTHIER][CASTE_NAME:unicorn clothier:unicorns:unicorn][POP_RATIO:6000]++++ ++++ ++++
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A renowned fashion artist, she can produce anything from simple jumpsuits and leather cloaks to gem-encursted clothes for the elite of society.]
-	[CASTE:UNICORN_M_CLOTHIER][POP_RATIO:6000]++++ ++++ ++++
+	[CASTE:UNICORN_M_CLOTHIER][CASTE_NAME:unicorn clothier:unicorns:unicorn][POP_RATIO:6000]++++ ++++ ++++
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A renowned fashion artist, he can produce anything from simple jumpsuits and leather cloaks to gem-encursted clothes for the elite of society.]
-	[CASTE:EARTH_F_CRAFTER_MISC][POP_RATIO:3000]*
+	[CASTE:EARTH_F_CRAFTER_MISC][CASTE_NAME:earth pony crafter:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can produce fine crafts and finished goods out of a variety of unusual materials.]
-	[CASTE:EARTH_M_CRAFTER_MISC][POP_RATIO:3000]*
+	[CASTE:EARTH_M_CRAFTER_MISC][CASTE_NAME:earth pony crafter:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can produce fine crafts and finished goods out of a variety of unusual materials.]
-	[CASTE:UNICORN_F_CRAFTER_MISC][POP_RATIO:5000]++++ ++++
+	[CASTE:UNICORN_F_CRAFTER_MISC][CASTE_NAME:unicorn crafter:unicorns:unicorn][POP_RATIO:5000]++++ ++++
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can produce fine crafts and finished goods out of a variety of unusual materials.]
-	[CASTE:UNICORN_M_CRAFTER_MISC][POP_RATIO:5000]++++ ++++
+	[CASTE:UNICORN_M_CRAFTER_MISC][CASTE_NAME:unicorn crafter:unicorns:unicorn][POP_RATIO:5000]++++ ++++
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can produce fine crafts and finished goods out of a variety of unusual materials.]
-	[CASTE:EARTH_F_MECHANIC][POP_RATIO:3000]*
+	[CASTE:EARTH_F_MECHANIC][CASTE_NAME:earth pony mechanic:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A skilled mechanic and tinkerer, she takes great pleasure in assembling everything from industrial equipment to fine pistols and rifles.]
-	[CASTE:EARTH_M_MECHANIC][POP_RATIO:3000]*
+	[CASTE:EARTH_M_MECHANIC][CASTE_NAME:earth pony mechanic:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A skilled mechanic and tinkerer, she takes great pleasure in assembling everything from industrial equipment to fine pistols and rifles.]
-	[CASTE:UNICORN_F_MECHANIC][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_MECHANIC][CASTE_NAME:unicorn mechanic:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A skilled mechanic and tinkerer, she takes great pleasure in assembling everything from industrial equipment to fine pistols and rifles.]
-	[CASTE:UNICORN_M_MECHANIC][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_MECHANIC][CASTE_NAME:unicorn mechanic:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell.  A skilled mechanic and tinkerer, she takes great pleasure in assembling everything from industrial equipment to fine pistols and rifles.]
-	[CASTE:EARTH_F_SOCIALITE][POP_RATIO:3000]*
+	[CASTE:EARTH_F_SOCIALITE][CASTE_NAME:earth pony socialite:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She enjoys socializing with anyone and everything, and has a natural charisma that allows her to convince others easily.]
-	[CASTE:EARTH_M_SOCIALITE][POP_RATIO:3000]*
+	[CASTE:EARTH_M_SOCIALITE][CASTE_NAME:earth pony socialite:earth ponies:earth pony][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He enjoys socializing with anyone and everything, and has a natural charisma that allows her to convince others easily.]
-	[CASTE:UNICORN_F_SOCIALITE][POP_RATIO:3000]*
+	[CASTE:UNICORN_F_SOCIALITE][CASTE_NAME:unicorn socialite:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She enjoys socializing with anyone and everything, and has a natural charisma that allows her to convince others easily.]
-	[CASTE:UNICORN_M_SOCIALITE][POP_RATIO:3000]*
+	[CASTE:UNICORN_M_SOCIALITE][CASTE_NAME:unicorn socialite:unicorns:unicorn][POP_RATIO:3000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He enjoys socializing with anyone and everything, and has a natural charisma that allows her to convince others easily.]
 	----------------Uncommon--------------
-	[CASTE:EARTH_F_ANIMAL_HANDLER][POP_RATIO:1000]*
+	[CASTE:EARTH_F_ANIMAL_HANDLER][CASTE_NAME:earth pony animal handler:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She holds a special bond with animals.]
-	[CASTE:EARTH_M_ANIMAL_HANDLER][POP_RATIO:1000]*
+	[CASTE:EARTH_M_ANIMAL_HANDLER][CASTE_NAME:earth pony animal handler:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He holds a special bond with animals.]
-	[CASTE:UNICORN_F_ANIMAL_HANDLER][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_ANIMAL_HANDLER][CASTE_NAME:unicorn animal handler:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She holds a special bond with animals.]
-	[CASTE:UNICORN_M_ANIMAL_HANDLER][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_ANIMAL_HANDLER][CASTE_NAME:unicorn animal handler:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He holds a special bond with animals.]
-	[CASTE:EARTH_F_HUNTER][POP_RATIO:1000]*
+	[CASTE:EARTH_F_HUNTER][CASTE_NAME:earth pony hunter:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She has the keen eye and light step of a born hunter.]
-	[CASTE:EARTH_M_HUNTER][POP_RATIO:1000]*
+	[CASTE:EARTH_M_HUNTER][CASTE_NAME:earth pony hunter:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He has the keen eye and light step of a born hunter.]
-	[CASTE:UNICORN_F_HUNTER][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_HUNTER][CASTE_NAME:unicorn hunter:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He has the keen eye and light step of a born hunter.]
-	[CASTE:UNICORN_M_HUNTER][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_HUNTER][CASTE_NAME:unicorn hunter:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She has the keen eye and light step of a born hunter.]
-	[CASTE:EARTH_F_COMBAT_EDGED][POP_RATIO:1000]*
+	[CASTE:EARTH_F_COMBAT_EDGED][CASTE_NAME:earth bladepony:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in the use of swords and other edged weapons.]
-	[CASTE:EARTH_M_COMBAT_EDGED][POP_RATIO:1000]*
+	[CASTE:EARTH_M_COMBAT_EDGED][CASTE_NAME:earth bladepony:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in the use of swords and other edged weapons.]
-	[CASTE:UNICORN_F_COMBAT_EDGED][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_COMBAT_EDGED][CASTE_NAME:blade unicorn:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in the use of swords and other edged weapons.]
-	[CASTE:UNICORN_M_COMBAT_EDGED][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_COMBAT_EDGED][CASTE_NAME:blade unicorn:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in the use of swords and other edged weapons.]
-	[CASTE:EARTH_F_COMBAT_BLUNT][POP_RATIO:1000]*
+	[CASTE:EARTH_F_COMBAT_BLUNT][CASTE_NAME:earth pony bludgeoner:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in the use of hammers and maces.]
-	[CASTE:EARTH_M_COMBAT_BLUNT][POP_RATIO:1000]*
+	[CASTE:EARTH_M_COMBAT_BLUNT][CASTE_NAME:earth pony bludgeoner:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in the use of hammers and maces.]
-	[CASTE:UNICORN_F_COMBAT_BLUNT][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_COMBAT_BLUNT][CASTE_NAME:unicorn bludgeoner:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in the use of hammers and maces.]
-	[CASTE:UNICORN_M_COMBAT_BLUNT][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_COMBAT_BLUNT][CASTE_NAME:unicorn bludgeoner:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in the use of hammers and maces.]
-	[CASTE:EARTH_F_COMBAT_POLEARMS][POP_RATIO:1000]*
+	[CASTE:EARTH_F_COMBAT_POLEARMS][CASTE_NAME:earth pony halbardier:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in the use of spears and pikes.]
-	[CASTE:EARTH_M_COMBAT_POLEARMS][POP_RATIO:1000]*
+	[CASTE:EARTH_M_COMBAT_POLEARMS][CASTE_NAME:earth pony halbardier:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in the use of spears and pikes.]
-	[CASTE:UNICORN_F_COMBAT_POLEARMS][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_COMBAT_POLEARMS][CASTE_NAME:unicorn halbardier:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in the use of spears and pikes.]
-	[CASTE:UNICORN_M_COMBAT_POLEARMS][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_COMBAT_POLEARMS][CASTE_NAME:unicorn halbardier:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in the use of spears and pikes.]
-	[CASTE:EARTH_F_COMBAT_UNDERHANDED][POP_RATIO:1000]*
+	[CASTE:EARTH_F_COMBAT_UNDERHANDED][CASTE_NAME:earth pony dirty fighter:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in martial arts, knife fighting and a variety of unusual combat styles.]
-	[CASTE:EARTH_M_COMBAT_UNDERHANDED][POP_RATIO:1000]*
+	[CASTE:EARTH_M_COMBAT_UNDERHANDED][CASTE_NAME:earth pony dirty fighter:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in martial arts, knife fighting and a variety of unusual combat styles.]
-	[CASTE:UNICORN_F_COMBAT_UNDERHANDED][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_COMBAT_UNDERHANDED][CASTE_NAME:unicorn dirty fighter:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She is skilled in martial arts, knife fighting and a variety of unusual combat styles.]
-	[CASTE:UNICORN_M_COMBAT_UNDERHANDED][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_COMBAT_UNDERHANDED][CASTE_NAME:unicorn dirty fighter:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He is skilled in martial arts, knife fighting and a variety of unusual combat styles.]
-	[CASTE:EARTH_F_COMBAT_RANGED][POP_RATIO:1000]*
+	[CASTE:EARTH_F_COMBAT_RANGED][CASTE_NAME:earth markspony:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Blessed with an eagle eye and a steady hoof, she is able to operate almost any projectile weapon with uncanny precision.]
-	[CASTE:EARTH_M_COMBAT_RANGED][POP_RATIO:1000]*
+	[CASTE:EARTH_M_COMBAT_RANGED][CASTE_NAME:earth markspony:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Blessed with an eagle eye and a steady hoof, he is able to operate almost any projectile weapon with uncanny precision.]
-	[CASTE:UNICORN_F_COMBAT_RANGED][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_COMBAT_RANGED][CASTE_NAME:marksunicorn:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Blessed with an eagle eye and a steady hoof, she is able to operate almost any projectile weapon with uncanny precision.]
-	[CASTE:UNICORN_M_COMBAT_RANGED][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_COMBAT_RANGED][CASTE_NAME:marksunicorn:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Blessed with an eagle eye and a steady hoof, he is able to operate almost any projectile weapon with uncanny precision.]
-	[CASTE:EARTH_F_MEDIC][POP_RATIO:500]--
+	[CASTE:EARTH_F_MEDIC][CASTE_NAME:earth pony medic:earth ponies:earth pony][POP_RATIO:500]--
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. An expert in medicine, she is able to quickly stabilize and conduct vital operations upon wounded ponies.]
-	[CASTE:EARTH_M_MEDIC][POP_RATIO:500]--
+	[CASTE:EARTH_M_MEDIC][CASTE_NAME:earth pony medic:earth ponies:earth pony][POP_RATIO:500]--
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. An expert in medicine, he is able to quickly stabilize and conduct vital operations upon wounded ponies.]
-	[CASTE:UNICORN_F_MEDIC][POP_RATIO:2500]++++ ++
+	[CASTE:UNICORN_F_MEDIC][CASTE_NAME:unicorn medic:unicorns:unicorn][POP_RATIO:2500]++++ ++
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. An expert in medicine and an adept in the ways of restoration magic, she is able to quickly stabilize and conduct vital operations upon wounded ponies.]
-	[CASTE:UNICORN_M_MEDIC][POP_RATIO:2500]++++ ++
+	[CASTE:UNICORN_M_MEDIC][CASTE_NAME:unicorn medic:unicorns:unicorn][POP_RATIO:2500]++++ ++
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. An expert in medicine and an adept in the ways of restoration magic, he is able to quickly stabilize and conduct vital operations upon wounded ponies.]
-	[CASTE:EARTH_F_TEACHER][POP_RATIO:1000]*
+	[CASTE:EARTH_F_TEACHER][CASTE_NAME:earth pony teacher:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Her knowledge and kindness make her an excellent teacher and a quick learner.]
-	[CASTE:EARTH_M_TEACHER][POP_RATIO:1000]*
+	[CASTE:EARTH_M_TEACHER][CASTE_NAME:earth pony teacher:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. His knowledge and kindness make him an excellent teacher and a quick learner.]
-	[CASTE:UNICORN_F_TEACHER][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_TEACHER][CASTE_NAME:unicorn teacher:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Her knowledge and kindness make her an excellent teacher and a quick learner.]
-	[CASTE:UNICORN_M_TEACHER][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_TEACHER][CASTE_NAME:unicorn teacher:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. His knowledge and kindness make him an excellent teacher and a quick learner.]
-	[CASTE:EARTH_F_WRITER][POP_RATIO:1000]*
+	[CASTE:EARTH_F_WRITER][CASTE_NAME:earth pony writer:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can weave fantastic tales and beautiful poems with pen and paper.]
-	[CASTE:EARTH_M_WRITER][POP_RATIO:1000]*
+	[CASTE:EARTH_M_WRITER][CASTE_NAME:earth pony writer:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can weave fantastic tales and beautiful poems with pen and paper.]
-	[CASTE:UNICORN_F_WRITER][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_WRITER][CASTE_NAME:unicorn writer:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can weave fantastic tales and beautiful poems with pen and paper.]
-	[CASTE:UNICORN_M_WRITER][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_WRITER][CASTE_NAME:unicorn writer:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can weave fantastic tales and beautiful poems with pen and paper.]
-	[CASTE:EARTH_F_SCHOLAR][POP_RATIO:1000]*
+	[CASTE:EARTH_F_SCHOLAR][CASTE_NAME:earth pony scholar:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She often spends time pondering the greater nature of the universe.]
-	[CASTE:EARTH_M_SCHOLAR][POP_RATIO:1000]*
+	[CASTE:EARTH_M_SCHOLAR][CASTE_NAME:earth pony scholar:earth ponies:earth pony][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He often spends time pondering the greater nature of the universe.]
-	[CASTE:UNICORN_F_SCHOLAR][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_SCHOLAR][CASTE_NAME:unicorn scholar:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She often spends time pondering the greater nature of the universe.]
-	[CASTE:UNICORN_M_SCHOLAR][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_SCHOLAR][CASTE_NAME:unicorn scholar:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He often spends time pondering the greater nature of the universe.]
-	[CASTE:EARTH_F_NEGOTIATOR][POP_RATIO:1500]++
+	[CASTE:EARTH_F_NEGOTIATOR][CASTE_NAME:earth pony negotiator:earth ponies:earth pony][POP_RATIO:1500]++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Her sly tongue and keen wit make him a master negotiator and a skilled merchant.]
-	[CASTE:EARTH_M_NEGOTIATOR][POP_RATIO:1500]++
+	[CASTE:EARTH_M_NEGOTIATOR][CASTE_NAME:earth pony negotiator:earth ponies:earth pony][POP_RATIO:1500]++
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. His sly tongue and keen wit make him a master negotiator and a skilled merchant.]
-	[CASTE:UNICORN_F_NEGOTIATOR][POP_RATIO:1000]*
+	[CASTE:UNICORN_F_NEGOTIATOR][CASTE_NAME:unicorn negotiator:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Her sly tongue and keen wit make him a master negotiator and a skilled merchant.]
-	[CASTE:UNICORN_M_NEGOTIATOR][POP_RATIO:1000]*
+	[CASTE:UNICORN_M_NEGOTIATOR][CASTE_NAME:unicorn negotiator:unicorns:unicorn][POP_RATIO:1000]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. His sly tongue and keen wit make him a master negotiator and a skilled merchant.]
-	[CASTE:EARTH_F_MUSICIAN][POP_RATIO:1000]
+	[CASTE:EARTH_F_MUSICIAN][CASTE_NAME:earth pony muse:earth ponies:earth pony][POP_RATIO:1000]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Music defines her soul, and through it she can weave beautiful songs.]
-	[CASTE:EARTH_M_MUSICIAN][POP_RATIO:1000]
+	[CASTE:EARTH_M_MUSICIAN][CASTE_NAME:earth pony muse:earth ponies:earth pony][POP_RATIO:1000]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Music defines his soul, and through it he can weave beautiful songs.]
-	[CASTE:UNICORN_F_MUSICIAN][POP_RATIO:1000]
+	[CASTE:UNICORN_F_MUSICIAN][CASTE_NAME:unicorn muse:unicorns:unicorn][POP_RATIO:1000]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Music defines her soul, and through it she can weave beautiful songs.]
-	[CASTE:UNICORN_M_MUSICIAN][POP_RATIO:1000]
+	[CASTE:UNICORN_M_MUSICIAN][CASTE_NAME:unicorn muse:unicorns:unicorn][POP_RATIO:1000]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Music defines his soul, and through it he can weave beautiful songs.]
 	---------------Rare---------------
-	[CASTE:EARTH_F_COMBAT_LEADER][POP_RATIO:500]*
+	[CASTE:EARTH_F_COMBAT_LEADER][CASTE_NAME:earth pony leader:earth ponies:earth pony][POP_RATIO:500]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A natural born leader, she is able to motivate, coordinate and maintain order among others, whether they be Stable dwelllers or soldiers in the field.]
-	[CASTE:EARTH_M_COMBAT_LEADER][POP_RATIO:500]*
+	[CASTE:EARTH_M_COMBAT_LEADER][CASTE_NAME:earth pony leader:earth ponies:earth pony][POP_RATIO:500]*
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A natural born leader, he is able to motivate, coordinate and maintain order among others, whether they be Stable dwellers or soldiers in the field.]
-	[CASTE:UNICORN_F_COMBAT_LEADER][POP_RATIO:500]*
+	[CASTE:UNICORN_F_COMBAT_LEADER][CASTE_NAME:unicorn leader:unicorns:unicorn][POP_RATIO:500]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A natural born leader, she is able to motivate, coordinate and maintain order among others, whether they be Stable dwelllers or soldiers in the field.]
-	[CASTE:UNICORN_M_COMBAT_LEADER][POP_RATIO:500]*
+	[CASTE:UNICORN_M_COMBAT_LEADER][CASTE_NAME:unicorn leader:unicorns:unicorn][POP_RATIO:500]*
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A natural born leader, he is able to motivate, coordinate and maintain order among others, whether they be Stable dwellers or soldiers in the field.]
-	[CASTE:EARTH_F_THIEF][POP_RATIO:500]
+	[CASTE:EARTH_F_THIEF][CASTE_NAME:earth pony thief:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She loves "liberating" objects from other ponys' possession.]
-	[CASTE:EARTH_M_THIEF][POP_RATIO:500]
+	[CASTE:EARTH_M_THIEF][CASTE_NAME:earth pony thief:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He loves "liberating" objects from other ponys' possession.]
-	[CASTE:UNICORN_F_THIEF][POP_RATIO:500]
+	[CASTE:UNICORN_F_THIEF][CASTE_NAME:unicorn thief:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She loves "liberating" objects from other ponys' possession.]
-	[CASTE:UNICORN_M_THIEF][POP_RATIO:500]
+	[CASTE:UNICORN_M_THIEF][CASTE_NAME:unicorn thief:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He loves "liberating" objects from other ponys' possession.]
-	[CASTE:EARTH_F_MARTIAL_ARTIST][POP_RATIO:500]
+	[CASTE:EARTH_F_MARTIAL_ARTIST][CASTE_NAME:martial earth pony:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Composed in both body and mind, she is a master of martial arts.]
-	[CASTE:EARTH_M_MARTIAL_ARTIST][POP_RATIO:500]
+	[CASTE:EARTH_M_MARTIAL_ARTIST][CASTE_NAME:martial earth pony:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Composed in both body and mind, he is a master of the martial arts.]
-	[CASTE:UNICORN_F_MARTIAL_ARTIST][POP_RATIO:500]
+	[CASTE:UNICORN_F_MARTIAL_ARTIST][CASTE_NAME:martial unicorn:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Composed in both body and mind, she is a master of martial arts and adept in alteration magic.]
-	[CASTE:UNICORN_M_MARTIAL_ARTIST][POP_RATIO:500]
+	[CASTE:UNICORN_M_MARTIAL_ARTIST][CASTE_NAME:martial unicorn:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Composed in both body and mind, he is a master of the martial arts and adept in alteration magic.]
-	[CASTE:EARTH_F_ADVENTURER][POP_RATIO:500]
+	[CASTE:EARTH_F_ADVENTURER][CASTE_NAME:earth pony archaeologist:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She enjoys exploring the old ruins and relishes a good thrill.]
-	[CASTE:EARTH_M_ADVENTURER][POP_RATIO:500]
+	[CASTE:EARTH_M_ADVENTURER][CASTE_NAME:earth pony archaeologist:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He enjoys exploring the old ruins and relishes a good thrill.]
-	[CASTE:UNICORN_F_ADVENTURER][POP_RATIO:500]
+	[CASTE:UNICORN_F_ADVENTURER][CASTE_NAME:unicorn archaeologist:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She enjoys exploring the old ruins and relishes a good thrill, and has picked up some skill with adept alteration magic.]
-	[CASTE:UNICORN_M_ADVENTURER][POP_RATIO:500]
+	[CASTE:UNICORN_M_ADVENTURER][CASTE_NAME:unicorn archaeologist:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He enjoys exploring the old ruins and relishes a good thrill, and has picked up some skill with adept alteration magic.]
-	[CASTE:EARTH_F_PRIEST][POP_RATIO:500]
+	[CASTE:EARTH_F_PRIEST][CASTE_NAME:earth pony priest:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Despite the coming of the end times, she still adheres strongly to her faith, seeking to sustain hope among her congregation.]
-	[CASTE:EARTH_M_PRIEST][POP_RATIO:500]
+	[CASTE:EARTH_M_PRIEST][CASTE_NAME:earth pony priest:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Despite the coming of the end times, he still adheres strongly to her faith, seeking to sustain hope among her congregation.]
-	[CASTE:UNICORN_F_PRIEST][POP_RATIO:500]
+	[CASTE:UNICORN_F_PRIEST][CASTE_NAME:unicorn priest:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Despite the coming of the end times, she still adheres strongly to her faith, seeking to sustain hope among her congregation and preserve their lives with adept restoration magic.]
-	[CASTE:UNICORN_M_PRIEST][POP_RATIO:500]
+	[CASTE:UNICORN_M_PRIEST][CASTE_NAME:unicorn priest:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Despite the coming of the end times, he still adheres strongly to her faith, seeking to sustain hope among her congregation and preserve their lives with adept restoration magic.]
-	[CASTE:EARTH_F_PSYCHOLOGIST][POP_RATIO:500]
+	[CASTE:EARTH_F_PSYCHOLOGIST][CASTE_NAME:earth pony psych:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Possessing deep insight into the pony psyche, she can discern the unconscious problems in other pony's hearts.]
-	[CASTE:EARTH_M_PSYCHOLOGIST][POP_RATIO:500]
+	[CASTE:EARTH_M_PSYCHOLOGIST][CASTE_NAME:earth pony psych:earth ponies:earth pony][POP_RATIO:500]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Possessing deep insight into the pony psyche, he can discern the unconscious problems in other pony's hearts.]
-	[CASTE:UNICORN_F_PSYCHOLOGIST][POP_RATIO:500]
+	[CASTE:UNICORN_F_PSYCHOLOGIST][CASTE_NAME:unicorn psych:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Possessing deep insight into the pony psyche, she can discern the unconscious problems in other pony's hearts and manipulate the minds of her foes with adept illusion magic.]
-	[CASTE:UNICORN_M_PSYCHOLOGIST][POP_RATIO:500]
+	[CASTE:UNICORN_M_PSYCHOLOGIST][CASTE_NAME:unicorn psych:unicorns:unicorn][POP_RATIO:500]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Possessing deep insight into the pony psyche, he can discern the unconscious problems in other pony's hearts and manipulate the minds of his foes with adept illusion magic.]
 	-------------------Heroic---------------------
-	[CASTE:EARTH_F_NINJA][POP_RATIO:200]
+	[CASTE:EARTH_F_NINJA][CASTE_NAME:earth pony ninja:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She has a way with stealth and coordination that endears her to covert undertakings.]
-	[CASTE:EARTH_M_NINJA][POP_RATIO:200]
+	[CASTE:EARTH_M_NINJA][CASTE_NAME:earth pony ninja:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He has a way with stealth and coordination that endears him to covert undertakings.]
-	[CASTE:UNICORN_F_NINJA][POP_RATIO:200]
+	[CASTE:UNICORN_F_NINJA][CASTE_NAME:unicorn ninja:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He has a way with stealth and coordination that endears him to covert undertakings, and can suppement his natural skills with adept alteration magic.]
-	[CASTE:UNICORN_M_NINJA][POP_RATIO:200]
+	[CASTE:UNICORN_M_NINJA][CASTE_NAME:unicorn ninja:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She has a way with stealth and coordination that endears her to covert undertakings, and can supplement her natural skills with adept alteration magic.]
-	[CASTE:EARTH_F_YIN_YANG][POP_RATIO:200]
+	[CASTE:EARTH_F_YIN_YANG][CASTE_NAME:taoist earth pony:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Wise in the ways of life and its many mysteries, she has long ago come to an understanding with the hope of new life despite the inevitability of death.]
-	[CASTE:EARTH_M_YIN_YANG][POP_RATIO:200]
+	[CASTE:EARTH_M_YIN_YANG][CASTE_NAME:taoist earth pony:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Wise in the ways of life and its many mysteries, he has long ago come to an understanding with the hope of new life despite the inevitability of death.]
-	[CASTE:UNICORN_F_YIN_YANG][POP_RATIO:200]
+	[CASTE:UNICORN_F_YIN_YANG][CASTE_NAME:taoist unicorn:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Wise in the ways of life and its many mysteries, she has long ago come to an understanding with the hope of new life despite the inevitability of death. She is capable of learning adept spells of any school.]
-	[CASTE:UNICORN_M_YIN_YANG][POP_RATIO:200]
+	[CASTE:UNICORN_M_YIN_YANG][CASTE_NAME:taoist unicorn:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. Wise in the ways of life and its many mysteries, he has long ago come to an understanding with the hope of new life despite the inevitability of death. He is capable of learning adept spells of any school.]
-	[CASTE:EARTH_F_CAPTAIN][POP_RATIO:200]
+	[CASTE:EARTH_F_CAPTAIN][CASTE_NAME:earth pony captain:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A pony of strong conviction and authority, she will do anything to keep her fellow ponies safe.]
-	[CASTE:EARTH_M_CAPTAIN][POP_RATIO:200]
+	[CASTE:EARTH_M_CAPTAIN][CASTE_NAME:earth pony captain:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A pony of strong conviction and authority, he will do anything to keep his fellow ponies safe.]
-	[CASTE:UNICORN_F_CAPTAIN][POP_RATIO:200]
+	[CASTE:UNICORN_F_CAPTAIN][CASTE_NAME:unicorn captain:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A pony of strong conviction, authority and proficiency in adept destruction magic, she will do anything to keep her fellow ponies safe.]
-	[CASTE:UNICORN_M_CAPTAIN][POP_RATIO:200]
+	[CASTE:UNICORN_M_CAPTAIN][CASTE_NAME:unicorn captain:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A pony of strong conviction, authority and proficiency in adept destruction magic, he will do anything to keep his fellow ponies safe.]
-	[CASTE:EARTH_F_WILD_LORD][POP_RATIO:200]
+	[CASTE:EARTH_F_WILD_LORD][CASTE_NAME:wild earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. At one with the earth and all its life, she is practically an embodiment of the untamed wilds that lay beyond the ruins of civilized pony society.]
-	[CASTE:EARTH_M_WILD_LORD][POP_RATIO:200]
+	[CASTE:EARTH_M_WILD_LORD][CASTE_NAME:wild earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. At one with the earth and all its life, he is practically an embodiment of the untamed wilds that lay beyond the ruins of civilized pony society.]
-	[CASTE:EARTH_F_SOCIAL_LORD][POP_RATIO:200]
+	[CASTE:EARTH_F_SOCIAL_LORD][CASTE_NAME:social earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. At one with the earth and all its life, she is endowed with an almost telepathic connection to all living things around her.]
-	[CASTE:EARTH_M_SOCIAL_LORD][POP_RATIO:200]
+	[CASTE:EARTH_M_SOCIAL_LORD][CASTE_NAME:social earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. At one with the earth and all its life, he is endowed with an almost telepathic connection to all living things around him.]
-	[CASTE:EARTH_F_WEAPON_LORD][POP_RATIO:200]
+	[CASTE:EARTH_F_WEAPON_LORD][CASTE_NAME:weapon earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. As an arms master, she can use any weapon at a moment's notice.]
-	[CASTE:EARTH_M_WEAPON_LORD][POP_RATIO:200]
+	[CASTE:EARTH_M_WEAPON_LORD][CASTE_NAME:weapon earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. As an arms master, he can use any weapon at a moment's notice.]
-	[CASTE:EARTH_F_CRAFTING_LORD][POP_RATIO:200]
+	[CASTE:EARTH_F_CRAFTING_LORD][CASTE_NAME:crafting earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. She can produce marvellous creations from almost anything.]
-	[CASTE:EARTH_M_CRAFTING_LORD][POP_RATIO:200]
+	[CASTE:EARTH_M_CRAFTING_LORD][CASTE_NAME:crafting earth lord:earth ponies:earth pony][POP_RATIO:200]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. He can produce marvellous creations from almost anything.]
 I can't think of a 5th specialist earth lord, so leaving this blank for the moment
-	CASTE:EARTH_F__LORD POP_RATIO:200
+	CASTE:EARTH_F__LORD CASTE_NAME: earth lord:earth ponies:earth pony POP_RATIO:200
 		DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell.  .
-	CASTE:EARTH_M__LORD POP_RATIO:200
+	CASTE:EARTH_M__LORD CASTE_NAME: earth lord:earth ponies:earth pony POP_RATIO:200
 		DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell.  .
-	[CASTE:UNICORN_F_ALTERATION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_F_ALTERATION_MASTER][CASTE_NAME:unicorn alchemist:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master alchemist, she possesses a fundamental understanding of alteration magic and its ties to the changing nature of reality.]
-	[CASTE:UNICORN_M_ALTERATION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_M_ALTERATION_MASTER][CASTE_NAME:unicorn alchemist:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master alchemist, he possesses a fundamental understanding of alteration magic and its ties to the changing nature of reality.]
-	[CASTE:UNICORN_F_CONJURATION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_F_CONJURATION_MASTER][CASTE_NAME:unicorn necromancer:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master necromancer, she possesses a fundamental understanding of conjuration magic and its ties to the constant death and rebirth of reality.]
-	[CASTE:UNICORN_M_CONJURATION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_M_CONJURATION_MASTER][CASTE_NAME:unicorn necromancer:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master necromancer, he possesses a fundamental understanding of conjuration magic and its ties to the constant death and rebirth of reality.]
-	[CASTE:UNICORN_F_DESTRUCTION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_F_DESTRUCTION_MASTER][CASTE_NAME:unicorn warlock:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master warlock, she possesses a fundamental understanding of destruction magic and its ties to the eventual fate of reality.]
-	[CASTE:UNICORN_M_DESTRUCTION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_M_DESTRUCTION_MASTER][CASTE_NAME:unicorn warlock:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master warlock, he possesses a fundamental understanding of destruction magic and its ties to the eventual fate of reality.]
-	[CASTE:UNICORN_F_ILLUSION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_F_ILLUSION_MASTER][CASTE_NAME:unicorn esper:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master esper, she possesses a fundamental understanding of illusion magic and its ties to the flow of minds within reality.]
-	[CASTE:UNICORN_M_ILLUSION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_M_ILLUSION_MASTER][CASTE_NAME:unicorn esper:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master esper, he possesses a fundamental understanding of illusion magic and its ties to the flow of minds within reality.]
-	[CASTE:UNICORN_F_RESTORATION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_F_RESTORATION_MASTER][CASTE_NAME:unicorn cleric:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master cleric, she possesses a fundamental understanding of restoration magic and ties to the eventual rebirth of reality.]
-	[CASTE:UNICORN_M_RESTORATION_MASTER][POP_RATIO:200]
+	[CASTE:UNICORN_M_RESTORATION_MASTER][CASTE_NAME:unicorn cleric:unicorns:unicorn][POP_RATIO:200]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master cleric, he possesses a fundamental understanding of restoration magic and ties to the eventual rebirth of reality.]
 	----------Legendary-------------
-	[CASTE:EARTH_F_EARTH_LORD][POP_RATIO:50]
+	[CASTE:EARTH_F_EARTH_LORD][CASTE_NAME:true earth lord:earth ponies:earth pony][POP_RATIO:50]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. At one with the earth and all its life, she is endowed with the remarkable strength and fortitude that exemplify a true earth pony.]
-	[CASTE:EARTH_M_EARTH_LORD][POP_RATIO:50]
+	[CASTE:EARTH_M_EARTH_LORD][CASTE_NAME:true earth lord:earth ponies:earth pony][POP_RATIO:50]
 		[DESCRIPTION:A pony with a strong bond with nature and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. At one with the earth and all its life, he is endowed with the remarkable strength and fortitude that exemplify a true earth pony.]
-	[CASTE:UNICORN_F_MAGIC_MASTER][POP_RATIO:50]
+	[CASTE:UNICORN_F_MAGIC_MASTER][CASTE_NAME:unicorn arcanist:unicorns:unicorn][POP_RATIO:50]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master of all the arcane arts, she possesses a fundamental understanding of the deep supernatural properties underlying the fabric of reality.]
-	[CASTE:UNICORN_M_MAGIC_MASTER][POP_RATIO:50]
+	[CASTE:UNICORN_M_MAGIC_MASTER][CASTE_NAME:unicorn arcanist:unicorns:unicorn][POP_RATIO:50]
 		[DESCRIPTION:A pony with a spiral horn growing from its forehead and equipped with a steel PipBuck, descended from those who sought refuge in the Stables when the megaspells fell. A master of all the arcane arts, he possesses a fundamental understanding of the deep supernatural properties underlying the fabric of reality.]
 
 	[SELECT_CASTE:EARTH_F_WATER]
@@ -711,7 +711,7 @@ I can't think of a 5th specialist earth lord, so leaving this blank for the mome
 		SELECT_ADDITIONAL_CASTE:EARTH_M__LORD
 		[SELECT_ADDITIONAL_CASTE:EARTH_F_EARTH_LORD]
 		[SELECT_ADDITIONAL_CASTE:EARTH_M_EARTH_LORD]
-			[CASTE_NAME:earth pony:earth ponies:earth pony]
+			{CASTE_NAME:earth pony:earth ponies:earth pony} doing individual caste names
 			[CASTE_TILE:'e']
 			[CASTE_SOLDIER_TILE:'E']
 			[PREFSTRING:strong bond with nature]
@@ -945,7 +945,7 @@ I can't think of a 5th specialist earth lord, so leaving this blank for the mome
 		[SELECT_ADDITIONAL_CASTE:UNICORN_M_RESTORATION_MASTER]
 		[SELECT_ADDITIONAL_CASTE:UNICORN_F_MAGIC_MASTER]
 		[SELECT_ADDITIONAL_CASTE:UNICORN_M_MAGIC_MASTER]
-			[CASTE_NAME:unicorn:unicorns:unicorn]
+			{CASTE_NAME:unicorn:unicorns:unicorn} doing individual caste names
 			[CASTE_TILE:'u']
 			[CASTE_SOLDIER_TILE:'U']
 			[PREFSTRING:magical horns]

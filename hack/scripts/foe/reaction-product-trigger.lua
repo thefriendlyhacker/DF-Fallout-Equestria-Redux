@@ -73,7 +73,8 @@ end
 
 local function afterProduce(reaction,reaction_product,unit,input_items,input_reagents,output_items)
  --printall(unit.job.current_job)
- local _,buildingId = dfhack.script_environment('foe/reaction-trigger').getWorkerAndBuilding(unit.job.current_job)
+ local _,buildingId 
+  if unit.job.current_job then _,buildingId = dfhack.script_environment('foe/reaction-trigger').getWorkerAndBuilding(unit.job.current_job) end
  for _,hook in ipairs(productHooks[reaction.code] or {}) do
   local command = hook.command
   local processed = processArgs(command, reaction, reaction_product, unit, input_items, input_reagents, output_items, buildingId)

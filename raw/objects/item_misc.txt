@@ -410,18 +410,6 @@ item_misc
 [NAME:scrap parts:scrap parts]
 [HARD_MAT]
 
-[ITEM_TOY:ITEM_DESTROYED_ROBOT_SMALL]
-[NAME:destroyed small robot:destroyed small robots]
-[HARD_MAT]
-
-[ITEM_TOY:ITEM_DESTROYED_ROBOT_MEDIUM]
-[NAME:destroyed robot:destroyed robots]
-[HARD_MAT]
-
-[ITEM_TOY:ITEM_DESTROYED_ROBOT_LARGE]
-[NAME:destroyed large robot:destroyed large robots]
-[HARD_MAT]
-
 [ITEM_TOY:ITEM_BROKEN_POWER_ARMOR]
 [NAME:broken power armor suit:broken power armor suits]
 [HARD_MAT]
