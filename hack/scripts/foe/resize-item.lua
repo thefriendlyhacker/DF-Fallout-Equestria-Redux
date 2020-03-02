@@ -1,11 +1,11 @@
 --on execution, changes the maker race of an item (sizing it for that race),
---written by thefriendlyhacker, 
+--written by thefriendlyhacker
 --parts ripped off the create-item script by expwnent, and the create-unit script by warmist, Boltgun, Dirst, Expwnent, lethosor, mifki, Putnam and Atomic Chicken.
 local usage = [====[
 
-foe/strip-dead-dwarf-flag
+foe/resize-item
 =====================
-This script sets the dead-dwarf flag of an item to false
+This script changes the sizing of an item
 
 Arguments::
 
@@ -52,24 +52,25 @@ if args.material then
 end
 
 
-if not args.race then
+if not args.race and not args.material then
   error ("no race given")
 end
 
-local raceIndex
-for i,v in ipairs(df.global.world.raws.creatures.all) do
-  if v.creature_id == args.race then
-    raceIndex = i
-    break
+if args.race then
+  local raceIndex
+  for i,v in ipairs(df.global.world.raws.creatures.all) do
+    if v.creature_id == args.race then
+      raceIndex = i
+      break
+    end
   end
+  
+  if not raceIndex then
+    qerror('Invalid race: '..args.race)
+  end
+  
+  item.maker_race=raceIndex
 end
-
-if not raceIndex then
-  qerror('Invalid race: '..args.race)
-end
-
-item.maker_race=raceIndex
-
 if material then
   item.mat_type=material.type
   item.mat_index=material.index

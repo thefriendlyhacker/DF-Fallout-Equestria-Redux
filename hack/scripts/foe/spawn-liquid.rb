@@ -6,7 +6,7 @@ foe/spawn-liquid
 =====================
 This script spawns liquid at the given coordinates
 
-type spawn-liquid help for 
+type spawn-liquid help for usage 
 
 =end
 
