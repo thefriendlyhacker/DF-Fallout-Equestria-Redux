@@ -133,23 +133,29 @@ function onTickFiringCheck()
   pos2List["firing"]={}
   tagsList["firing"]={}
   local nextProj=df.global.world.proj_list.next
-  if nextProj then
-    repeat
-      if nextProj.item.distance_flown==0 then
-        callLoop(nextProj.item,"firing")
-      end
-      nextProj=nextProj.next
-    until not nextProj
+  while nextProj do
+    if nextProj.item.distance_flown==0 then
+      callLoop(nextProj.item,"firing")
+    end
+    nextProj=nextProj.next
   end
 end
-
 firingTimeout=firingTimeout or nil
 if not firingTimeout then
   firingTimeout=dfhack.timeout(1,'ticks',onTickFiringCheck)
 end
 
 function onProjMovement(proj)
-  callLoop(proj,"move",{})
+  --since adventure mode processes projectiles entirely between ticks, we gotta check for adv mode and handle firing as well if necessary
+  if proj.distance_flown==0 then
+    --gametype=5 appears to be arena mode unit control, can't find a less magic numbery way of handling this case
+    if dfhack.world.isAdventureMode() or (dfhack.world.isArena() and df.global.gametype==5) then
+      callLoop(proj,"firing")
+    end
+    --there technically *may* be double callLoop() procs if switching between arena and arena unit control just after a proj is fired
+    --but frankly my dear, I don't give a damn
+  end
+  callLoop(proj,"move")
 end
 
 eventful.onProjItemCheckMovement.rangedModule = onProjMovement
@@ -158,17 +164,19 @@ eventful.onUnload.rangedTriggerModule = function()
   triggers = nil
   firingTimeout=nil
 end
---takes a template projectile, item details and creating unit, and creates an initialised projectile
-function createProjectile(proj,itemType,itemSubtype,matType,matIndex,creator)
-  local newProjItem = df.item.find(dfhack.items.createItem(itemType, itemSubtype, matType, matIndex, creator))
+--takes a template projectile and item details, and creates an initialised projectile
+function createProjectile(proj,itemType,itemSubtype,matType,matIndex)
+  local newProjItem = df.item.find(dfhack.items.createItem(itemType, itemSubtype, matType, matIndex, proj.firer))
   newProjItem.flags.forbid = true
-  if not newProjItem.quality==nil then
-    if proj.item.quality==nil then
-      newProjItem.quality=0
-    else
-      newProjItem.quality=proj.item.quality
-    end
-  end
+  
+  --for the moment, set quality to the same as the template ammo. Builtin functions handle the edge cases of if old/new projs even have quality field
+  newProjItem:setQuality(proj.item:getQuality())
+  
+  --since dfhack.items.createItem *requires* a maker, I have to set the maker to the template proj's maker (which may not exist) separately
+  newProjItem:setMaker(proj.item:getMaker())
+  --probably unnecessary since this ID appears to just be used for armor sizing
+  newProjItem:setMakerRace(proj.item:getMakerRace())
+  
   local newProj = dfhack.items.makeProjectile(newProjItem)
   
   --if newProj is created midair then dfhack "helpfully" makes it a falling projectile

@@ -158,7 +158,7 @@ function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeapo
       local randAngle, randDist = math.random()*2*math.pi,math.random()*maxDiv
     --for some silly reason lua has no round func, so we are doing a trick with math.ceil to duplicate it
       local targetX,targetY= math.ceil(math.cos(randAngle)*randDist+0.5)-1,math.ceil(math.sin(randAngle)*randDist+0.5)-1
-      local newProj,newProjItem=rm.createProjectile(proj,projType,projSubtype,projMatType,projMatIndex,proj.firer)
+      local newProj,newProjItem=rm.createProjectile(proj,projType,projSubtype,projMatType,projMatIndex)
       newProj.target_pos.x = newProj.target_pos.x + targetX
       newProj.target_pos.y = newProj.target_pos.y + targetY
       table.insert(newProjs,newProj)
