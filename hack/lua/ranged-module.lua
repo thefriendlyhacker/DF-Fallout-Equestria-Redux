@@ -2,7 +2,17 @@ local _ENV = mkmodule("ranged-module")
 eventful = require 'plugins.eventful'
 utils = require 'utils'
 
-triggers=triggers or {["move"]={},["impact"]={},["firing"]={}}
+-- all functions contained in triggers are run upon one of the following
+--move - moves a square during df internal projectile processing
+--impact - hits something
+--firing - is initially spawned (usually when a creature just fired it, but before it moves)
+--reprocess - upon a scan being done by the function rearranging projectiles during internal df processing.
+    --if a reprocess trigger returns a table and doesn't include .dontShift, the projectile will be rearranged and reprocessed
+
+triggers=triggers or {["move"]={},["impact"]={},["firing"]={},["reprocess"]={}}
+
+--these are used for tracking secondary projectiles and their tags between the primary projectile and the secondaries
+--pos1 and pos2 list hold the position that the call loop should continue from
 pos1List=pos1List or {["move"]={},["impact"]={},["firing"]={}}
 pos2List=pos2List or {["move"]={},["impact"]={},["firing"]={}}
 tagsList=tagsList or {["move"]={},["impact"]={},["firing"]={}}
@@ -243,4 +253,116 @@ function createProjectile(proj,itemType,itemSubtype,matType,matIndex)
   newProj.accel_z = proj.accel_z
   return newProj,newProjItem
 end
+
+function fireshiftTest()
+  eventful.onProjItemCheckMovement.fireshift=fireshiftMovement
+end
+local fireshiftProj=nil
+
+function fireshiftSpawnItem()
+  --spawn a glass boulder - this is what  stop on and run our scripts
+  local itemType=dfhack.items.findType("BOULDER:NONE")
+  local itemSubtype=dfhack.items.findSubtype("BOULDER:NONE")
+  local matType=dfhack.matinfo.find("GLASS_CLEAR:NONE")['type']
+  local matSubtype=dfhack.matinfo.find("GLASS_CLEAR:NONE")['index']
+  local newProjItem = df.item.find(dfhack.items.createItem(itemType, itemSubtype, matType, matSubtype, df.unit.find(df.global.unit_next_id-1)))
+  local newProj = dfhack.items.makeProjectile(newProjItem)
+
+  --if newProj is created midair then dfhack "helpfully" makes it a falling projectile
+  --this prevents the above call from creating a projectile, so we need to "borrow" the one dfhack made
+  if newProj==nil then
+    local projLink=df.global.world.proj_list
+    repeat
+      projLink=projLink.next
+      if projLink~=nil then
+        if projLink.item.item==newProjItem then
+          newProj=projLink.item
+        end
+      else error("error - cannot create projectile from new item for unknown reason") end
+    until newProj
+  end
+  fireshiftProj=newProj
+  --link, don't need to touch
+  --id, don't need to touch
+  newProj.firer=nil
+  newProj.origin_pos.x = 0
+  newProj.origin_pos.y = 0
+  newProj.origin_pos.z = 0
+  newProj.prev_pos.x = 0
+  newProj.prev_pos.y = 0
+  newProj.prev_pos.z = 0
+  newProj.cur_pos.x = 0
+  newProj.cur_pos.y = 0
+  newProj.cur_pos.z = 0
+  newProj.target_pos.x = 0
+  newProj.target_pos.y = 0
+  newProj.target_pos.z = 1
+  newProj.distance_flown = 0
+  newProj.fall_threshold = 60
+  newProj.min_hit_distance = 5
+  newProj.min_ground_distance = 59
+  --flags
+  newProj.flags.no_impact_destroy = false
+  newProj.flags.has_hit_ground = false
+  newProj.flags.bouncing = false
+  newProj.flags.high_flying = false
+  newProj.flags.piercing = false
+  newProj.flags.to_be_deleted = false
+  newProj.flags.unk6 = false
+  newProj.flags.unk7 = false
+  newProj.flags.parabolic = false
+  newProj.flags.unk9 = false
+  newProj.flags.no_collide = false
+  newProj.flags.safe_landing = false
+  --end flags
+  newProj.fall_counter = 0
+  newProj.fall_delay = 0
+  newProj.hit_rating = 1 --accuracy of the attack I *think*
+  newProj.unk21 = 0 --only ever seen this equal to 0
+  newProj.unk22 = 1--this is projectile velocity, note to self vel=(force/20)/(density*size/10^6 (cm^3->m^3))
+  newProj.bow_id = -1
+  newProj.unk_item_id = -1 --no idea what this is
+  newProj.unk_unit_id = -1 --ditto
+  newProj.unk_v40_1 = -1 --probably target ID
+  newProj.speed_x = 0 --these are always 0 for projectiles, dunno their significance
+  newProj.speed_y = 0
+  newProj.speed_z = 0
+  newProj.accel_x = 0 --ditto
+  newProj.accel_y = 0
+  newProj.accel_z = 0
+end
+
+function fireshiftMovement(proj)
+  if not fireshiftProj then 
+    fireshiftSpawnItem()
+    return
+  elseif proj~=fireshiftProj then
+    return 
+  else
+    fireshiftProj=nil
+    local nextLink=df.global.world.proj_list.next
+    while nextLink and nextLink~=proj.link do
+      curLink=nextLink
+      nextLink=curLink.next
+      if curLink.item.firer then
+        if curLink~=proj.link then
+          --remove link from doubly linked list
+          curLink.prev.next=curLink.next
+          curLink.next.prev=curLink.prev
+          --add new links to seperated element
+          curLink.next=proj.link.next
+          curLink.prev=proj.link
+          --correct links around element
+          if curLink.next then
+            curLink.next.prev=curLink
+          end
+          curLink.prev.next=curLink
+        end
+      end
+    end
+    if proj.link.next then fireshiftSpawnItem() end
+  end
+end
+
+
 return _ENV
