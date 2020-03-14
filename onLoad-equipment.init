@@ -183,7 +183,7 @@ ranged/ranged-multishot -name "amr canister multishot" -reqProjType AMMO:ITEM_AM
 ranged/ranged-properties -name "multishot cone accuracy booster" -reqTags "multishot cone" -priority " -2" -hitRatingBase 20 -hitRatingMult 2
 
 #minigun
-ranged/ranged-multishot -name "minigun multishot" -reqProjType GLOB:NONE -reqProjMat INORGANIC:MEDIUM_CALIBER_MINIGUN -newProjType AMMO:ITEM_AMMO_BULLET_MEDIUM -newProjMat INORGANIC:STEEL -tags "minigun projectile" -divergence 3 -priority 2  -newProjNbr 6 
+ranged/ranged-multishot -name "minigun multishot" -reqProjType GLOB:NONE -reqProjMat INORGANIC:MEDIUM_CALIBER_MINIGUN_BULLET -newProjType AMMO:ITEM_AMMO_BULLET_MEDIUM -newProjMat INORGANIC:STEEL -tags "minigun projectile" -divergence 3 -priority 2  -newProjNbr 6 
 
 ranged/ranged-properties -name "minigun velocity adjustment" -reqTags "minigun projectile" -force 40000 -maxVelocity 3400 -priority 1 -reqProjType AMMO:ITEM_AMMO_BULLET_MEDIUM
 
