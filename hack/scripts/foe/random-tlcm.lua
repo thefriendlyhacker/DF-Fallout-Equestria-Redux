@@ -39,7 +39,8 @@ rTLCM= persist.GlobalTable.randomTLCM
 checkedCreatures=checkedCreatures or {}
 
 function checkColorMod(unit,tlcmName)
-  rTLCM[tlcmName]=rTLCM[tlcmName] or {}--The persistent table is either getting cleared or bugging out for some reason. This is a hacky workaround
+  --The persistent table is either getting cleared or bugging out on load sometimes. This is a hacky workaround
+  rTLCM[tlcmName]=rTLCM[tlcmName] or {}
   if rTLCM[tlcmName][tostring(unit.id)]~=nil then return end
   local changed=false
   for i,v in ipairs(df.creature_raw.find(unit.race).caste[unit.caste].color_modifiers) do
