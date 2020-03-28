@@ -77,6 +77,8 @@ rm= require 'ranged-module'
 function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, divergence, velocity, velocityMult, force, maxVelocity, hitRatingBase, hitRatingMult, piercing, delete, scriptTags, reqTags, forbiddenTags)
   return function (proj,tags)
     if not proj.firer then return false end
+    --dear god this is hacky but I don't know a nicer way of checking if the projectile is a unit or an item
+    if not pcall(function() return proj.item end) then return false end
     if reqTags then
       for tag,_ in pairs(reqTags) do
         if tags[tag]==nil then return end

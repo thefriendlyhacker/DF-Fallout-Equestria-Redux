@@ -13,7 +13,7 @@ item_ammo
 	[NAME:small caliber bullet:small caliber rounds]
 	[CLASS:AMMO_LOW]
 	[SIZE:2]
-	[ATTACK:EDGE:4:1000:strike:strikes:NO_SUB:1000]
+	[ATTACK:EDGE:10:1000:strike:strikes:NO_SUB:1000]
 		[ATTACK_PREPARE_AND_RECOVER:4:2]
 
 [ITEM_AMMO:ITEM_AMMO_BULLET_MEDIUM] 7.62x51mm NATO

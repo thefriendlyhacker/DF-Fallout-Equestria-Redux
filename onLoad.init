@@ -3,15 +3,9 @@ repeat -name warn-starving -time 10 -timeUnits days -command [ warn-starving ]
 #ffid for fortress mode spells and such
 foe/ffid-tagger
 
-#bug fix for unreactable steel ranger corpses and dead pet robots
-
-modtools/item-trigger -itemType ITEM_MINIGUN_RANGER_CORPSE -command [ foe/strip-dead-dwarf-flag -item \\ITEM_ID ] -onEquip [ Hauled ]
-modtools/item-trigger -itemType ITEM_ROCKET_RANGER_CORPSE -command [ foe/strip-dead-dwarf-flag -item \\ITEM_ID ]  -onEquip [ Hauled ]
-modtools/item-trigger -itemType ITEM_CQC_RANGER_CORPSE -command [ foe/strip-dead-dwarf-flag -item \\ITEM_ID ]  -onEquip [ Hauled ]
-
-#modtools/item-trigger -itemType ITEM_DESTROYED_ROBOT_SMALL -command [ foe/strip-dead-dwarf-flag -item \\ITEM_ID ]  -onEquip [ Hauled ]
-#modtools/item-trigger -itemType ITEM_DESTROYED_ROBOT_MEDIUM -command [ foe/strip-dead-dwarf-flag -item \\ITEM_ID ]  -onEquip [ Hauled ]
-#modtools/item-trigger -itemType ITEM_DESTROYED_ROBOT_LARGE -command [ foe/strip-dead-dwarf-flag -item \\ITEM_ID ]  -onEquip [ Hauled ]
+#stripping dead-dwarf tags from unreactable steel ranger corpse items and dead pet robots
+foe/unrestrict-dead-creature -itemType [ "TOOL:ITEM_CQC_RANGER_CORPSE" "TOOL:ITEM_ROCKET_RANGER_CORPSE" "TOOL:ITEM_MINIGUN_RANGER_CORPSE" ]
+foe/unrestrict-dead-creature -creatureClass ROBOT
 
 #fixing crappy genetic model with randomization workaround
 foe/random-tlcm -name "cutie mark" -tissueName "cutie mark"

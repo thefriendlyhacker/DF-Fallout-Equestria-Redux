@@ -138,6 +138,8 @@ end
 function getCommandFunc(funcName,reqProjMats,reqProjTypes,reqWeaponMats,reqWeaponTypes, timeBase, timeMult, resetBase, resetMult, neverReset, processSecondaries, allowMultTrigs, scriptTags, reqTags, forbiddenTags)
   return function (proj,tags)
     if not proj.firer then return false end
+    --dear god this is hacky but I don't know a nicer way of checking if the projectile is a unit or an item
+    if not pcall(function() return proj.item end) then return false end
     if tags._secondaryProj and not processSecondaries then return end
     if tags._rof and allowMultTrigs then return end
     if reqTags then
